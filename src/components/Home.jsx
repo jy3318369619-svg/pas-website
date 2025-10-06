@@ -255,7 +255,9 @@ const Home = () => {
           alignItems: 'center',
           justifyContent: 'center',
           position: 'relative',
-          overflow: 'hidden'
+          overflow: 'hidden',
+          marginTop: '-80px',
+          paddingTop: '80px'
         }}>
           {/* Silk Background - 使用 reactbits.dev 的默认参数 */}
           <div style={{

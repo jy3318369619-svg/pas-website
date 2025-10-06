@@ -264,7 +264,9 @@ const Technology = () => {
       <div style={{ 
         background: 'linear-gradient(180deg, #ECEFF1 0%, #ffffff 50%, #ECEFF1 100%)', 
         minHeight: '100vh',
-        fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+        fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif",
+        marginTop: '-80px',
+        paddingTop: '80px'
       }}>
         {/* Hero Section */}
         <div id="hero" className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
