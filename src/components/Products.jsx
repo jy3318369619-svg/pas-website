@@ -177,9 +177,7 @@ const Products = () => {
       <div style={{ 
         background: 'linear-gradient(180deg, #fff 0%, #f8f9fa 50%, #fff 100%)', 
         minHeight: '100vh',
-        paddingBottom: '80px',
-        marginTop: '-80px',
-        paddingTop: '80px'
+        paddingBottom: '80px'
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 40px' }}>
           {/* Hero Section */}

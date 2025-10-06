@@ -48,17 +48,13 @@ const About = () => {
     backgroundPosition: 'center 45%',
     backgroundRepeat: 'no-repeat',
     color: '#ffffff',
-    padding: '0',
-    paddingTop: '160px',
-    paddingBottom: '180px',
+    padding: '160px 0 180px',
     textAlign: 'center',
     position: 'relative',
     overflow: 'hidden',
-    minHeight: '100vh',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: '-80px'
+    justifyContent: 'center'
   };
 
   const heroOverlayStyle = {

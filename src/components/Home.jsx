@@ -249,15 +249,13 @@ const Home = () => {
       <div>
         {/* Hero Section */}
         <section id="hero" style={{
-          minHeight: '100vh',
           background: '#000000', // 简化背景色
+          padding: '160px 0 180px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           position: 'relative',
-          overflow: 'hidden',
-          marginTop: '-80px',
-          paddingTop: '80px'
+          overflow: 'hidden'
         }}>
           {/* Silk Background - 使用 reactbits.dev 的默认参数 */}
           <div style={{

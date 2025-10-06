@@ -244,13 +244,12 @@ const Contact = () => {
           animation: 'float 6s ease-in-out infinite reverse'
         }} />
 
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 40px', marginTop: '-80px', paddingTop: '80px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 40px' }}>
           {/* Hero Section */}
            <div 
              id="hero"
              className="hero-section"
              style={{ 
-               minHeight: '80vh',
                display: 'flex',
                alignItems: 'center',
                justifyContent: 'center',
