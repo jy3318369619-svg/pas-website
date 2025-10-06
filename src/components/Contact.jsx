@@ -254,7 +254,7 @@ const Contact = () => {
                alignItems: 'center',
                justifyContent: 'center',
                textAlign: 'center',
-               padding: '160px 0 180px',
+               padding: '230px 0 180px',
                marginBottom: '0px'
              }}
            >
@@ -834,7 +834,7 @@ const Contact = () => {
                       fontWeight: 500,
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                     }}>
-                      TEL: +86 15058729834
+                      TEL: +86 15018729834
                     </span>
                   </div>
                 </div>

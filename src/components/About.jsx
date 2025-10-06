@@ -44,11 +44,11 @@ const About = () => {
   // Hero Section
   const heroStyle = {
     backgroundImage: `url('/images/about%20us.jpg')`,
-    backgroundSize: '110%',
+    backgroundSize: 'cover',
     backgroundPosition: 'center 45%',
     backgroundRepeat: 'no-repeat',
     color: '#ffffff',
-    padding: '160px 0 180px',
+    padding: '200px 0 180px',
     textAlign: 'center',
     position: 'relative',
     overflow: 'hidden',
@@ -73,8 +73,7 @@ const About = () => {
     maxWidth: '1200px',
     margin: '0 auto',
     padding: '0 40px',
-    textAlign: 'center',
-    transform: 'translateY(-30px)'
+    textAlign: 'center'
   };
 
   const heroTitleStyle = {
@@ -95,14 +94,13 @@ const About = () => {
   const heroSubtitleStyle = {
     fontSize: '26px',
     opacity: 0.95,
-    margin: '-30px auto 0 auto',
+    margin: '0 auto',
     lineHeight: 1.7,
     fontWeight: 400,
     animation: 'fadeInUp 1.2s ease-out 0.4s both',
     color: '#f5f5f5',
     textShadow: '0 2px 10px rgba(0,0,0,0.3)',
-    letterSpacing: '0.01em',
-    whiteSpace: 'nowrap'
+    letterSpacing: '0.01em'
   };
 
   // Content Section - Professional Textile Industry Style

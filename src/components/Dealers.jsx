@@ -161,10 +161,10 @@ const Dealers = () => {
   const heroStyle = {
     background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/dealers.png)`,
     backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    backgroundPosition: 'center 30%',
     backgroundRepeat: 'no-repeat',
     color: '#ffffff',
-    padding: '160px 0 180px',
+    padding: '200px 0 180px',
     textAlign: 'center',
     position: 'relative',
     overflow: 'hidden',
