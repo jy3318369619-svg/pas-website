@@ -641,6 +641,31 @@ const Home = () => {
                 >
                   CHINESE POOL/HEYBALL
                 </button>
+                <button 
+                  style={{
+                    background: hoveredButtons[5] ? '#0056CC' : '#007BFF',
+                    color: '#FFFFFF',
+                    padding: '12px 24px',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    border: 'none',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                    fontFamily: "'Montserrat', sans-serif",
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px',
+                    boxShadow: hoveredButtons[5]
+                      ? '0 6px 20px rgba(0, 123, 255, 0.4)' 
+                      : '0 3px 12px rgba(0, 123, 255, 0.3)',
+                    transform: hoveredButtons[5] ? 'translateY(-2px)' : 'translateY(0)'
+                  }}
+                  onClick={() => navigate('/products')}
+                  onMouseEnter={() => handleButtonHover(5, true)}
+                  onMouseLeave={() => handleButtonHover(5, false)}
+                >
+                  MORE
+                </button>
               </div>
             </div>
             

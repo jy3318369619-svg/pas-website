@@ -55,14 +55,24 @@ const Dealers = () => {
       gradient: '#000000',
       countries: [
         { name: 'India', dealers: 'Contact information for Indian dealers will be displayed here.' },
-        { name: 'Indonesia', dealers: 'Contact information for Indonesian dealers will be displayed here.' },
+        { 
+          name: 'Indonesia', 
+          dealers: (
+            <>
+              <strong>Eutopia Billiards & Co</strong><br />
+              Tel: +62 851 9454 9686<br />
+              Email: <a href="mailto:eutopia.idn@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>eutopia.idn@gmail.com</a><br />
+              Instagram: <a href="https://www.instagram.com/eutopiabilliards?igsh=MXE3NjlwNGhlZXdiNA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@eutopiabilliards</a>
+            </>
+          )
+        },
         { 
           name: 'Malaysia', 
           dealers: (
             <>
               <strong>Arena Billiards Sport Trading</strong><br />
-              Address: No 23-2 Jalan Sepah Puteri 5/1b, Kota Damansara, PJU 5, 47810 Petaling Jaya, Selangor<br />
-              Contact: +6017-741 6133
+              Tel: +6017-741 6133<br />
+              Address: No 23-2 Jalan Sepah Puteri 5/1b, Kota Damansara, PJU 5, 47810 Petaling Jaya, Selangor
             </>
           )
         },
@@ -74,8 +84,8 @@ const Dealers = () => {
             <>
               <strong>HSP Billiards Equipment</strong><br />
               Contact Person: Ho So Phat<br />
-              Address: 1D/7 Binh Gia, Ward 13, Tan Binh District, Ho Chi Minh City, Vietnam<br />
-              Tel: +84 933 18 68 18
+              Tel: +84 933 18 68 18<br />
+              Address: 1D/7 Binh Gia, Ward 13, Tan Binh District, Ho Chi Minh City, Vietnam
             </>
           )
         }
