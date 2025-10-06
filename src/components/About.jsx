@@ -79,7 +79,7 @@ const About = () => {
   };
 
   const heroTitleStyle = {
-    fontSize: 'clamp(3rem, 6vw, 5.5rem)',
+    fontSize: '88px',
     fontWeight: 800,
     marginBottom: '40px',
     letterSpacing: '-0.04em',
@@ -94,7 +94,7 @@ const About = () => {
   };
 
   const heroSubtitleStyle = {
-    fontSize: 'clamp(1.2rem, 2.5vw, 1.6rem)',
+    fontSize: '26px',
     opacity: 0.95,
     margin: '-30px auto 0 auto',
     lineHeight: 1.7,
@@ -121,7 +121,7 @@ const About = () => {
   };
 
   const sectionTitleStyle = {
-    fontSize: 'clamp(2.2rem, 4vw, 3.5rem)',
+    fontSize: '56px',
     fontWeight: 600,
     color: '#2c3e50',
     textAlign: 'center',
@@ -132,7 +132,7 @@ const About = () => {
   };
 
   const sectionSubtitleStyle = {
-    fontSize: '1.2em',
+    fontSize: '19px',
     color: '#5a6c7d',
     textAlign: 'center',
     marginBottom: '70px',
@@ -171,7 +171,7 @@ const About = () => {
   };
 
   const timelineYearStyle = {
-    fontSize: '1.8em',
+    fontSize: '29px',
     fontWeight: 600,
     color: '#2c3e50',
     marginBottom: '16px',
@@ -182,7 +182,7 @@ const About = () => {
   };
 
   const timelineTextStyle = {
-    fontSize: '1.05em',
+    fontSize: '17px',
     color: '#34495e',
     lineHeight: 1.7,
     marginBottom: '20px',
@@ -196,7 +196,7 @@ const About = () => {
     borderRadius: '16px',
     borderLeft: '4px solid #007AFF',
     fontStyle: 'italic',
-    fontSize: '1.1em',
+    fontSize: '18px',
     color: '#1a1a1a',
     lineHeight: 1.6,
     margin: '30px 0',
@@ -212,7 +212,7 @@ const About = () => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontSize: '4em',
+    fontSize: '64px',
     color: '#ffffff',
     position: 'relative',
     overflow: 'hidden',
@@ -300,7 +300,7 @@ const About = () => {
                   borderLeft: '3px solid #3498db'
                 }}>
                   <h4 style={{
-                    fontSize: '1.1em',
+                    fontSize: '18px',
                     fontWeight: 600,
                     color: '#2c3e50',
                     marginBottom: '8px'
@@ -308,7 +308,7 @@ const About = () => {
                     Manufacturing Excellence
                   </h4>
                   <p style={{
-                    fontSize: '0.95em',
+                    fontSize: '15px',
                     color: '#5a6c7d',
                     margin: 0,
                     lineHeight: 1.5
@@ -390,7 +390,7 @@ const About = () => {
                     color: '#ffffff',
                     padding: '16px 32px',
                     borderRadius: '12px',
-                    fontSize: '1.1em',
+                    fontSize: '18px',
                     fontWeight: 600,
                     border: 'none',
                     cursor: 'pointer',

@@ -291,7 +291,7 @@ const Technology = () => {
               opacity: 0.1
             }} />
             <h1 className="hero-title" style={{
-              fontSize: 'clamp(3rem, 6vw, 5.5rem)',
+              fontSize: '88px',
               fontWeight: 700,
               marginBottom: '24px',
               letterSpacing: '-0.03em',

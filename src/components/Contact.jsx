@@ -261,7 +261,7 @@ const Contact = () => {
            >
             <div>
               <h1 className="hero-title" style={{
-            fontSize: 'clamp(3rem, 6vw, 5.5rem)',
+            fontSize: '88px',
             fontWeight: 700,
             color: '#1d1d1f',
             marginBottom: '30px',
@@ -275,7 +275,7 @@ const Contact = () => {
             Contact Us
           </h1>
           <p style={{
-            fontSize: '1.5em',
+            fontSize: '24px',
             color: '#86868b',
             maxWidth: '800px',
             margin: '0 auto',
@@ -303,7 +303,7 @@ const Contact = () => {
             }}
           >
             <h2 style={{
-              fontSize: '2em',
+              fontSize: '32px',
               color: '#1d1d1f',
               marginBottom: '30px',
               fontWeight: 600,
@@ -320,7 +320,7 @@ const Contact = () => {
                 <label style={{
                   display: 'block',
                   color: '#1d1d1f',
-                  fontSize: '1.1em',
+                  fontSize: '18px',
                   fontWeight: 500,
                   marginBottom: '18px',
                   fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
@@ -344,7 +344,7 @@ const Contact = () => {
                 <label style={{
                   display: 'block',
                   color: '#1d1d1f',
-                  fontSize: '1.1em',
+                  fontSize: '18px',
                   fontWeight: 500,
                   marginBottom: '18px',
                   fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
@@ -368,7 +368,7 @@ const Contact = () => {
                 <label style={{
                   display: 'block',
                   color: '#1d1d1f',
-                  fontSize: '1.1em',
+                  fontSize: '18px',
                   fontWeight: 500,
                   marginBottom: '18px',
                   fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
@@ -404,7 +404,7 @@ const Contact = () => {
                   color: '#fff',
                   padding: '20px 40px',
                   borderRadius: '16px',
-                  fontSize: '1.2em',
+                  fontSize: '19px',
                   fontWeight: 600,
                   border: 'none',
                   cursor: 'pointer',
@@ -424,7 +424,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="contact-info-section">
             <h2 style={{
-              fontSize: '2em',
+              fontSize: '32px',
               color: '#1d1d1f',
               marginBottom: '40px',
               fontWeight: 600,
@@ -463,7 +463,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 style={{
-                    fontSize: '1.3em',
+                    fontSize: '21px',
                     color: '#1d1d1f',
                     marginBottom: '8px',
                     fontWeight: 600,
@@ -473,7 +473,7 @@ const Contact = () => {
                   </h3>
                   <p style={{
                     color: '#86868b',
-                    fontSize: '1.1em',
+                    fontSize: '18px',
                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                   }}>
                     Stevie Jiang
@@ -506,7 +506,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 style={{
-                    fontSize: '1.3em',
+                    fontSize: '21px',
                     color: '#1d1d1f',
                     marginBottom: '8px',
                     fontWeight: 600,
@@ -516,7 +516,7 @@ const Contact = () => {
                   </h3>
                   <p style={{
                     color: '#86868b',
-                    fontSize: '1.1em',
+                    fontSize: '18px',
                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                   }}>
                     +86 18505200972
@@ -549,7 +549,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 style={{
-                      fontSize: '1.3em',
+                      fontSize: '21px',
                       color: '#1d1d1f',
                       marginBottom: '8px',
                       fontWeight: 600,
@@ -559,7 +559,7 @@ const Contact = () => {
                     </h3>
                     <p style={{
                       color: '#86868b',
-                      fontSize: '1.1em',
+                      fontSize: '18px',
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                     }}>
                       pns_stevie
@@ -592,7 +592,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 style={{
-                      fontSize: '1.3em',
+                      fontSize: '21px',
                       color: '#1d1d1f',
                       marginBottom: '8px',
                       fontWeight: 600,
@@ -602,7 +602,7 @@ const Contact = () => {
                     </h3>
                     <p style={{
                       color: '#86868b',
-                      fontSize: '1.1em',
+                      fontSize: '18px',
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                     }}>
                       pnsbilliardcloth@gmail.com
@@ -637,7 +637,7 @@ const Contact = () => {
                     animation: 'pulse 2s ease-in-out infinite'
                   }} />
                   <h4 style={{
-                    fontSize: '1.2em',
+                    fontSize: '19px',
                     color: '#1d1d1f',
                     fontWeight: 600,
                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
@@ -647,7 +647,7 @@ const Contact = () => {
                 </div>
                 <p style={{
                   color: '#86868b',
-                  fontSize: '1.1em',
+                  fontSize: '18px',
                   lineHeight: 1.6,
                   fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                 }}>
@@ -697,7 +697,7 @@ const Contact = () => {
                     <circle cx="12" cy="10" r="3" stroke="#007AFF" strokeWidth="2" fill="none"/>
                   </svg>
                   <h3 style={{
-                    fontSize: '1.3em',
+                    fontSize: '21px',
                     color: '#1d1d1f',
                     fontWeight: 600,
                     margin: 0,
@@ -713,7 +713,7 @@ const Contact = () => {
                 }}>
                   <p style={{
                     color: '#1d1d1f',
-                    fontSize: '1.1em',
+                    fontSize: '18px',
                     margin: 0,
                     fontWeight: 500,
                     lineHeight: 1.4,
@@ -732,7 +732,7 @@ const Contact = () => {
                     </svg>
                     <span style={{
                       color: '#86868b',
-                      fontSize: '1em',
+                      fontSize: '16px',
                       fontWeight: 500,
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                     }}>
@@ -749,7 +749,7 @@ const Contact = () => {
                     </svg>
                     <span style={{
                       color: '#86868b',
-                      fontSize: '1em',
+                      fontSize: '16px',
                       fontWeight: 500,
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                     }}>
@@ -779,7 +779,7 @@ const Contact = () => {
                     <polyline points="9,22 9,12 15,12 15,22" stroke="#007AFF" strokeWidth="2" fill="none"/>
                   </svg>
                   <h3 style={{
-                    fontSize: '1.3em',
+                    fontSize: '21px',
                     color: '#1d1d1f',
                     fontWeight: 600,
                     margin: 0,
@@ -795,7 +795,7 @@ const Contact = () => {
                 }}>
                   <p style={{
                     color: '#1d1d1f',
-                    fontSize: '1.1em',
+                    fontSize: '18px',
                     margin: 0,
                     fontWeight: 500,
                     lineHeight: 1.4,
@@ -814,7 +814,7 @@ const Contact = () => {
                     </svg>
                     <span style={{
                       color: '#86868b',
-                      fontSize: '1em',
+                      fontSize: '16px',
                       fontWeight: 500,
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                     }}>
@@ -831,7 +831,7 @@ const Contact = () => {
                     </svg>
                     <span style={{
                       color: '#86868b',
-                      fontSize: '1em',
+                      fontSize: '16px',
                       fontWeight: 500,
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                     }}>

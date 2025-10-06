@@ -315,7 +315,7 @@ const Home = () => {
             </div>
             
             <h1 className="hero-title" style={{
-              fontSize: 'clamp(3rem, 6vw, 5.5rem)',
+              fontSize: '88px',
               fontWeight: 800,
               marginBottom: '24px',
               lineHeight: 1.2,
@@ -433,7 +433,7 @@ const Home = () => {
               marginBottom: '80px'
             }}>
               <h2 className="section-title" style={{
-                fontSize: 'clamp(2rem, 4vw, 3.2rem)',
+                fontSize: '52px',
                 fontWeight: 700,
                 color: '#1d1d1f',
                 marginBottom: '24px',
@@ -447,7 +447,7 @@ const Home = () => {
                 margin: '0 auto'
               }}>
                 <p style={{
-                  fontSize: '1.3em',
+                  fontSize: '21px',
                   color: '#1d1d1f',
                   marginBottom: '20px',
                   lineHeight: 1.6,
@@ -456,7 +456,7 @@ const Home = () => {
                   <strong style={{ color: '#007AFF' }}>PNS Billiard Cloth</strong> was founded in <strong>1995</strong> in China.
                 </p>
                 <p style={{
-                  fontSize: '1.1em',
+                  fontSize: '18px',
                   color: '#6e6e73',
                   marginBottom: '16px',
                   lineHeight: 1.6,
@@ -465,7 +465,7 @@ const Home = () => {
                   As a company with a leading position in high-quality billiard cloth manufacturing, we provide cloth for <em>pool, snooker, carom, and pyramid</em>, along with related products.
                 </p>
                 <p style={{
-                  fontSize: '1.1em',
+                  fontSize: '18px',
                   color: '#6e6e73',
                   margin: 0,
                   lineHeight: 1.6,
@@ -525,7 +525,7 @@ const Home = () => {
               marginBottom: '80px'
             }}>
               <h2 className="section-title" style={{
-                fontSize: 'clamp(2rem, 4vw, 3.2rem)',
+                fontSize: '52px',
                 fontWeight: 700,
                 color: '#1d1d1f',
                 marginBottom: '20px',
@@ -535,7 +535,7 @@ const Home = () => {
                 Our Products
               </h2>
               <p style={{
-                fontSize: '1.2em',
+                fontSize: '19px',
                 color: '#6e6e73',
                 maxWidth: '800px',
                 margin: '0 auto 40px auto',
@@ -737,7 +737,7 @@ const Home = () => {
                   }}>
                     <h3 style={{
                       color: '#1d1d1f',
-                      fontSize: '1.2em',
+                      fontSize: '19px',
                       marginBottom: '12px',
                       fontWeight: 700,
                       fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif",
@@ -747,7 +747,7 @@ const Home = () => {
                     </h3>
                     <p style={{
                       color: '#6e6e73',
-                      fontSize: '0.9em',
+                      fontSize: '14px',
                       lineHeight: 1.5,
                       marginBottom: '24px',
                       fontWeight: 400
@@ -762,7 +762,7 @@ const Home = () => {
                         color: '#fff',
                         padding: '12px 24px',
                         borderRadius: '10px',
-                        fontSize: '0.85em',
+                        fontSize: '14px',
                         fontWeight: 600,
                         border: 'none',
                         cursor: 'pointer',
@@ -804,7 +804,7 @@ const Home = () => {
               marginBottom: '80px'
             }}>
               <h2 className="section-title" style={{
-                fontSize: 'clamp(2rem, 4vw, 3.2rem)',
+                fontSize: '52px',
                 fontWeight: 700,
                 color: '#1d1d1f',
                 marginBottom: '24px',
@@ -814,7 +814,7 @@ const Home = () => {
                 Ambassadors & Partnerships
               </h2>
               <p style={{
-                fontSize: '1.2em',
+                fontSize: '19px',
                 color: '#6e6e73',
                 maxWidth: '800px',
                 margin: '0 auto',

@@ -195,7 +195,7 @@ const Dealers = () => {
   };
 
   const heroTitleStyle = {
-    fontSize: 'clamp(3rem, 6vw, 5.5rem)',
+    fontSize: '88px',
     fontWeight: 800,
     marginBottom: '40px',
     letterSpacing: '-0.04em',
@@ -211,7 +211,7 @@ const Dealers = () => {
   };
 
   const heroSubtitleStyle = {
-    fontSize: 'clamp(1.2rem, 2.5vw, 1.6rem)',
+    fontSize: '26px',
     opacity: 0.95,
     margin: '0 auto',
     lineHeight: 1.7,
@@ -237,7 +237,7 @@ const Dealers = () => {
   };
 
   const sectionTitleStyle = {
-    fontSize: 'clamp(2rem, 4vw, 3.2rem)',
+    fontSize: '52px',
     fontWeight: 700,
     color: '#1a1a1a',
     textAlign: 'center',
@@ -247,7 +247,7 @@ const Dealers = () => {
   };
 
   const sectionSubtitleStyle = {
-    fontSize: '1.1em',
+    fontSize: '18px',
     color: '#666666',
     textAlign: 'center',
     marginBottom: '80px',
@@ -486,7 +486,7 @@ const Dealers = () => {
                             }}
                           >
                             <h4 style={{
-                              fontSize: '1.2em',
+                              fontSize: '19px',
                               fontWeight: 600,
                               color: '#1a1a1a',
                               margin: '0 0 12px',
@@ -531,7 +531,7 @@ const Dealers = () => {
                 color: '#ffffff'
               }}>
                 <h3 style={{
-                  fontSize: '2.2em',
+                  fontSize: '35px',
                   fontWeight: 700,
                   marginBottom: '24px',
                   color: '#ffffff'
@@ -539,7 +539,7 @@ const Dealers = () => {
                   Dealer Inquiries
                 </h3>
                 <p style={{
-                  fontSize: '1.2em',
+                  fontSize: '19px',
                   marginBottom: '32px',
                   color: '#e0e0e0',
                   lineHeight: 1.6,

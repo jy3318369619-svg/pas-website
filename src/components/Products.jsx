@@ -187,7 +187,7 @@ const Products = () => {
             paddingTop: '200px'
           }}>
             <h1 style={{
-              fontSize: 'clamp(3rem, 6vw, 5.5rem)',
+              fontSize: '88px',
               fontWeight: 700,
               color: '#1d1d1f',
               marginBottom: '30px',
@@ -202,7 +202,7 @@ const Products = () => {
               Our Products
             </h1>
             <p style={{
-              fontSize: '1.5em',
+              fontSize: '24px',
               color: '#86868b',
               maxWidth: '800px',
               margin: '0 auto',
@@ -210,7 +210,7 @@ const Products = () => {
               animation: 'fadeInUp 1s ease-out 0.3s both'
             }}>
               Premium billiard cloths for Snooker, Pool, Chinese Pool/Heyball games, and professional accessories.<br />
-              <span style={{ fontSize: '0.8em', opacity: 0.8 }}>Click on any category to explore our product collection.</span>
+              <span style={{ fontSize: '19px', opacity: 0.8 }}>Click on any category to explore our product collection.</span>
             </p>
           </div>
 
@@ -283,7 +283,7 @@ const Products = () => {
                     <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                       <div>
                         <h3 style={{
-                          fontSize: '1.6em',
+                          fontSize: '26px',
                           fontWeight: 700,
                           margin: 0,
                           fontFamily: "'SF Pro Display', sans-serif",
@@ -292,7 +292,7 @@ const Products = () => {
                           {product.name}
                         </h3>
                         <p style={{
-                          fontSize: '0.9em',
+                          fontSize: '14px',
                           margin: '4px 0 0',
                           opacity: 0.9,
                           fontWeight: 500
@@ -314,7 +314,7 @@ const Products = () => {
                   </div>
                   
                   <p style={{
-                    fontSize: '0.95em',
+                    fontSize: '15px',
                     margin: '16px 0 0',
                     opacity: 0.9,
                     lineHeight: 1.5,
