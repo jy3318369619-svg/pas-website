@@ -328,21 +328,6 @@ const Dealers = () => {
     .expand-icon.expanded {
       transform: rotate(180deg);
     }
-
-    @media (max-width: 768px) {
-      .hero-title {
-        font-size: 2.5rem !important;
-      }
-      .section-title {
-        font-size: 2rem !important;
-      }
-      .container {
-        padding: 0 20px !important;
-      }
-      .continent-grid {
-        grid-template-columns: 1fr !important;
-      }
-    }
   `;
 
   return (

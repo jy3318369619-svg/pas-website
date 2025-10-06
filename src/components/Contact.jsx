@@ -210,31 +210,6 @@ const Contact = () => {
       gap: 80px;
       align-items: start;
     }
-
-    @media (max-width: 768px) {
-      .contact-grid {
-        grid-template-columns: 1fr !important;
-        gap: 40px !important;
-      }
-      
-      .hero-title {
-        font-size: 2.5rem !important;
-      }
-      
-      .form-container, .contact-info-container {
-        padding: 40px 30px !important;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero-title {
-        font-size: 2rem !important;
-      }
-      
-      .form-container, .contact-info-container {
-        padding: 30px 20px !important;
-      }
-    }
   `;
 
   return (

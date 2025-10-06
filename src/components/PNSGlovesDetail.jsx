@@ -36,22 +36,6 @@ const PNSGlovesDetail = () => {
       gap: 30px;
     }
     
-    @media (max-width: 768px) {
-      .product-detail-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-      .features-grid {
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .button-group {
-        flex-direction: column;
-      }
-    }
   `;
 
   return (

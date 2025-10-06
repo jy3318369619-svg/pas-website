@@ -182,14 +182,6 @@ const Home = () => {
       }
     }
 
-    @media (max-width: 768px) {
-      .hero-title {
-        font-size: 2.5rem !important;
-      }
-      .section-title {
-        font-size: 2rem !important;
-      }
-    }
   `;
 
   return (

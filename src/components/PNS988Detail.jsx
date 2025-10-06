@@ -34,22 +34,6 @@ const PNS988Detail = () => {
       gap: 30px;
     }
     
-    @media (max-width: 768px) {
-      .product-detail-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-      .specs-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .button-group {
-        flex-direction: column;
-      }
-    }
   `;
 
   return (

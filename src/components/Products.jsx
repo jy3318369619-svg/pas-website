@@ -169,16 +169,6 @@ const Products = () => {
     .expand-icon.expanded {
       transform: rotate(180deg);
     }
-
-    @media (max-width: 768px) {
-      .products-grid {
-        gap: 30px !important;
-      }
-      .product-content div[style*="grid"] {
-        grid-template-columns: 1fr !important;
-        gap: 16px !important;
-      }
-    }
   `;
 
   return (

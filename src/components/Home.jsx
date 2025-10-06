@@ -241,33 +241,6 @@ const Home = () => {
         transform: scale(1);
       }
     }
-
-    @media (max-width: 768px) {
-      .hero-title {
-        font-size: 2.5rem !important;
-      }
-      .section-title {
-        font-size: 2rem !important;
-      }
-      .product-grid {
-        grid-template-columns: 1fr !important;
-        gap: 30px !important;
-      }
-    }
-    
-    @media (max-width: 1024px) and (min-width: 769px) {
-      .product-grid {
-        grid-template-columns: 1fr !important;
-        gap: 40px !important;
-      }
-    }
-    
-    @media (min-width: 1600px) {
-      .product-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 60px !important;
-      }
-    }
   `;
 
   return (

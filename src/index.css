@@ -14,13 +14,3 @@ body {
 #root {
   min-height: 100vh;
 }
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5em !important;
-  }
-  .hero-subtitle {
-    font-size: 1.1em !important;
-  }
-}

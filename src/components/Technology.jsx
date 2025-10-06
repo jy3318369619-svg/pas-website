@@ -256,30 +256,6 @@ const Technology = () => {
       background: #0A65A3;
       color: white;
     }
-
-    @media (max-width: 1024px) {
-      .tech-section {
-        flex-direction: column !important;
-      }
-      
-      .tech-content {
-        max-width: 100% !important;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        padding: 0 16px !important;
-      }
-      
-      .hero-title {
-        font-size: 48px !important;
-      }
-      
-      .tech-card {
-        padding: 32px 24px !important;
-      }
-    }
   `;
 
   return (

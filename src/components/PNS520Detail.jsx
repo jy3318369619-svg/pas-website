@@ -26,23 +26,6 @@ const PNS520Detail = () => {
       grid-template-columns: 2fr 1fr 1.5fr;
       gap: 30px;
     }
-    
-    @media (max-width: 768px) {
-      .product-detail-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-      .specs-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .button-group {
-        flex-direction: column;
-      }
-    }
   `;
 
   return (

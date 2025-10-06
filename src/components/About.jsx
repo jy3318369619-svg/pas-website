@@ -260,13 +260,6 @@ const About = () => {
     .floating-element {
       animation: float 3s ease-in-out infinite;
     }
-
-    @media (max-width: 768px) {
-      .timeline-item {
-        flex-direction: column !important;
-        gap: 40px !important;
-      }
-    }
   `;
 
   return (
