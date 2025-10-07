@@ -77,7 +77,18 @@ const Dealers = () => {
             </>
           )
         },
-        { name: 'Pakistan', dealers: 'Contact information for Pakistani dealers will be displayed here.' },
+        { 
+          name: 'Pakistan', 
+          dealers: (
+            <>
+              <strong>Al-Madina Sports</strong><br />
+              Contact Person: Jahanzaib Sheikh<br />
+              Tel: +92 3097147147<br />
+              Branch 1: Shop #13 & 14B, Ichhra Shopping Centre, Main Ferozpur Road, Lahore, Pakistan<br />
+              Branch 2: Shop #1 & 2, Ground Floor, Umer Farooq Plaza, Murree Road, Near Chandni Chowk, Rawalpindi, Pakistan
+            </>
+          )
+        },
         { name: 'Thailand', dealers: 'Contact information for Thailand dealers will be displayed here.' },
         { 
           name: 'Vietnam', 
