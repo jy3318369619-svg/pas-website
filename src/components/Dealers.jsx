@@ -128,7 +128,17 @@ const Dealers = () => {
       color: '#000000',
       gradient: '#000000',
       countries: [
-        { name: 'South Africa', dealers: 'Contact information for South African dealers will be displayed here.' }
+        { 
+          name: 'South Africa', 
+          dealers: (
+            <>
+              <strong>Crown Snooker & Pool Shop</strong><br />
+              Contact Person: Cuban Moodley<br />
+              Tel: +27 840689572<br />
+              Email: <a href="mailto:ceo@prosnooker.co.za" style={{ color: '#007AFF', textDecoration: 'none' }}>ceo@prosnooker.co.za</a>
+            </>
+          )
+        }
       ]
     },
     {
