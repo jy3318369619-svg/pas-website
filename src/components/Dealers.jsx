@@ -61,6 +61,7 @@ const Dealers = () => {
             <>
               <strong>Eutopia Billiards & Co</strong><br />
               Tel: +62 851 9454 9686<br />
+              Address: Jl. Teuku Umar No.39, Dauh Puri Klod, Kecamatan Denpasar Baru, Kota Denpasar, Bali, 80114 (Postal Code)<br />
               Email: <a href="mailto:eutopia.idn@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>eutopia.idn@gmail.com</a><br />
               Instagram: <a href="https://www.instagram.com/eutopiabilliards?igsh=MXE3NjlwNGhlZXdiNA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@eutopiabilliards</a>
             </>
@@ -71,7 +72,7 @@ const Dealers = () => {
           dealers: (
             <>
               <strong>Arena Billiards Sport Trading</strong><br />
-              Tel: +6017-741 6133<br />
+              Tel: +60 17-741 6133<br />
               Address: No 23-2 Jalan Sepah Puteri 5/1b, Kota Damansara, PJU 5, 47810 Petaling Jaya, Selangor
             </>
           )
@@ -109,7 +110,16 @@ const Dealers = () => {
             </>
           )
         },
-        { name: 'United Kingdom', dealers: 'Contact information for UK dealers will be displayed here.' }
+        { 
+          name: 'United Kingdom', 
+          dealers: (
+            <>
+              <strong>Mark Williams Snooker</strong><br />
+              Website: <a href="https://markwilliamssnooker.com" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>markwilliamssnooker.com</a><br />
+              Facebook: <a href="https://www.facebook.com/share/1EJNKKs7Pi/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Mark Williams Snooker</a>
+            </>
+          )
+        }
       ]
     },
     {
