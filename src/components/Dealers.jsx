@@ -501,7 +501,7 @@ const Dealers = () => {
                     <div 
                       className="countries-content"
                       style={{
-                        maxHeight: expandedContinents[continent.id] ? '1000px' : '0',
+                        maxHeight: expandedContinents[continent.id] ? '2500px' : '0',
                         transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
                         overflow: 'hidden'
                       }}
