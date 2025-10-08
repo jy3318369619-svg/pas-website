@@ -89,7 +89,17 @@ const Dealers = () => {
             </>
           )
         },
-        { name: 'Thailand', dealers: 'Contact information for Thailand dealers will be displayed here.' },
+        { 
+          name: 'Thailand', 
+          dealers: (
+            <>
+              <strong>Grand999</strong><br />
+              Tel: +66 835935939<br />
+              Address: 55/12 Moo.1 Phetchakasem R. Omyai Sampran Nakhonpathom<br />
+              Email: <a href="mailto:grandtriplenine@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>grandtriplenine@gmail.com</a>
+            </>
+          )
+        },
         { 
           name: 'Vietnam', 
           dealers: (
