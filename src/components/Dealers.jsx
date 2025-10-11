@@ -54,7 +54,6 @@ const Dealers = () => {
       color: '#000000',
       gradient: '#000000',
       countries: [
-        { name: 'India', dealers: 'Contact information for Indian dealers will be displayed here.' },
         { 
           name: 'Indonesia', 
           dealers: (
@@ -167,9 +166,7 @@ const Dealers = () => {
       name: 'North America',
       color: '#000000',
       gradient: '#000000',
-      countries: [
-        { name: 'Canada', dealers: 'Contact information for Canadian dealers will be displayed here.' }
-      ]
+      countries: []
     },
     {
       id: 'south-america',
