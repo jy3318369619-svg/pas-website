@@ -108,7 +108,10 @@ const Products = () => {
       gradient: '#546E7A',
       color: '#546E7A',
       productList: [
-        { name: 'PNS Gloves', description: 'Professional Model — Enhanced Grip for Precision Play' }
+        { name: 'PNS Gloves', description: 'Professional Model — Enhanced Grip for Precision Play' },
+        { name: 'Baekeland Orange Series', description: 'TV Pool Ball — A Tribute to the Classics' },
+        { name: 'Baekeland Purple Panda Series', description: 'TV Pool Ball — Original Design (Panda Limited Edition)' },
+        { name: 'Baekeland Cue Ball', description: 'TV Pool Ball — Designed for Precision and Endurance' }
       ]
     }
   ];
@@ -337,7 +340,9 @@ const Products = () => {
                   <div style={{
                     padding: expandedProducts[product.id] ? '24px 32px 32px' : '0 32px',
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                    gridTemplateColumns: product.id === 'other-accessories' 
+                      ? 'repeat(2, 1fr)' 
+                      : 'repeat(auto-fit, minmax(300px, 1fr))',
                     gap: '20px'
                   }}>
                     {product.productList.map((item, itemIndex) => {
