@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import WhyNotPureWool from './WhyNotPureWool';
 
 const PNS520Detail = () => {
   const navigate = useNavigate();
@@ -236,6 +237,9 @@ const PNS520Detail = () => {
             </div>
           </div>
         </div>
+
+        {/* Why Not 100% Wool Section */}
+        <WhyNotPureWool />
       </div>
     </>
   );
