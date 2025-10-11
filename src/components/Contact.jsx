@@ -817,7 +817,7 @@ const Contact = () => {
                       fontWeight: 500,
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                     }}>
-                      Contact: Bill Jiang
+                      Contact: Edwin Liu
                     </span>
                   </div>
                   <div style={{
@@ -834,7 +834,7 @@ const Contact = () => {
                       fontWeight: 500,
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                     }}>
-                      TEL: +86 15018729834
+                      TEL: +86 13824032283
                     </span>
                   </div>
                 </div>
