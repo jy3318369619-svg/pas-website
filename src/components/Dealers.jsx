@@ -106,7 +106,14 @@ const Dealers = () => {
               <strong>HSP Billiards Equipment</strong><br />
               Contact Person: Ho So Phat<br />
               Tel: +84 933 18 68 18<br />
-              Address: 1D/7 Binh Gia, Ward 13, Tan Binh District, Ho Chi Minh City, Vietnam
+              Address: 1D/7 Binh Gia, Ward 13, Tan Binh District, Ho Chi Minh City, Vietnam<br />
+              <br />
+              <strong>Le Hoang Billiards</strong><br />
+              Tel: +84 931 295 222<br />
+              Zalo: 0931295222<br />
+              Address: 332 Tran Hung Dao, Phuong Le Dai Hanh, Hai Phong City<br />
+              Email: <a href="mailto:Hoanguyen96neu@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>Hoanguyen96neu@gmail.com</a><br />
+              Facebook: <a href="https://www.facebook.com/share/17KzGNfzAa/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Le Hoang Billiards</a>
             </>
           )
         }
