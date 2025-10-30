@@ -55,6 +55,16 @@ const Dealers = () => {
       gradient: '#000000',
       countries: [
         { 
+          name: 'India', 
+          dealers: (
+            <>
+              <strong>Apex Sports Promotion</strong><br />
+              Contact Person: Mohsin Achhava<br />
+              Tel: +91 80003 37105
+            </>
+          )
+        },
+        { 
           name: 'Indonesia', 
           dealers: (
             <>
