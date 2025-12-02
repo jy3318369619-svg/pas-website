@@ -94,7 +94,12 @@ const Dealers = () => {
               Contact Person: Jahanzaib Sheikh<br />
               Tel: +92 3097147147<br />
               Branch 1: Shop #13 & 14B, Ichhra Shopping Centre, Main Ferozpur Road, Lahore, Pakistan<br />
-              Branch 2: Shop #1 & 2, Ground Floor, Umer Farooq Plaza, Murree Road, Near Chandni Chowk, Rawalpindi, Pakistan
+              Branch 2: Shop #1 & 2, Ground Floor, Umer Farooq Plaza, Murree Road, Near Chandni Chowk, Rawalpindi, Pakistan<br />
+              <br />
+              <strong>NS TRADERS</strong><br />
+              Contact Person: Nasarullah<br />
+              Tel: 0092-423-7632693<br />
+              Address: 7B Shah Alam Market
             </>
           )
         },
