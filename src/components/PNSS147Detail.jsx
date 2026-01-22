@@ -96,6 +96,34 @@ const PNSS147Detail = () => {
               </p>
 
               <div style={{
+                marginBottom: '30px',
+                padding: '20px',
+                background: '#f5f5f7',
+                borderRadius: '12px',
+                borderLeft: '4px solid #007BFF'
+              }}>
+                <h3 style={{
+                  fontSize: '1.1rem',
+                  fontWeight: 700,
+                  color: '#1d1d1f',
+                  marginBottom: '12px'
+                }}>
+                  Official Cloth of Elite Snooker Championships
+                </h3>
+                <ul style={{
+                  margin: 0,
+                  paddingLeft: '20px',
+                  color: '#1d1d1f',
+                  fontSize: '1rem',
+                  lineHeight: '1.6'
+                }}>
+                  <li>2025 Commonwealth Billiards Championships</li>
+                  <li>2025 Oman World Cup of Snooker (Men’s & Teams)</li>
+                  <li>2025 Arab Championship</li>
+                </ul>
+              </div>
+
+              <div style={{
                 marginBottom: '40px'
               }}>
                 <p style={{
