@@ -92,7 +92,7 @@ const Dealers = () => {
           dealers: (
             <>
               <strong>Playon ltd</strong><br />
-              Contact Person: yaki matlin<br />
+              Contact Person: Yaki Matlin<br />
               Tel: 972 522462299<br />
               Email: <a href="mailto:yaki@playon.co.il" style={{ color: '#007AFF', textDecoration: 'none' }}>yaki@playon.co.il</a><br />
               Website: <a href="https://playon.co.il" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>playon.co.il</a>
