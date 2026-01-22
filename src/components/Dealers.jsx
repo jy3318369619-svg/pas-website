@@ -55,6 +55,17 @@ const Dealers = () => {
       gradient: '#000000',
       countries: [
         { 
+          name: 'Gulf Cooperation Council (GCC)', 
+          dealers: (
+            <>
+              <strong>Dubai Snooker Club</strong><br />
+              Tel: +971 50 452 0770<br />
+              Address: Khalid Bin Al Waleed Road, Al Karama, Dubai, UAE<br />
+              Website: <a href="https://dubaisnooker.ae/" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>dubaisnooker.ae</a>
+            </>
+          )
+        },
+        { 
           name: 'India', 
           dealers: (
             <>
@@ -73,6 +84,18 @@ const Dealers = () => {
               Address: Jl. Teuku Umar No.39, Dauh Puri Klod, Kecamatan Denpasar Baru, Kota Denpasar, Bali, 80114 (Postal Code)<br />
               Email: <a href="mailto:eutopia.idn@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>eutopia.idn@gmail.com</a><br />
               Instagram: <a href="https://www.instagram.com/eutopiabilliards?igsh=MXE3NjlwNGhlZXdiNA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@eutopiabilliards</a>
+            </>
+          )
+        },
+        {
+          name: 'Israel',
+          dealers: (
+            <>
+              <strong>Playon ltd</strong><br />
+              Contact Person: yaki matlin<br />
+              Tel: 972 522462299<br />
+              Email: <a href="mailto:yaki@playon.co.il" style={{ color: '#007AFF', textDecoration: 'none' }}>yaki@playon.co.il</a><br />
+              Website: <a href="https://playon.co.il" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>playon.co.il</a>
             </>
           )
         },
