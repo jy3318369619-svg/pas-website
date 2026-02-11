@@ -59,9 +59,11 @@ const Dealers = () => {
           dealers: (
             <>
               <strong>Dubai Snooker Club</strong><br />
-              Tel: +971 50 452 0770<br />
               Address: Khalid Bin Al Waleed Road, Al Karama, Dubai, UAE<br />
-              Website: <a href="https://dubaisnooker.ae/" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>dubaisnooker.ae</a>
+              Tel: +971 50 1471491 | +971 50 4520770<br />
+              Email: <a href="mailto:dubsnkr@eim.ae" style={{ color: '#007AFF', textDecoration: 'none' }}>dubsnkr@eim.ae</a> | <a href="mailto:dubaisnookerclub@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>dubaisnookerclub@gmail.com</a><br />
+              Website: <a href="https://www.dubaisnooker.ae" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>www.dubaisnooker.ae</a><br />
+              Instagram: <a href="https://www.instagram.com/dubaisnooker" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@dubaisnooker</a>
             </>
           )
         },
