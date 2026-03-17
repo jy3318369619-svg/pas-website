@@ -101,6 +101,18 @@ const Dealers = () => {
             </>
           )
         },
+        {
+          name: 'Kyrgyzstan',
+          dealers: (
+            <>
+              <strong>AS Billiards</strong><br />
+              Address: Kyrgyzstan, Bishkek, Bakaeva st. 4<br />
+              Tel: +996703305305<br />
+              Email: <a href="mailto:biznesman2309@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>biznesman2309@gmail.com</a><br />
+              Instagram: <a href="https://www.instagram.com/asbilliards_shop.kg" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@asbilliards_shop.kg</a>
+            </>
+          )
+        },
         { 
           name: 'Malaysia', 
           dealers: (
