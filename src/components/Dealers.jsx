@@ -102,6 +102,16 @@ const Dealers = () => {
           )
         },
         {
+          name: 'Kazakhstan',
+          dealers: (
+            <>
+              <strong>Classic Factory</strong><br />
+              Contact Person: Serkul Bekbol<br />
+              Phone: +7 702 574 7474
+            </>
+          )
+        },
+        {
           name: 'Kyrgyzstan',
           dealers: (
             <>
