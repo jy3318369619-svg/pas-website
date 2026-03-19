@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-// Logo moved to public/images folder - using direct path
 
 const Navigation = () => {
   const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+      if (window.innerWidth > 768) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
 
   // 样式定义
   const styles = {
@@ -21,7 +37,7 @@ const Navigation = () => {
     container: {
       maxWidth: '1200px',
       margin: '0 auto',
-      padding: '0 40px',
+      padding: isMobile ? '0 20px' : '0 40px',
       display: 'flex',
       justifyContent: 'space-between',
       alignItems: 'center',
@@ -29,7 +45,8 @@ const Navigation = () => {
     },
     logoContainer: {
       display: 'flex',
-      alignItems: 'center'
+      alignItems: 'center',
+      zIndex: 1001
     },
     logo: {
       height: '40px',
@@ -37,16 +54,26 @@ const Navigation = () => {
       transition: 'opacity 0.3s ease'
     },
     menuContainer: {
-      display: 'flex',
+      display: isMobile ? (isMobileMenuOpen ? 'flex' : 'none') : 'flex',
+      flexDirection: isMobile ? 'column' : 'row',
       alignItems: 'center',
-      position: 'absolute',
-      left: '50%',
-      transform: 'translateX(-50%)'
+      position: isMobile ? 'absolute' : 'absolute',
+      top: isMobile ? '100%' : 'auto',
+      left: isMobile ? 0 : '50%',
+      right: isMobile ? 0 : 'auto',
+      transform: isMobile ? 'none' : 'translateX(-50%)',
+      background: isMobile ? '#000000' : 'transparent',
+      padding: isMobile ? '20px 0' : 0,
+      borderBottom: isMobile ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
+      width: isMobile ? '100%' : 'auto',
+      zIndex: 1000
     },
     menu: {
       display: 'flex',
+      flexDirection: isMobile ? 'column' : 'row',
       alignItems: 'center',
-      gap: '32px'
+      gap: isMobile ? '20px' : '32px',
+      width: '100%'
     },
     link: {
       color: '#ffffff',
@@ -57,15 +84,19 @@ const Navigation = () => {
       transition: 'all 0.3s ease',
       position: 'relative',
       padding: '6px 0',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      textAlign: isMobile ? 'center' : 'left',
+      width: isMobile ? '100%' : 'auto'
     },
     activeLink: {
       color: '#007AFF'
     },
     socialIcons: {
-      display: 'flex',
+      display: isMobile ? (isMobileMenuOpen ? 'flex' : 'none') : 'flex',
       alignItems: 'center',
-      gap: '16px'
+      gap: '16px',
+      marginTop: isMobile ? '20px' : 0,
+      justifyContent: 'center'
     },
     socialIcon: {
       width: '24px',
@@ -73,6 +104,27 @@ const Navigation = () => {
       opacity: 0.8,
       transition: 'opacity 0.3s ease',
       cursor: 'pointer'
+    },
+    hamburger: {
+      display: isMobile ? 'flex' : 'none',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      width: '30px',
+      height: '21px',
+      background: 'transparent',
+      border: 'none',
+      cursor: 'pointer',
+      padding: 0,
+      zIndex: 1001
+    },
+    hamburgerLine: {
+      width: '100%',
+      height: '3px',
+      background: '#ffffff',
+      borderRadius: '10px',
+      transition: 'all 0.3s linear',
+      position: 'relative',
+      transformOrigin: '1px'
     }
   };
 
@@ -121,6 +173,16 @@ const Navigation = () => {
           </Link>
         </div>
         
+        {/* 汉堡菜单按钮 (仅移动端) */}
+        <button 
+          style={styles.hamburger} 
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <div style={{...styles.hamburgerLine, transform: isMobileMenuOpen ? 'rotate(45deg)' : 'rotate(0)'}} />
+          <div style={{...styles.hamburgerLine, opacity: isMobileMenuOpen ? 0 : 1, transform: isMobileMenuOpen ? 'translateX(20px)' : 'translateX(0)'}} />
+          <div style={{...styles.hamburgerLine, transform: isMobileMenuOpen ? 'rotate(-45deg)' : 'rotate(0)'}} />
+        </button>
+
         {/* 导航菜单 - 居中 */}
         <div style={styles.menuContainer}>
           <div style={styles.menu}>
@@ -137,27 +199,51 @@ const Navigation = () => {
               </Link>
             ))}
           </div>
+          
+          {/* 社交媒体图标 (移动端放在菜单下方) */}
+          {isMobile && (
+            <div style={styles.socialIcons}>
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={social.title}
+                  style={styles.socialIcon}
+                  onMouseEnter={(e) => e.target.style.opacity = '1'}
+                  onMouseLeave={(e) => e.target.style.opacity = '0.8'}
+                >
+                  <svg viewBox="0 0 24 24" fill="#ffffff">
+                    <path d={social.icon} />
+                  </svg>
+                </a>
+              ))}
+            </div>
+          )}
         </div>
         
-        {/* 社交媒体图标 - 右侧 */}
-        <div style={styles.socialIcons}>
-          {socialLinks.map((social, index) => (
-            <a
-              key={index}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              title={social.title}
-              style={styles.socialIcon}
-              onMouseEnter={(e) => e.target.style.opacity = '1'}
-              onMouseLeave={(e) => e.target.style.opacity = '0.8'}
-            >
-              <svg viewBox="0 0 24 24" fill="#ffffff">
-                <path d={social.icon} />
-              </svg>
-            </a>
-          ))}
-        </div>
+        {/* 社交媒体图标 - 右侧 (仅PC端) */}
+        {!isMobile && (
+          <div style={styles.socialIcons}>
+            {socialLinks.map((social, index) => (
+              <a
+                key={index}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={social.title}
+                style={styles.socialIcon}
+                onMouseEnter={(e) => e.target.style.opacity = '1'}
+                onMouseLeave={(e) => e.target.style.opacity = '0.8'}
+              >
+                <svg viewBox="0 0 24 24" fill="#ffffff">
+                  <path d={social.icon} />
+                </svg>
+              </a>
+            ))}
+          </div>
+        )}
       </div>
     </nav>
   );

@@ -5,8 +5,7 @@
 }
 
 html {
-  min-width: 1440px;
-  overflow-x: auto;
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -18,9 +17,8 @@ body {
   line-height: 1.6;
   color: #333;
   background: #000;
-  min-width: 1440px;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -29,6 +27,100 @@ body {
 
 #root {
   min-height: 100vh;
-  min-width: 1440px;
   width: 100%;
+}
+
+/* Global Responsive Overrides */
+@media (max-width: 768px) {
+  /* Common Containers */
+  div[style*="max-width: 1200px"],
+  div[style*="maxWidth: 1200px"],
+  div[style*="max-width: 1400px"] {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* Hero Titles */
+  h1 {
+    font-size: clamp(40px, 10vw, 60px) !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* Section Titles */
+  h2 {
+    font-size: clamp(32px, 8vw, 42px) !important;
+  }
+
+  /* Hero Subtitles */
+  p[style*="fontSize: 26px"],
+  p[style*="font-size: 26px"],
+  p[style*="fontSize: 24px"],
+  p[style*="font-size: 24px"] {
+    font-size: 18px !important;
+    padding: 0 10px !important;
+  }
+
+  /* Reduce massive paddings */
+  div[style*="padding: 200px"],
+  div[style*="padding: 180px"],
+  div[style*="padding: 150px"],
+  div[style*="paddingTop: 200px"],
+  div[style*="padding-top: 200px"] {
+    padding-top: 120px !important;
+    padding-bottom: 80px !important;
+  }
+
+  div[style*="padding: 120px"],
+  div[style*="paddingTop: 120px"],
+  div[style*="padding-top: 120px"] {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+
+  /* Grids that are forced to columns */
+  div[style*="gridTemplateColumns"],
+  div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* Flex layouts that should wrap on mobile */
+  .flex-responsive {
+    flex-direction: column !important;
+  }
+
+  /* Specific class overrides */
+  .product-grid, .contact-grid, .continent-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .timeline-item {
+    flex-direction: column !important;
+    padding: 20px !important;
+    gap: 30px !important;
+  }
+
+  .timeline-item > div {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+  }
+
+  .tech-section {
+    flex-direction: column !important;
+    gap: 40px !important;
+    text-align: center !important;
+  }
+
+  .tech-section > div {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Adjust image sizes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
