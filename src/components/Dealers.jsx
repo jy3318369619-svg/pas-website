@@ -463,7 +463,7 @@ const Dealers = () => {
 
         {/* Content Section */}
         <div style={contentSectionStyle}>
-          <div style={containerStyle}>
+          <div className="container" style={containerStyle}>
             <h2 style={sectionTitleStyle}>Global Network</h2>
             <p style={sectionSubtitleStyle}>
               Our trusted partners deliver PNS quality across the globe.<br />

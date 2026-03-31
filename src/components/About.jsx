@@ -274,7 +274,7 @@ const About = () => {
 
         {/* The Origin of Innovation */}
         <div style={contentSectionStyle}>
-          <div style={containerStyle}>
+          <div className="container" style={containerStyle}>
 
             {/* 1995 Timeline */}
             <div 

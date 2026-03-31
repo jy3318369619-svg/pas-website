@@ -159,7 +159,7 @@ const Navigation = () => {
 
   return (
     <nav style={styles.nav}>
-      <div style={styles.container}>
+      <div className="container" style={styles.container}>
         {/* Logo - 左侧 */}
         <div style={styles.logoContainer}>
           <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>

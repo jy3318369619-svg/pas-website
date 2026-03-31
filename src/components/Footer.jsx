@@ -8,7 +8,7 @@ const Footer = () => {
       padding: '60px 0 30px 0',
       marginTop: 'auto'
     }}>
-      <div style={{
+      <div className="container" style={{
         maxWidth: '1200px',
         margin: '0 auto',
         padding: '0 40px'

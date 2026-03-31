@@ -288,7 +288,7 @@ const Home = () => {
             zIndex: 2
           }} />
           
-          <div style={{
+          <div className="container" style={{
             maxWidth: '1200px',
             width: '100%',
             padding: '0 40px',
@@ -423,7 +423,7 @@ const Home = () => {
             transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
           }}
         >
-          <div style={{
+          <div className="container" style={{
             maxWidth: '1200px',
             margin: '0 auto',
             padding: '0 40px'

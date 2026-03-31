@@ -244,7 +244,7 @@ const Contact = () => {
           animation: 'float 6s ease-in-out infinite reverse'
         }} />
 
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 40px' }}>
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 40px' }}>
           {/* Hero Section */}
            <div 
              id="hero"
