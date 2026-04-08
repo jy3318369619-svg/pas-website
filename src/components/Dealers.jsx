@@ -208,6 +208,18 @@ const Dealers = () => {
               Facebook: <a href="https://www.facebook.com/share/1EJNKKs7Pi/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Mark Williams Snooker</a>
             </>
           )
+        },
+        {
+          name: 'Ukraine',
+          dealers: (
+            <>
+              <strong>TT-Billiard</strong><br />
+              Address: Europeyskoho Soyusa 35, Kyiv, Ukraine, 04108<br />
+              Tel: +38(067)2364341 , +38(050)4431028<br />
+              Email: <a href="mailto:info@tt-billiard.ua" style={{ color: '#007AFF', textDecoration: 'none' }}>info@tt-billiard.ua</a><br />
+              Instagram: <a href="https://www.instagram.com/tt_billiard" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>tt_billiard</a>
+            </>
+          )
         }
       ]
     },
