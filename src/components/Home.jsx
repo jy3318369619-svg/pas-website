@@ -20,6 +20,11 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
+    if (!('IntersectionObserver' in window)) {
+      setVisibleSections(new Set(['about', 'products', 'ambassadors']));
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -515,7 +520,7 @@ const Home = () => {
             transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s'
           }}
         >
-          <div style={{
+          <div className="container" style={{
             maxWidth: '1200px',
             margin: '0 auto',
             padding: '0 40px'
@@ -819,7 +824,7 @@ const Home = () => {
             transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s'
           }}
         >
-          <div style={{
+          <div className="container" style={{
             maxWidth: '1200px',
             margin: '0 auto',
             padding: '0 40px'
@@ -880,6 +885,17 @@ const Home = () => {
                     'Champion — 2022 Joy Billiards Chinese 8-Ball Masters (Changzhou, Jiangsu – Division A)',
                     'Champion — Dingguan Billiards Chain Cup, Duyá Legendary Chinese 9-Ball Championship',
                     'Champion — Chinese 8-Ball International Exchange Tournament (Dangshan Stop)'
+                  ]
+                },
+                {
+                  name: 'Chang Bing Yu',
+                  country: 'China',
+                  color: '#007BFF',
+                  photo: '/images/chang-bing-yu.png',
+                  achievements: [
+                    '2025 Scottish Open — Runner-up',
+                    '2025 Saudi Masters — Last 16',
+                    '2018 World Snooker Under-21 Championship & World Snooker Under-18 Championship — Runner-up (both)'
                   ]
                 },
                 { 
