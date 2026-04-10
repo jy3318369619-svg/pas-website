@@ -232,7 +232,7 @@ const PNS600Detail = () => {
                   whiteSpace: 'pre-line',
                   lineHeight: 1.4
                 }}>
-                  {'Snooker: 3.75m bed cloth + 0.15m cushion cloth × 6\nChinese pool/Heyball: 2.8m bed cloth + 0.17m cushion cloth × 6'}
+                  {'Snooker: 3.75m bed cloth + 0.17m cushion cloth × 6\nChinese pool/Heyball: 2.8m bed cloth + 0.17m cushion cloth × 6'}
                 </div>
               </div>
             </div>

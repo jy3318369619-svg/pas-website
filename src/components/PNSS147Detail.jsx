@@ -178,7 +178,7 @@ const PNSS147Detail = () => {
             
             <div className="specs-grid">
               {[
-                { label: 'Weight', value: '800g/m (28.2 oz/m)' },
+                { label: 'Weight', value: '700g/m (24.7oz/m)' },
                 { label: 'Composition', value: '90% Wool\n10% Nylon' },
                 { label: 'Width', value: '195cm' }
               ].map((spec, index) => (
@@ -229,7 +229,7 @@ const PNSS147Detail = () => {
                   whiteSpace: 'pre-line',
                   lineHeight: 1.4
                 }}>
-                  3.75m bed cloth + 0.15m cushion cloth × 6
+                  3.75m bed cloth + 0.17m cushion cloth × 6
                 </div>
               </div>
             </div>
