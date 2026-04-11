@@ -98,6 +98,11 @@ body {
 
 /* Global Responsive Overrides */
 @media (max-width: 768px) {
+  [data-section] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
   /* Common Containers */
   div[style*="max-width: 1200px"],
   div[style*="maxWidth: 1200px"],
