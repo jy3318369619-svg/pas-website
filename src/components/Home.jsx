@@ -856,8 +856,8 @@ const Home = () => {
             </div>
             
             {/* Ambassadors Grid */}
-            <div style={{
-                display: 'grid',
+            <div className="ambassadors-grid" style={{
+              display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
               gap: '30px',
               marginBottom: '80px'
@@ -961,6 +961,7 @@ const Home = () => {
                 }
               ].map((ambassador, index) => (
                 <div 
+                  className="ambassador-card"
                   key={index}
                   style={{ 
                     background: 'rgba(255, 255, 255, 0.9)',

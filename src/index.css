@@ -217,6 +217,17 @@ body {
     gap: 16px !important;
   }
 
+  .ambassadors-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .ambassador-card {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   /* Adjust image sizes */
   img {
     max-width: 100%;
