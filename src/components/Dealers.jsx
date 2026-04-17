@@ -203,9 +203,9 @@ const Dealers = () => {
           name: 'United Kingdom', 
           dealers: (
             <>
-              <strong>Mark Williams Snooker</strong><br />
-              Website: <a href="https://markwilliamssnooker.com" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>markwilliamssnooker.com</a><br />
-              Facebook: <a href="https://www.facebook.com/share/1EJNKKs7Pi/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Mark Williams Snooker</a>
+              <strong>Dunstable Snooker Club</strong><br />
+              Contact Person: Suny Singh<br />
+              Email: <a href="mailto:dunstablesnooker@outlook.com" style={{ color: '#007AFF', textDecoration: 'none' }}>dunstablesnooker@outlook.com</a>
             </>
           )
         },
