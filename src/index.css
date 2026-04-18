@@ -228,6 +228,23 @@ body {
     transition: none !important;
   }
 
+  .countries-inner {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .country-item {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 16px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .country-item p {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
   /* Adjust image sizes */
   img {
     max-width: 100%;

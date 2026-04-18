@@ -864,6 +864,19 @@ const Home = () => {
             }}>
               {[
                 { 
+                  name: 'Mark Williams', 
+                  country: 'United Kingdom', 
+                  color: '#007BFF',
+                  photo: '/images/mark williams.png',
+                  achievements: [
+                    'World Champion — 2000, 2003, 2018',
+                    'Triple Crown Winner — World Championship, Masters, UK Championship (2002–03)',
+                    '26 Ranking Titles',
+                    'World No.1 (2000–2002, 2003–2004, 2011)',
+                    'Special Records — First left-handed World Champion; oldest World Championship finalist (2025, age 50)'
+                  ]
+                },
+                { 
                   name: 'Phone Myint Kyaw', 
                   country: 'Myanmar', 
                   color: '#007BFF',

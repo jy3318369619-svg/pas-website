@@ -2,9 +2,21 @@ import React, { useState, useRef, useEffect } from 'react';
 
 const WhyNotPureWool = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    if (!('IntersectionObserver' in window)) {
+      setIsVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -26,18 +38,18 @@ const WhyNotPureWool = () => {
   const containerStyle = {
     maxWidth: '1200px',
     margin: '0 auto',
-    padding: '100px 40px',
+    padding: isMobile ? '70px 16px' : '100px 40px',
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translateY(0)' : 'translateY(60px)',
     transition: 'all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
   };
 
   const titleStyle = {
-    fontSize: '48px',
+    fontSize: isMobile ? '32px' : '48px',
     fontWeight: 700,
     color: '#1d1d1f',
     textAlign: 'center',
-    marginBottom: '60px',
+    marginBottom: isMobile ? '28px' : '60px',
     fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif",
     letterSpacing: '-0.02em'
   };
@@ -45,26 +57,26 @@ const WhyNotPureWool = () => {
   const contentBoxStyle = {
     background: 'rgba(255, 255, 255, 0.8)',
     backdropFilter: 'blur(20px)',
-    borderRadius: '28px',
-    padding: '50px 60px',
+    borderRadius: isMobile ? '20px' : '28px',
+    padding: isMobile ? '22px 18px' : '50px 60px',
     border: '1px solid rgba(0, 0, 0, 0.06)',
     boxShadow: '0 20px 60px rgba(0, 0, 0, 0.08)'
   };
 
   const paragraphStyle = {
-    fontSize: '18px',
-    lineHeight: '1.8',
+    fontSize: isMobile ? '15px' : '18px',
+    lineHeight: isMobile ? '1.65' : '1.8',
     color: '#1d1d1f',
-    marginBottom: '28px',
+    marginBottom: isMobile ? '18px' : '28px',
     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
   };
 
   const listItemStyle = {
-    fontSize: '17px',
-    lineHeight: '1.7',
+    fontSize: isMobile ? '14px' : '17px',
+    lineHeight: isMobile ? '1.6' : '1.7',
     color: '#1d1d1f',
-    marginBottom: '14px',
-    paddingLeft: '28px',
+    marginBottom: isMobile ? '12px' : '14px',
+    paddingLeft: isMobile ? '22px' : '28px',
     position: 'relative',
     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
   };
@@ -72,9 +84,9 @@ const WhyNotPureWool = () => {
   const bulletStyle = {
     position: 'absolute',
     left: '0',
-    top: '9px',
-    width: '7px',
-    height: '7px',
+    top: isMobile ? '8px' : '9px',
+    width: isMobile ? '6px' : '7px',
+    height: isMobile ? '6px' : '7px',
     background: '#007AFF',
     borderRadius: '50%'
   };
@@ -85,24 +97,24 @@ const WhyNotPureWool = () => {
   };
 
   const highlightTextStyle = {
-    fontSize: '18px',
-    lineHeight: '1.8',
+    fontSize: isMobile ? '15px' : '18px',
+    lineHeight: isMobile ? '1.65' : '1.8',
     color: '#1d1d1f',
     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
-    marginBottom: '28px'
+    marginBottom: isMobile ? '18px' : '28px'
   };
 
   const finalNoteStyle = {
-    fontSize: '19px',
-    lineHeight: '1.8',
+    fontSize: isMobile ? '15px' : '19px',
+    lineHeight: isMobile ? '1.65' : '1.8',
     color: '#1d1d1f',
     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
     fontWeight: 500,
     textAlign: 'center',
-    marginTop: '40px',
-    padding: '30px',
+    marginTop: isMobile ? '22px' : '40px',
+    padding: isMobile ? '18px' : '30px',
     background: 'linear-gradient(135deg, rgba(0, 122, 255, 0.05), rgba(0, 212, 255, 0.05))',
-    borderRadius: '20px',
+    borderRadius: isMobile ? '16px' : '20px',
     border: '2px solid rgba(0, 122, 255, 0.1)'
   };
 
@@ -117,7 +129,7 @@ const WhyNotPureWool = () => {
           ratio of wool and nylon to meet all three perspectives:
         </p>
 
-        <div style={{ marginBottom: '28px' }}>
+        <div style={{ marginBottom: isMobile ? '18px' : '28px' }}>
           <div style={listItemStyle}>
             <div style={bulletStyle}></div>
             <span style={strongStyle}>Players</span> demand fast, smooth motion and consistent end speed.
@@ -159,4 +171,3 @@ const WhyNotPureWool = () => {
 };
 
 export default WhyNotPureWool;
-

@@ -594,7 +594,7 @@ const Dealers = () => {
                         overflow: 'hidden'
                       }}
                     >
-                      <div style={{
+                      <div className="countries-inner" style={{
                         padding: expandedContinents[continent.id] ? '24px 32px 32px' : '0 32px'
                       }}>
                         {continent.countries.map((country, countryIndex) => (
