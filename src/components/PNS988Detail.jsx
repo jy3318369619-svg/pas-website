@@ -176,7 +176,7 @@ const PNS988Detail = () => {
                     boxShadow: '0 4px 16px rgba(21, 101, 192, 0.3)'
                   }}
                 >
-                  Search Dealers
+                  Search Distributors
                 </button>
               </div>
             </div>

@@ -134,7 +134,7 @@ const Navigation = () => {
     { path: '/about', label: 'About' },
     { path: '/products', label: 'Products' },
     { path: '/technology', label: 'Technology' },
-    { path: '/dealers', label: 'Dealers' },
+    { path: '/dealers', label: 'Distributors' },
     { path: '/contact', label: 'Contact' }
   ];
 

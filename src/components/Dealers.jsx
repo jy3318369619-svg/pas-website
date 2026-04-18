@@ -466,9 +466,9 @@ const Dealers = () => {
         <div id="hero" style={heroStyle}>
           <div style={heroOverlayStyle}></div>
           <div style={heroContentStyle}>
-            <h1 style={heroTitleStyle}>Our Dealers</h1>
+            <h1 style={heroTitleStyle}>Our Distributors</h1>
             <p style={heroSubtitleStyle}>
-              Find authorized PNS dealers worldwide for premium billiard cloth and exceptional service.
+              Find authorized PNS distributors worldwide for premium billiard cloth and exceptional service.
             </p>
           </div>
         </div>
@@ -479,7 +479,7 @@ const Dealers = () => {
             <h2 style={sectionTitleStyle}>Global Network</h2>
             <p style={sectionSubtitleStyle}>
               Our trusted partners deliver PNS quality across the globe.<br />
-              Click on any continent to explore dealers in different countries.
+              Click on any continent to explore distributors in different countries.
             </p>
 
             {/* Continents Grid */}
@@ -639,7 +639,7 @@ const Dealers = () => {
               </div>
             </div>
 
-            {/* Contact Information for Dealers */}
+            {/* Contact Information for Distributors */}
             <div 
               ref={el => sectionRefs.current[1] = el}
               data-section="dealer-contact"
@@ -664,7 +664,7 @@ const Dealers = () => {
                   marginBottom: '24px',
                   color: '#ffffff'
                 }}>
-                  Dealer Inquiries
+                  Distributor Inquiries
                 </h3>
                 <p className="dealer-inquiries-text" style={{
                   fontSize: '19px',
@@ -674,7 +674,7 @@ const Dealers = () => {
                   maxWidth: '800px',
                   margin: '0 auto 32px'
                 }}>
-                  Interested in becoming a PNS dealer or need dealer support?<br />
+                  Interested in becoming a PNS distributor or need distributor support?<br />
                   Contact our partnership team.
                 </p>
                 <div className="dealer-inquiries-actions" style={{

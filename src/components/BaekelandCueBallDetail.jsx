@@ -123,7 +123,7 @@ const BaekelandCueBallDetail = () => {
                     boxShadow: '0 4px 16px rgba(14, 165, 233, 0.3)'
                   }}
                 >
-                  Search Dealers
+                  Search Distributors
                 </button>
                 <button 
                   onClick={() => navigate('/contact')}
@@ -553,4 +553,3 @@ const BaekelandCueBallDetail = () => {
 };
 
 export default BaekelandCueBallDetail;
-

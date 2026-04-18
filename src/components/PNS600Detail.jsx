@@ -155,7 +155,7 @@ const PNS600Detail = () => {
                   boxShadow: '0 4px 16px rgba(59, 130, 246, 0.3)'
                   }}
                 >
-                  Search Dealers
+                  Search Distributors
                 </button>
               </div>
             </div>

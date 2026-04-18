@@ -185,7 +185,7 @@ const Footer = () => {
                 { name: 'About Us', href: '/about' },
                 { name: 'Products', href: '/products' },
                 { name: 'Technology', href: '/technology' },
-                { name: 'Dealers', href: '/dealers' },
+                { name: 'Distributors', href: '/dealers' },
                 { name: 'Contact', href: '/contact' }
               ].map((link, index) => (
                 <li key={index} style={{ marginBottom: '12px' }}>

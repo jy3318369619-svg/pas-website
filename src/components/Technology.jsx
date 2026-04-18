@@ -154,8 +154,8 @@ const Technology = () => {
       id: 'nfc-auth',
       title: 'NFC Authentication',
       subtitle: 'Quality & Service',
-      description: 'Each set of billiard cloth has a round NFC chip embedded on the cushion cloth. Simply tap with a smartphone to verify authenticity, trace production batches, and manage dealers.',
-      highlights: ['Anti-counterfeiting', 'Batch traceability', 'Reliable dealer management'],
+      description: 'Each set of billiard cloth has a round NFC chip embedded on the cushion cloth. Simply tap with a smartphone to verify authenticity, trace production batches, and manage distributors.',
+      highlights: ['Anti-counterfeiting', 'Batch traceability', 'Reliable distributor management'],
       icon: (
         <img 
           src="/images/nfc_auth.png" 

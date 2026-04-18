@@ -119,7 +119,7 @@ const BaekelandOrangeSeriesDetail = () => {
                     boxShadow: '0 4px 16px rgba(255, 107, 0, 0.3)'
                   }}
                 >
-                  Search Dealers
+                  Search Distributors
                 </button>
                 <button 
                   onClick={() => navigate('/contact')}
@@ -578,4 +578,3 @@ const BaekelandOrangeSeriesDetail = () => {
 };
 
 export default BaekelandOrangeSeriesDetail;
-
