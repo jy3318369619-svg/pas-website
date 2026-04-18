@@ -651,14 +651,14 @@ const Dealers = () => {
                 transitionDelay: '0.2s'
               }}
             >
-              <div style={{
+              <div className="dealer-inquiries" style={{
                 background: '#000000',
                 borderRadius: '24px',
                 padding: '60px 40px',
                 textAlign: 'center',
                 color: '#ffffff'
               }}>
-                <h3 style={{
+                <h3 className="dealer-inquiries-title" style={{
                   fontSize: '35px',
                   fontWeight: 700,
                   marginBottom: '24px',
@@ -666,7 +666,7 @@ const Dealers = () => {
                 }}>
                   Dealer Inquiries
                 </h3>
-                <p style={{
+                <p className="dealer-inquiries-text" style={{
                   fontSize: '19px',
                   marginBottom: '32px',
                   color: '#e0e0e0',
@@ -677,7 +677,7 @@ const Dealers = () => {
                   Interested in becoming a PNS dealer or need dealer support?<br />
                   Contact our partnership team.
                 </p>
-                <div style={{
+                <div className="dealer-inquiries-actions" style={{
                   display: 'flex',
                   justifyContent: 'center',
                   gap: '20px',
@@ -685,6 +685,7 @@ const Dealers = () => {
                 }}>
                   <a
                     href="mailto:pnsbilliardcloth@gmail.com"
+                    className="dealer-inquiries-button"
                     style={{
                       background: '#007AFF',
                       color: '#ffffff',
@@ -701,6 +702,7 @@ const Dealers = () => {
                   </a>
                   <a
                     href="https://wa.me/8618505200972"
+                    className="dealer-inquiries-button"
                     style={{
                       background: 'transparent',
                       color: '#ffffff',

@@ -51,6 +51,17 @@ body {
   margin-right: auto;
 }
 
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-links {
+  margin-left: 30px;
+}
+
 @media (max-width: 1024px) {
   .container, .container-wide {
     padding-left: var(--container-padding-md) !important;
@@ -245,6 +256,74 @@ body {
     word-break: break-word;
   }
 
+  .dealer-inquiries {
+    padding: 32px 18px !important;
+    border-radius: 18px !important;
+  }
+
+  .dealer-inquiries-title {
+    font-size: 24px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .dealer-inquiries-text {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+    margin: 0 auto 20px !important;
+  }
+
+  .dealer-inquiries-actions {
+    gap: 12px !important;
+  }
+
+  .dealer-inquiries-button {
+    font-size: 14px !important;
+    padding: 12px 18px !important;
+    border-radius: 10px !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1.2fr !important;
+    gap: 24px !important;
+    align-items: start !important;
+  }
+
+  .footer-links {
+    margin-left: 0 !important;
+  }
+
+  .footer-company img {
+    height: 56px !important;
+  }
+
+  .footer-company p {
+    font-size: 0.85em !important;
+  }
+
+  .footer-grid h4 {
+    font-size: 0.95em !important;
+    margin-bottom: 12px !important;
+  }
+
+  .footer-links a {
+    font-size: 0.85em !important;
+    padding: 2px 0 !important;
+  }
+
+  .footer-contact {
+    font-size: 0.85em !important;
+  }
+
+  .footer-social {
+    gap: 10px !important;
+  }
+
+  .footer-social-link {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 8px !important;
+  }
+
   /* Adjust image sizes */
   img {
     max-width: 100%;
@@ -256,5 +335,30 @@ body {
   .container, .container-wide {
     padding-left: var(--container-padding-xs) !important;
     padding-right: var(--container-padding-xs) !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1.2fr !important;
+    gap: 18px !important;
+  }
+
+  .footer-company img {
+    height: 50px !important;
+  }
+
+  .footer-grid h4 {
+    font-size: 0.9em !important;
+    margin-bottom: 10px !important;
+  }
+
+  .footer-company p,
+  .footer-links a,
+  .footer-contact {
+    font-size: 0.8em !important;
+  }
+
+  .footer-social-link {
+    width: 32px !important;
+    height: 32px !important;
   }
 }

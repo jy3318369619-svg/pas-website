@@ -14,14 +14,9 @@ const Footer = () => {
         padding: '0 40px'
       }}>
         {/* Main Footer Content */}
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-          gap: '40px',
-          marginBottom: '40px'
-        }}>
+        <div className="footer-grid">
           {/* Company Info */}
-          <div>
+          <div className="footer-company">
             <div style={{
               marginBottom: '20px',
               textAlign: 'left'
@@ -60,12 +55,13 @@ const Footer = () => {
             }}>
               Follow Us
             </h4>
-            <div style={{
+            <div className="footer-social" style={{
               display: 'flex',
               gap: '12px'
             }}>
               {/* Facebook */}
               <a 
+                className="footer-social-link"
                 href="https://www.facebook.com/share/1C9zJsasvF/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -99,6 +95,7 @@ const Footer = () => {
               </a>
               {/* Instagram */}
               <a 
+                className="footer-social-link"
                 href="https://www.instagram.com/pns_billiard_cloth?igsh=MWw1aDE1aGVvODBqbA%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -132,6 +129,7 @@ const Footer = () => {
               </a>
               {/* X (Twitter) */}
               <a 
+                className="footer-social-link"
                 href="https://x.com/pns_cloth?s=21"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -167,9 +165,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div style={{
-            marginLeft: '30px'
-          }}>
+          <div className="footer-links">
             <h4 style={{
               fontSize: '1.1em',
               fontWeight: 600,
@@ -214,7 +210,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
+          <div className="footer-contact">
             <h4 style={{
               fontSize: '1.1em',
               fontWeight: 600,
