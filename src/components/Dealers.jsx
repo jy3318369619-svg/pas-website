@@ -102,6 +102,16 @@ const Dealers = () => {
           )
         },
         {
+          name: 'Jordan',
+          dealers: (
+            <>
+              Contact Person: Abdullah Khraim<br />
+              Tel: +962 7 9918 7928<br />
+              Instagram: <a href="https://www.instagram.com/abdullah_khraim" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@abdullah_khraim</a>
+            </>
+          )
+        },
+        {
           name: 'Kazakhstan',
           dealers: (
             <>
