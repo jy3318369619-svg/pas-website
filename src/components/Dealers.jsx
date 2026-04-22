@@ -7,6 +7,8 @@ const Dealers = () => {
   const [expandedContinents, setExpandedContinents] = useState({});
   const [hoveredCards, setHoveredCards] = useState({});
   const sectionRefs = useRef([]);
+  const countriesContentRefs = useRef({});
+  const [continentContentHeights, setContinentContentHeights] = useState({});
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -32,6 +34,24 @@ const Dealers = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const updateHeights = () => {
+      const next = {};
+      Object.entries(expandedContinents).forEach(([continentId, isExpanded]) => {
+        if (!isExpanded) return;
+        const el = countriesContentRefs.current[continentId];
+        if (!el) return;
+        next[continentId] = el.scrollHeight;
+      });
+      if (Object.keys(next).length === 0) return;
+      setContinentContentHeights(prev => ({ ...prev, ...next }));
+    };
+
+    updateHeights();
+    window.addEventListener('resize', updateHeights);
+    return () => window.removeEventListener('resize', updateHeights);
+  }, [expandedContinents]);
 
   // 处理大洲展开/收缩
   const toggleContinent = (continentId) => {
@@ -598,9 +618,14 @@ const Dealers = () => {
                     {/* Countries Content */}
                     <div 
                       className="countries-content"
+                      ref={(el) => {
+                        if (el) countriesContentRefs.current[continent.id] = el;
+                      }}
                       style={{
-                        maxHeight: expandedContinents[continent.id] ? '2500px' : '0',
-                        transition: 'all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                        maxHeight: expandedContinents[continent.id]
+                          ? `${continentContentHeights[continent.id] || 0}px`
+                          : '0',
+                        transition: 'max-height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
                         overflow: 'hidden'
                       }}
                     >
