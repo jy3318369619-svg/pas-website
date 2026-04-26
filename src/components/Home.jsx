@@ -913,18 +913,6 @@ const Home = () => {
                   ]
                 },
                 { 
-                  name: 'Duong Quoc Hoang', 
-                  country: 'Vietnam', 
-                  color: '#007BFF',
-                  photo: '/images/duong quoc hoang.jpg',
-                  achievements: [
-                    'Champion — 2017 Vietnam National 9-Ball Championship',
-                    'Champion — Vietnam National 10-Ball Championship (2019, 2020, 2021, 2025)',
-                    'Champion — 2024 Jacoby Scottish Open (World Nineball Tour)',
-                    'Champion — 2024 Reyes Cup (Team Asia vs Europe)'
-                  ]
-                },
-                { 
                   name: 'Andri Januarta', 
                   country: 'Indonesia', 
                   color: '#007BFF',
