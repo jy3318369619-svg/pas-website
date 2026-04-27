@@ -286,7 +286,7 @@ const About = () => {
               <div style={timelineContentStyle}>
                 <div style={timelineYearStyle}>1995: Foundation & Vision</div>
                 <p style={timelineTextStyle}>
-                  Founded in 1995 and headquartered in Changzhou, Jiangsu Province, PNS Billiard Cloth holds a leading position in the field of premium billiard cloth manufacturing. Over the past decades, we have grown into a trusted name supplying billiard cloth for pool, snooker, carom, and pyramid, along with a comprehensive range of related products.
+                  Founded in 1995 and headquartered in Changzhou, Jiangsu Province, PNS Billiard Cloth holds a leading position in the field of premium billiard cloth manufacturing. Over the past decades, we have grown into a trusted name supplying billiard cloth for American Pool, snooker, carom, and pyramid, along with a comprehensive range of related products.
                 </p>
                 <div style={{
                   background: 'linear-gradient(135deg, rgba(52, 152, 219, 0.1), rgba(41, 128, 185, 0.05))',

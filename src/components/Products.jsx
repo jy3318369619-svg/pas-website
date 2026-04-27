@@ -78,8 +78,8 @@ const Products = () => {
     },
     {
       id: 'pool',
-      name: 'Pool',
-      description: 'High-performance pool cloth delivering smooth playability, precise control, and lasting durability. Designed for both competition and leisure play.',
+      name: 'American Pool',
+      description: 'High-performance American pool cloth delivering smooth playability, precise control, and lasting durability. Designed for both competition and leisure play.',
       gradient: '#1565C0',
       color: '#1565C0',
       productList: [
@@ -212,7 +212,7 @@ const Products = () => {
               lineHeight: 1.5,
               animation: 'fadeInUp 1s ease-out 0.3s both'
             }}>
-              Premium billiard cloths for Snooker, Pool, Chinese Pool/Heyball games, and professional accessories.<br />
+              Premium billiard cloths for Snooker, American Pool, Chinese Pool/Heyball games, and professional accessories.<br />
               <span style={{ fontSize: '19px', opacity: 0.8 }}>Click on any category to explore our product collection.</span>
             </p>
           </div>

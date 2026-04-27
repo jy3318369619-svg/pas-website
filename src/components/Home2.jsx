@@ -403,7 +403,7 @@ const Home = () => {
                   lineHeight: 1.6,
                   fontWeight: 400
                 }}>
-                  As a company with a leading position in high-quality billiard cloth manufacturing, we provide cloth for <em>pool, snooker, carom, and pyramid</em>, along with related products.
+                  As a company with a leading position in high-quality billiard cloth manufacturing, we provide cloth for <em>American Pool, snooker, carom, and pyramid</em>, along with related products.
                 </p>
                 <p style={{
                   fontSize: '1.1em',
@@ -564,7 +564,7 @@ const Home = () => {
                   onMouseEnter={() => handleButtonHover(3, true)}
                   onMouseLeave={() => handleButtonHover(3, false)}
                 >
-                  POOL
+                  AMERICAN POOL
                 </button>
                 <button 
                   style={{
