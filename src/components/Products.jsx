@@ -56,6 +56,10 @@ const Products = () => {
   const handleProductItemClick = (productName, categoryId) => {
     // Snooker、Chinese Pool、Pool和Other Accessories都有详情页
     if (categoryId === 'snooker' || categoryId === 'chinese-pool' || categoryId === 'pool' || categoryId === 'other-accessories') {
+      if (categoryId === 'other-accessories' && productName === 'Baekeland Balls') {
+        window.open('https://www.baekelandballs.com', '_blank', 'noopener,noreferrer');
+        return;
+      }
       const productSlug = productName.toLowerCase().replace(/\s+/g, '-');
       navigate(`/${productSlug}`);
     }
@@ -109,9 +113,7 @@ const Products = () => {
       color: '#546E7A',
       productList: [
         { name: 'PNS Gloves', description: 'Professional Model — Enhanced Grip for Precision Play' },
-        { name: 'Baekeland Orange Series', description: 'TV Pool Ball — A Tribute to the Classics' },
-        { name: 'Baekeland Purple Panda Series', description: 'TV Pool Ball — Original Design (Panda Limited Edition)' },
-        { name: 'Baekeland Cue Ball', description: 'TV Pool Ball — Designed for Precision and Endurance' }
+        { name: 'Baekeland Balls', description: 'Official website — www.baekelandballs.com' }
       ]
     }
   ];

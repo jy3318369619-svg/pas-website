@@ -17,9 +17,6 @@ import PNS760Detail from './components/PNS760Detail'
 import PNS900Detail from './components/PNS900Detail'
 import PNS988Detail from './components/PNS988Detail'
 import PNSGlovesDetail from './components/PNSGlovesDetail'
-import BaekelandOrangeSeriesDetail from './components/BaekelandOrangeSeriesDetail'
-import BaekelandPurplePandaSeriesDetail from './components/BaekelandPurplePandaSeriesDetail'
-import BaekelandCueBallDetail from './components/BaekelandCueBallDetail'
 
 function ScrollToHero() {
   const location = useLocation();
@@ -61,9 +58,6 @@ function App() {
           <Route path="/pns-900" element={<PNS900Detail />} />
           <Route path="/pns-988" element={<PNS988Detail />} />
           <Route path="/pns-gloves" element={<PNSGlovesDetail />} />
-          <Route path="/baekeland-orange-series" element={<BaekelandOrangeSeriesDetail />} />
-          <Route path="/baekeland-purple-panda-series" element={<BaekelandPurplePandaSeriesDetail />} />
-          <Route path="/baekeland-cue-ball" element={<BaekelandCueBallDetail />} />
         </Routes>
         <Footer />
       </div>
