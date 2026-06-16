@@ -21,7 +21,7 @@ const Home = () => {
 
   useEffect(() => {
     if (!('IntersectionObserver' in window)) {
-      setVisibleSections(new Set(['about', 'products', 'ambassadors']));
+      setVisibleSections(new Set(['about', 'products', 'ambassadors', 'partners']));
       return;
     }
 
@@ -201,6 +201,109 @@ const Home = () => {
   };
 
 
+  // 合作伙伴数据 —— 占位内容；如需替换为真实Logo：把图片放到 public/images/ 下，
+  // 再把对应 logo 改为 '/images/你的文件名.png'，name 改成合作伙伴名称即可。
+  const partners = [
+    {
+      name: 'IBSF',
+      subtitle: 'International Billiards & Snooker Federation',
+      logo: '/images/ibsf-logo.png',
+      width: '280px',
+      height: '220px',
+      logoMaxWidth: '112px',
+      logoMaxHeight: '112px'
+    }
+  ];
+  const hasMultiplePartners = partners.length > 1;
+
+  const renderPartner = (partner, i) => (
+    <div className="partner-card" key={i} style={{
+      flex: '0 0 auto',
+      width: partner.width || '200px',
+      height: partner.height || '120px',
+      background: '#ffffff',
+      borderRadius: '16px',
+      border: '1px solid rgba(0, 0, 0, 0.06)',
+      boxShadow: '0 8px 24px rgba(0, 0, 0, 0.06)',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: '12px',
+      padding: '16px 20px'
+    }}>
+      {partner.logo ? (
+        <>
+          <img
+            className="partner-logo-img"
+            src={partner.logo}
+            alt={partner.name}
+            style={{
+              maxWidth: partner.logoMaxWidth || '150px',
+              maxHeight: partner.logoMaxHeight || '70px',
+              objectFit: 'contain'
+            }}
+          />
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '4px',
+            textAlign: 'center'
+          }}>
+            <span style={{
+              fontSize: '15px',
+              fontWeight: 700,
+              color: '#1d1d1f',
+              fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+            }}>
+              {partner.name}
+            </span>
+            {partner.subtitle && (
+              <span style={{
+                fontSize: '12px',
+                fontWeight: 500,
+                lineHeight: 1.35,
+                color: '#6e6e73',
+                fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+              }}>
+                {partner.subtitle}
+              </span>
+            )}
+          </div>
+        </>
+      ) : (
+        <>
+          <div style={{
+            width: '52px',
+            height: '52px',
+            flexShrink: 0,
+            borderRadius: '50%',
+            background: 'linear-gradient(135deg, #007BFF, #00A3FF)',
+            color: '#ffffff',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '20px',
+            fontWeight: 700,
+            fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif",
+            boxShadow: '0 4px 12px rgba(0, 123, 255, 0.3)'
+          }}>
+            {partner.name.charAt(0).toUpperCase()}
+          </div>
+          <span style={{
+            fontSize: '14px',
+            fontWeight: 600,
+            color: '#6e6e73',
+            fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+          }}>
+            {partner.name}
+          </span>
+        </>
+      )}
+    </div>
+  );
+
   // CSS animations
   const styles = `
     @keyframes fadeInUp {
@@ -245,6 +348,38 @@ const Home = () => {
         opacity: 1;
         transform: scale(1);
       }
+    }
+
+    @keyframes partnerScroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    .partner-track {
+      animation: partnerScroll 35s linear infinite;
+    }
+
+    .partner-marquee:hover .partner-track {
+      animation-play-state: paused;
+    }
+
+    .partner-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .partner-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+    }
+
+    .partner-logo-img {
+      filter: none;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .partner-card:hover .partner-logo-img {
+      opacity: 1;
     }
   `;
 
@@ -1102,6 +1237,73 @@ const Home = () => {
               ))}
             </div>
 
+          </div>
+        </section>
+
+        {/* Our Partners Section - 滚动展示合作伙伴 */}
+        <section
+          ref={el => sectionRefs.current[3] = el}
+          data-section="partners"
+          style={{
+            background: 'linear-gradient(180deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%)',
+            padding: '120px 0',
+            color: '#1d1d1f',
+            opacity: visibleSections.has('partners') ? 1 : 0,
+            transform: visibleSections.has('partners') ? 'translateY(0)' : 'translateY(60px)',
+            transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
+          }}
+        >
+          <div style={{
+            textAlign: 'center',
+            maxWidth: '1200px',
+            margin: '0 auto 60px auto',
+            padding: '0 40px'
+          }}>
+            <h2 className="section-title" style={{
+              fontSize: '52px',
+              fontWeight: 700,
+              color: '#1d1d1f',
+              marginBottom: '24px',
+              letterSpacing: '-0.02em',
+              fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+            }}>
+              Our Partners
+            </h2>
+            <p style={{
+              fontSize: '19px',
+              color: '#6e6e73',
+              maxWidth: '800px',
+              margin: '0 auto',
+              lineHeight: 1.5,
+              fontWeight: 400
+            }}>
+              Proud to collaborate with leading brands and organizations around the world
+            </p>
+          </div>
+
+          {/* Scrolling marquee */}
+          <div className="partner-marquee" style={{
+            position: 'relative',
+            overflow: 'hidden',
+            padding: '20px 0',
+            WebkitMaskImage: hasMultiplePartners ? 'linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)' : 'none',
+            maskImage: hasMultiplePartners ? 'linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent)' : 'none'
+          }}>
+            <div className="partner-track" style={{
+              display: 'flex',
+              justifyContent: hasMultiplePartners ? 'flex-start' : 'center',
+              width: hasMultiplePartners ? 'max-content' : '100%',
+              animation: hasMultiplePartners ? undefined : 'none'
+            }}>
+              <div className="partner-group" style={{ display: 'flex', gap: '24px', paddingRight: '24px' }}>
+                {partners.map(renderPartner)}
+              </div>
+              {hasMultiplePartners && (
+                <div className="partner-group" aria-hidden="true" style={{ display: 'flex', gap: '24px', paddingRight: '24px' }}>
+                  {partners.map(renderPartner)}
+                </div>
+              )}
+            </div>
           </div>
         </section>
       </div>
