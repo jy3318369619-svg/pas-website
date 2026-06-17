@@ -208,9 +208,20 @@ const Home = () => {
       name: 'IBSF',
       subtitle: 'International Billiards & Snooker Federation',
       logo: '/images/ibsf-logo.png',
-      width: '280px',
+      width: '360px',
       height: '220px',
+      logoFrameHeight: '112px',
       logoMaxWidth: '112px',
+      logoMaxHeight: '112px'
+    },
+    {
+      name: 'AFBS',
+      subtitle: 'Arab Federation For Billiard & Snooker',
+      logo: '/images/afbs-logo.png',
+      width: '360px',
+      height: '220px',
+      logoFrameHeight: '112px',
+      logoMaxWidth: '170px',
       logoMaxHeight: '112px'
     }
   ];
@@ -234,16 +245,24 @@ const Home = () => {
     }}>
       {partner.logo ? (
         <>
-          <img
-            className="partner-logo-img"
-            src={partner.logo}
-            alt={partner.name}
-            style={{
-              maxWidth: partner.logoMaxWidth || '150px',
-              maxHeight: partner.logoMaxHeight || '70px',
-              objectFit: 'contain'
-            }}
-          />
+          <div style={{
+            width: '100%',
+            height: partner.logoFrameHeight || '112px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}>
+            <img
+              className="partner-logo-img"
+              src={partner.logo}
+              alt={partner.name}
+              style={{
+                maxWidth: partner.logoMaxWidth || '150px',
+                maxHeight: partner.logoMaxHeight || '70px',
+                objectFit: 'contain'
+              }}
+            />
+          </div>
           <div style={{
             display: 'flex',
             flexDirection: 'column',
@@ -261,11 +280,12 @@ const Home = () => {
             </span>
             {partner.subtitle && (
               <span style={{
-                fontSize: '12px',
+                fontSize: '11px',
                 fontWeight: 500,
                 lineHeight: 1.35,
                 color: '#6e6e73',
-                fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+                fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif",
+                whiteSpace: 'nowrap'
               }}>
                 {partner.subtitle}
               </span>
@@ -275,30 +295,52 @@ const Home = () => {
       ) : (
         <>
           <div style={{
-            width: '52px',
+            minWidth: '88px',
             height: '52px',
             flexShrink: 0,
-            borderRadius: '50%',
-            background: 'linear-gradient(135deg, #007BFF, #00A3FF)',
+            borderRadius: '14px',
+            padding: '0 16px',
+            background: partner.badgeBackground || 'linear-gradient(135deg, #007BFF, #00A3FF)',
             color: '#ffffff',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            fontSize: '20px',
+            fontSize: '18px',
             fontWeight: 700,
+            letterSpacing: '0.08em',
             fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif",
-            boxShadow: '0 4px 12px rgba(0, 123, 255, 0.3)'
+            boxShadow: partner.badgeShadow || '0 4px 12px rgba(0, 123, 255, 0.3)'
           }}>
-            {partner.name.charAt(0).toUpperCase()}
+            {partner.badgeText || partner.name}
           </div>
-          <span style={{
-            fontSize: '14px',
-            fontWeight: 600,
-            color: '#6e6e73',
-            fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '4px',
+            textAlign: 'center'
           }}>
-            {partner.name}
-          </span>
+            <span style={{
+              fontSize: '15px',
+              fontWeight: 700,
+              color: '#1d1d1f',
+              fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+            }}>
+              {partner.name}
+            </span>
+            {partner.subtitle && (
+              <span style={{
+                fontSize: '11px',
+                fontWeight: 500,
+                lineHeight: 1.35,
+                color: '#6e6e73',
+                fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif",
+                whiteSpace: 'nowrap'
+              }}>
+                {partner.subtitle}
+              </span>
+            )}
+          </div>
         </>
       )}
     </div>
