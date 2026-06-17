@@ -38,7 +38,7 @@ const WhyNotPureWool = () => {
   const containerStyle = {
     maxWidth: '1200px',
     margin: '0 auto',
-    padding: isMobile ? '70px 16px' : '100px 40px',
+    padding: isMobile ? '64px 16px' : '84px 40px',
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translateY(0)' : 'translateY(60px)',
     transition: 'all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
@@ -49,7 +49,7 @@ const WhyNotPureWool = () => {
     fontWeight: 700,
     color: '#1d1d1f',
     textAlign: 'center',
-    marginBottom: isMobile ? '28px' : '60px',
+    marginBottom: isMobile ? '24px' : '48px',
     fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif",
     letterSpacing: '-0.02em'
   };
@@ -111,7 +111,7 @@ const WhyNotPureWool = () => {
     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
     fontWeight: 500,
     textAlign: 'center',
-    marginTop: isMobile ? '22px' : '40px',
+    marginTop: isMobile ? '20px' : '32px',
     padding: isMobile ? '18px' : '30px',
     background: 'linear-gradient(135deg, rgba(0, 122, 255, 0.05), rgba(0, 212, 255, 0.05))',
     borderRadius: isMobile ? '16px' : '20px',

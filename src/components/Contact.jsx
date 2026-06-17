@@ -254,7 +254,7 @@ const Contact = () => {
                alignItems: 'center',
                justifyContent: 'center',
                textAlign: 'center',
-               padding: '230px 0 180px',
+               padding: '180px 0 144px',
                marginBottom: '0px'
              }}
            >
@@ -617,7 +617,7 @@ const Contact = () => {
                 borderRadius: '20px',
                 padding: '32px',
                 marginTop: '40px',
-                marginBottom: '60px',
+                marginBottom: '40px',
                 border: '1px solid rgba(255, 255, 255, 0.2)',
                 boxShadow: '0 15px 40px rgba(0, 0, 0, 0.08)'
               }}>
@@ -661,7 +661,7 @@ const Contact = () => {
         <div style={{
           maxWidth: '1200px',
           margin: '0 auto',
-          padding: '0 40px 80px',
+          padding: '0 40px 64px',
         }}>
           <div style={{
             background: 'rgba(245, 245, 247, 0.8)',

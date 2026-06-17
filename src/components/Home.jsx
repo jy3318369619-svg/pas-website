@@ -432,7 +432,7 @@ const Home = () => {
         {/* Hero Section */}
         <section id="hero" style={{
           background: '#000000', // 简化背景色
-          padding: '160px 0 180px',
+          padding: '152px 0 144px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -599,7 +599,7 @@ const Home = () => {
           data-section="about"
           style={{
             background: 'linear-gradient(180deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%)',
-            padding: '120px 0',
+            padding: '96px 0',
             opacity: visibleSections.has('about') ? 1 : 0,
             transform: visibleSections.has('about') ? 'translateY(0)' : 'translateY(60px)',
             transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
@@ -612,7 +612,7 @@ const Home = () => {
           }}>
             <div style={{
               textAlign: 'center',
-              marginBottom: '80px'
+              marginBottom: '56px'
             }}>
               <h2 className="section-title" style={{
                 fontSize: '52px',
@@ -691,7 +691,7 @@ const Home = () => {
           data-section="products"
           style={{
             background: 'linear-gradient(180deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%)',
-            padding: '120px 0',
+            padding: '96px 0',
             opacity: visibleSections.has('products') ? 1 : 0,
             transform: visibleSections.has('products') ? 'translateY(0)' : 'translateY(60px)',
             transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s'
@@ -704,7 +704,7 @@ const Home = () => {
           }}>
             <div style={{
               textAlign: 'center',
-              marginBottom: '80px'
+              marginBottom: '56px'
             }}>
               <h2 className="section-title" style={{
                 fontSize: '52px',
@@ -994,7 +994,7 @@ const Home = () => {
           data-section="ambassadors"
           style={{
             background: 'linear-gradient(180deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%)',
-            padding: '120px 0',
+            padding: '96px 0 40px',
             color: '#1d1d1f',
             opacity: visibleSections.has('ambassadors') ? 1 : 0,
             transform: visibleSections.has('ambassadors') ? 'translateY(0)' : 'translateY(60px)',
@@ -1008,7 +1008,7 @@ const Home = () => {
           }}>
             <div style={{
               textAlign: 'center',
-              marginBottom: '80px'
+              marginBottom: '56px'
             }}>
               <h2 className="section-title" style={{
                 fontSize: '52px',
@@ -1037,7 +1037,7 @@ const Home = () => {
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
               gap: '30px',
-              marginBottom: '80px'
+              marginBottom: '16px'
             }}>
               {[
                 { 
@@ -1288,7 +1288,7 @@ const Home = () => {
           data-section="partners"
           style={{
             background: 'linear-gradient(180deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%)',
-            padding: '120px 0',
+            padding: '56px 0 96px',
             color: '#1d1d1f',
             opacity: visibleSections.has('partners') ? 1 : 0,
             transform: visibleSections.has('partners') ? 'translateY(0)' : 'translateY(60px)',
@@ -1298,7 +1298,7 @@ const Home = () => {
           <div style={{
             textAlign: 'center',
             maxWidth: '1200px',
-            margin: '0 auto 60px auto',
+            margin: '0 auto 48px auto',
             padding: '0 40px'
           }}>
             <h2 className="section-title" style={{

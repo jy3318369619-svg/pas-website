@@ -269,10 +269,10 @@ const Technology = () => {
         {/* Hero Section */}
         <div id="hero" className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
           {/* Top spacing */}
-          <div style={{ height: '120px' }}></div>
+          <div style={{ height: '96px' }}></div>
           <div style={{ 
             textAlign: 'center', 
-            marginBottom: '120px',
+            marginBottom: '72px',
             background: 'linear-gradient(135deg, #0A65A3, #1976D2)',
             borderRadius: '32px',
             padding: '60px 40px',
@@ -326,7 +326,7 @@ const Technology = () => {
                   style={{
                     display: 'flex',
                     alignItems: 'center',
-                    marginBottom: index === technologies.length - 1 ? '60px' : '120px',
+                    marginBottom: index === technologies.length - 1 ? '40px' : '88px',
                     flexDirection: index % 2 === 0 ? 'row' : 'row-reverse',
                     gap: '80px',
                     opacity: visibleSections.has(tech.id) ? 1 : 0,
@@ -459,7 +459,7 @@ const Technology = () => {
               ))}
 
           {/* Bottom spacing */}
-          <div style={{ height: '80px' }}></div>
+          <div style={{ height: '56px' }}></div>
         </div>
       </div>
     </>

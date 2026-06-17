@@ -323,7 +323,7 @@ const Dealers = () => {
     backgroundPosition: 'center 30%',
     backgroundRepeat: 'no-repeat',
     color: '#ffffff',
-    padding: '200px 0 180px',
+    padding: '180px 0 144px',
     textAlign: 'center',
     position: 'relative',
     overflow: 'hidden',
@@ -383,7 +383,7 @@ const Dealers = () => {
 
   // Content Section
   const contentSectionStyle = {
-    padding: '120px 0',
+    padding: '96px 0',
     background: 'linear-gradient(180deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%)',
     position: 'relative'
   };
@@ -408,8 +408,8 @@ const Dealers = () => {
     fontSize: '18px',
     color: '#666666',
     textAlign: 'center',
-    marginBottom: '80px',
-    margin: '0 auto 80px',
+    marginBottom: '56px',
+    margin: '0 auto 56px',
     fontWeight: 400,
     maxWidth: '600px'
   };

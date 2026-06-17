@@ -48,7 +48,7 @@ const About = () => {
     backgroundPosition: 'center 45%',
     backgroundRepeat: 'no-repeat',
     color: '#ffffff',
-    padding: '200px 0 180px',
+    padding: '180px 0 144px',
     textAlign: 'center',
     position: 'relative',
     overflow: 'hidden',
@@ -105,7 +105,7 @@ const About = () => {
 
   // Content Section - Professional Textile Industry Style
   const contentSectionStyle = {
-    padding: '100px 0',
+    padding: '96px 0',
     background: '#f8f9fa',
     position: 'relative',
     overflow: 'hidden'
@@ -132,8 +132,8 @@ const About = () => {
     fontSize: '19px',
     color: '#5a6c7d',
     textAlign: 'center',
-    marginBottom: '70px',
-    margin: '0 auto 70px',
+    marginBottom: '56px',
+    margin: '0 auto 56px',
     fontWeight: 400,
     maxWidth: '700px',
     lineHeight: 1.6
@@ -143,7 +143,7 @@ const About = () => {
     display: 'flex',
     alignItems: 'stretch',
     gap: '60px',
-    marginBottom: '80px',
+    marginBottom: '56px',
     opacity: isVisible ? 1 : 0,
     transform: isVisible ? 'translateY(0)' : 'translateY(60px)',
     transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)',

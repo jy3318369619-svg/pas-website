@@ -182,14 +182,14 @@ const Products = () => {
       <div style={{ 
         background: 'linear-gradient(180deg, #fff 0%, #f8f9fa 50%, #fff 100%)', 
         minHeight: '100vh',
-        paddingBottom: '80px'
+        paddingBottom: '64px'
       }}>
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 40px' }}>
           {/* Hero Section */}
           <div id="hero" style={{ 
             textAlign: 'center', 
-            marginBottom: '80px',
-            paddingTop: '200px'
+            marginBottom: '56px',
+            paddingTop: '176px'
           }}>
             <h1 style={{
               fontSize: '88px',
@@ -228,7 +228,7 @@ const Products = () => {
               display: 'flex',
               flexDirection: 'column',
               gap: '40px',
-              marginBottom: '80px',
+              marginBottom: '56px',
               opacity: visibleSections.has('products-grid') ? 1 : 0,
               transform: visibleSections.has('products-grid') ? 'translateY(0)' : 'translateY(60px)',
               transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)'

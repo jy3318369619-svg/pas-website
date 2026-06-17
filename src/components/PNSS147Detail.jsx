@@ -36,7 +36,7 @@ const PNSS147Detail = () => {
       <div style={{
         minHeight: '100vh',
         background: '#ffffff',
-        padding: '120px 0 80px 0'
+        padding: '104px 0 64px 0'
       }}>
         <div style={{
           maxWidth: '1200px',
@@ -55,7 +55,7 @@ const PNSS147Detail = () => {
               fontSize: '14px',
               fontWeight: 500,
               cursor: 'pointer',
-              marginBottom: '40px',
+              marginBottom: '32px',
               transition: 'all 0.3s ease'
             }}
           >
@@ -124,7 +124,7 @@ const PNSS147Detail = () => {
               </div>
 
               <div style={{
-                marginBottom: '40px'
+                marginBottom: '32px'
               }}>
                 <p style={{
                   fontSize: '1.1rem',
@@ -160,7 +160,7 @@ const PNSS147Detail = () => {
 
           {/* Technical Specifications */}
           <div style={{
-            marginTop: '80px',
+            marginTop: '64px',
             background: '#ffffff',
             padding: '60px 40px',
             borderRadius: '20px',
@@ -170,7 +170,7 @@ const PNSS147Detail = () => {
               fontSize: '2rem',
               fontWeight: 700,
               color: '#1d1d1f',
-              marginBottom: '40px',
+              marginBottom: '32px',
               textAlign: 'center'
             }}>
               Technical Specifications

@@ -80,13 +80,24 @@ body {
   div[style*="padding: 230px"],
   div[style*="padding: 200px"],
   div[style*="padding: 180px"],
+  section[style*="padding: 180px"],
+  section[style*="padding: 160px"],
+  section[style*="padding: 152px"],
   div[style*="paddingTop: 200px"],
+  div[style*="paddingTop: 176px"],
   div[style*="padding-top: 200px"] {
     padding-top: 160px !important;
     padding-bottom: 120px !important;
   }
 
   div[style*="padding: 120px"],
+  div[style*="padding: 104px"],
+  div[style*="padding: 100px"],
+  div[style*="padding: 96px"],
+  section[style*="padding: 120px"],
+  section[style*="padding: 96px"],
+  section[style*="padding: 72px"],
+  section[style*="padding: 56px"],
   div[style*="paddingTop: 120px"],
   div[style*="padding-top: 120px"] {
     padding-top: 80px !important;
@@ -151,13 +162,24 @@ body {
   div[style*="padding: 200px"],
   div[style*="padding: 180px"],
   div[style*="padding: 150px"],
+  section[style*="padding: 180px"],
+  section[style*="padding: 160px"],
+  section[style*="padding: 152px"],
   div[style*="paddingTop: 200px"],
+  div[style*="paddingTop: 176px"],
   div[style*="padding-top: 200px"] {
     padding-top: 120px !important;
     padding-bottom: 80px !important;
   }
 
   div[style*="padding: 120px"],
+  div[style*="padding: 104px"],
+  div[style*="padding: 100px"],
+  div[style*="padding: 96px"],
+  section[style*="padding: 120px"],
+  section[style*="padding: 96px"],
+  section[style*="padding: 72px"],
+  section[style*="padding: 56px"],
   div[style*="paddingTop: 120px"],
   div[style*="padding-top: 120px"] {
     padding-top: 60px !important;
