@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer style={{
+    <footer className="site-footer" style={{
       background: '#000000',
       color: '#ffffff',
       padding: '60px 0 30px 0',
@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer-grid">
           {/* Company Info */}
           <div className="footer-company">
-            <div style={{
+            <div className="footer-brand" style={{
               marginBottom: '20px',
               textAlign: 'left'
             }}>
@@ -46,7 +46,7 @@ const Footer = () => {
             </div>
             
             {/* Follow Us Section */}
-            <h4 style={{
+            <h4 className="footer-follow-title" style={{
               fontSize: '1.1em',
               fontWeight: 600,
               color: '#ffffff',
@@ -166,7 +166,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="footer-links">
-            <h4 style={{
+            <h4 className="footer-section-title" style={{
               fontSize: '1.1em',
               fontWeight: 600,
               color: '#ffffff',
@@ -211,7 +211,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="footer-contact">
-            <h4 style={{
+            <h4 className="footer-section-title" style={{
               fontSize: '1.1em',
               fontWeight: 600,
               color: '#ffffff',
@@ -220,29 +220,29 @@ const Footer = () => {
             }}>
               Contact Info
             </h4>
-            <div style={{
+            <div className="footer-contact-list" style={{
               color: '#b0b0b0',
               fontSize: '0.95em',
               lineHeight: 1.8
             }}>
-              <div style={{ marginBottom: '12px' }}>
-                <strong style={{ color: '#ffffff' }}>Contact Person:</strong><br />
-                Stevie Jiang
+              <div className="footer-contact-item" style={{ marginBottom: '12px' }}>
+                <strong style={{ color: '#ffffff' }}>Contact Person:</strong>
+                <span>Stevie Jiang</span>
               </div>
-              <div style={{ marginBottom: '12px' }}>
-                <strong style={{ color: '#ffffff' }}>WhatsApp:</strong><br />
-                +86 18505200972
+              <div className="footer-contact-item" style={{ marginBottom: '12px' }}>
+                <strong style={{ color: '#ffffff' }}>WhatsApp:</strong>
+                <span>+86 18505200972</span>
               </div>
-              <div style={{ marginBottom: '12px' }}>
-                <strong style={{ color: '#ffffff' }}>Email:</strong><br />
-                pnsbilliardcloth@gmail.com
+              <div className="footer-contact-item" style={{ marginBottom: '12px' }}>
+                <strong style={{ color: '#ffffff' }}>Email:</strong>
+                <span>pnsbilliardcloth@gmail.com</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div style={{
+        <div className="footer-bottom" style={{
           borderTop: '1px solid rgba(255, 255, 255, 0.1)',
           paddingTop: '30px',
           display: 'flex',

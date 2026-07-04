@@ -33,7 +33,7 @@ const PNSS147Detail = () => {
   return (
     <>
       <style>{responsiveStyles}</style>
-      <div style={{
+      <div className="product-detail-page" style={{
         minHeight: '100vh',
         background: '#ffffff',
         padding: '104px 0 64px 0'

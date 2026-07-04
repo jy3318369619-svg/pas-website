@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Silk from './Silk';
+import { SplitRevealText, SpotlightCard } from './AnimatedBits';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -228,7 +229,7 @@ const Home = () => {
   const hasMultiplePartners = partners.length > 1;
 
   const renderPartner = (partner, i) => (
-    <div className="partner-card" key={i} style={{
+    <SpotlightCard className="partner-card" key={i} spotlightColor="rgba(0, 123, 255, 0.14)" style={{
       flex: '0 0 auto',
       width: partner.width || '200px',
       height: partner.height || '120px',
@@ -343,7 +344,7 @@ const Home = () => {
           </div>
         </>
       )}
-    </div>
+    </SpotlightCard>
   );
 
   // CSS animations
@@ -496,7 +497,7 @@ const Home = () => {
               </span>
             </div>
             
-            <h1 className="hero-title" style={{
+            <SplitRevealText as="h1" text="The Choice of Champions" className="hero-title" delay={0.25} style={{
               fontSize: '88px',
               fontWeight: 800,
               marginBottom: '24px',
@@ -505,9 +506,7 @@ const Home = () => {
               fontFamily: "'Montserrat', sans-serif",
               textShadow: '0 2px 8px rgba(0, 0, 0, 0.3)',
               animation: 'fadeInUp 1s ease-out 0.3s both'
-            }}>
-              The Choice of Champions
-            </h1>
+            }} />
             
             <div style={{
               marginBottom: '40px',
@@ -614,16 +613,14 @@ const Home = () => {
               textAlign: 'center',
               marginBottom: '56px'
             }}>
-              <h2 className="section-title" style={{
+              <SplitRevealText as="h2" text="About Us" className="section-title" style={{
                 fontSize: '52px',
                 fontWeight: 700,
                 color: '#1d1d1f',
                 marginBottom: '24px',
-                letterSpacing: '-0.02em',
+                letterSpacing: 0,
                 fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
-              }}>
-                About Us
-              </h2>
+              }} />
               <div style={{
                 maxWidth: '800px',
                 margin: '0 auto'
@@ -706,16 +703,14 @@ const Home = () => {
               textAlign: 'center',
               marginBottom: '56px'
             }}>
-              <h2 className="section-title" style={{
+              <SplitRevealText as="h2" text="Our Products" className="section-title" style={{
                 fontSize: '52px',
                 fontWeight: 700,
                 color: '#1d1d1f',
                 marginBottom: '20px',
-                letterSpacing: '-0.02em',
+                letterSpacing: 0,
                 fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
-              }}>
-                Our Products
-              </h2>
+              }} />
               <p style={{
                 fontSize: '19px',
                 color: '#6e6e73',
@@ -862,8 +857,9 @@ const Home = () => {
             className="product-grid"
             >
               {productCategories[activeProductCategory].map((product, index) => (
-                <div 
+                <SpotlightCard 
                   key={`${activeProductCategory}-${index}`}
+                  spotlightColor={`${product.color}24`}
                   style={{
                     background: 'linear-gradient(145deg, #ffffff 0%, #fafafa 100%)',
                     borderRadius: '24px',
@@ -981,7 +977,7 @@ const Home = () => {
                       Learn More
                     </button>
                   </div>
-                </div>
+                </SpotlightCard>
               ))}
             </div>
           </div>
@@ -1010,16 +1006,14 @@ const Home = () => {
               textAlign: 'center',
               marginBottom: '56px'
             }}>
-              <h2 className="section-title" style={{
+              <SplitRevealText as="h2" text="Ambassadors & Partnerships" className="section-title" style={{
                 fontSize: '52px',
                 fontWeight: 700,
                 color: '#1d1d1f',
                 marginBottom: '24px',
-                letterSpacing: '-0.02em',
+                letterSpacing: 0,
                 fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
-              }}>
-                Ambassadors & Partnerships
-              </h2>
+              }} />
               <p style={{
                 fontSize: '19px',
                 color: '#6e6e73',
@@ -1125,9 +1119,10 @@ const Home = () => {
                   ]
                 }
               ].map((ambassador, index) => (
-                <div 
+                <SpotlightCard 
                   className="ambassador-card"
                   key={index}
+                  spotlightColor="rgba(0, 123, 255, 0.16)"
                   style={{ 
                     background: 'rgba(255, 255, 255, 0.9)',
                     padding: '24px',
@@ -1275,7 +1270,7 @@ const Home = () => {
                       )}
                     </div>
                   </div>
-                </div>
+                </SpotlightCard>
               ))}
             </div>
 
@@ -1301,16 +1296,14 @@ const Home = () => {
             margin: '0 auto 48px auto',
             padding: '0 40px'
           }}>
-            <h2 className="section-title" style={{
+            <SplitRevealText as="h2" text="Our Partners" className="section-title" style={{
               fontSize: '52px',
               fontWeight: 700,
               color: '#1d1d1f',
               marginBottom: '24px',
-              letterSpacing: '-0.02em',
+              letterSpacing: 0,
               fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
-            }}>
-              Our Partners
-            </h2>
+            }} />
             <p style={{
               fontSize: '19px',
               color: '#6e6e73',
