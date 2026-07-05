@@ -210,6 +210,210 @@ const Contact = () => {
       gap: 80px;
       align-items: start;
     }
+
+    @media (max-width: 768px) {
+      .contact-bg-shape {
+        display: none;
+      }
+
+      .contact-container {
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+      }
+
+      .contact-hero {
+        padding: 116px 0 48px !important;
+      }
+
+      .contact-hero .hero-title {
+        font-size: 42px !important;
+        line-height: 1.08 !important;
+        margin-bottom: 14px !important;
+        letter-spacing: 0 !important;
+      }
+
+      .contact-hero-subtitle {
+        max-width: 330px !important;
+        padding: 0 !important;
+        font-size: 16px !important;
+        line-height: 1.5 !important;
+      }
+
+      .contact-grid {
+        gap: 26px !important;
+      }
+
+      .contact-form-card {
+        padding: 28px 18px 32px !important;
+        border-radius: 22px !important;
+        box-shadow: 0 14px 36px rgba(0, 0, 0, 0.08) !important;
+      }
+
+      .contact-section-title {
+        font-size: 26px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 22px !important;
+      }
+
+      .contact-form {
+        gap: 22px !important;
+      }
+
+      .contact-form label {
+        margin-bottom: 10px !important;
+        font-size: 15px !important;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        padding: 15px 16px !important;
+        border-radius: 14px !important;
+        font-size: 16px !important;
+        transform: none !important;
+      }
+
+      .contact-form textarea {
+        min-height: 132px !important;
+      }
+
+      .contact-submit {
+        width: 100% !important;
+        min-height: 54px !important;
+        padding: 15px 18px !important;
+        border-radius: 14px !important;
+        font-size: 16px !important;
+        transform: none !important;
+      }
+
+      .contact-info-section {
+        animation: fadeInUp 0.8s ease-out 0.2s both;
+      }
+
+      .contact-list {
+        gap: 14px !important;
+      }
+
+      .contact-item {
+        align-items: flex-start !important;
+        gap: 14px !important;
+        padding: 16px !important;
+        border-radius: 18px !important;
+        transform: none !important;
+      }
+
+      .contact-item-icon {
+        width: 46px !important;
+        height: 46px !important;
+        min-width: 46px !important;
+        border-radius: 14px !important;
+      }
+
+      .contact-item-icon svg {
+        width: 24px !important;
+        height: 24px !important;
+      }
+
+      .contact-item-content {
+        min-width: 0;
+        flex: 1;
+      }
+
+      .contact-item-title {
+        margin-bottom: 4px !important;
+        font-size: 16px !important;
+      }
+
+      .contact-item-value {
+        font-size: 15px !important;
+        line-height: 1.4 !important;
+        overflow-wrap: anywhere;
+      }
+
+      .contact-response-card {
+        padding: 22px 18px !important;
+        margin-top: 22px !important;
+        margin-bottom: 28px !important;
+        border-radius: 18px !important;
+        animation: none !important;
+      }
+
+      .contact-response-title {
+        font-size: 17px !important;
+      }
+
+      .contact-response-text {
+        font-size: 15px !important;
+        line-height: 1.55 !important;
+      }
+
+      .contact-location-section {
+        padding: 0 18px 44px !important;
+      }
+
+      .contact-location-card {
+        padding: 0 !important;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+      }
+
+      .contact-location-list {
+        gap: 16px !important;
+      }
+
+      .contact-address-card {
+        padding: 20px 18px !important;
+        border-radius: 18px !important;
+      }
+
+      .contact-address-header {
+        gap: 12px !important;
+        margin-bottom: 14px !important;
+      }
+
+      .contact-address-header h3 {
+        font-size: 18px !important;
+        line-height: 1.25 !important;
+      }
+
+      .contact-address-text {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+      }
+
+      .contact-meta-row {
+        align-items: flex-start !important;
+        gap: 10px !important;
+      }
+
+      .contact-meta-row span {
+        min-width: 0 !important;
+        font-size: 14px !important;
+        line-height: 1.4 !important;
+        overflow-wrap: anywhere;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .contact-container {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+      }
+
+      .contact-hero .hero-title {
+        font-size: 38px !important;
+      }
+
+      .contact-item {
+        padding: 14px !important;
+      }
+
+      .contact-location-section {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+      }
+    }
   `;
 
   return (
@@ -221,7 +425,7 @@ const Contact = () => {
         position: 'relative'
       }}>
         {/* Background Elements */}
-        <div style={{
+        <div className="contact-bg-shape" style={{
           position: 'absolute',
           top: '20%',
           right: '10%',
@@ -232,7 +436,7 @@ const Contact = () => {
           filter: 'blur(40px)',
           animation: 'float 8s ease-in-out infinite'
         }} />
-        <div style={{
+        <div className="contact-bg-shape" style={{
           position: 'absolute',
           bottom: '20%',
           left: '5%',
@@ -244,11 +448,11 @@ const Contact = () => {
           animation: 'float 6s ease-in-out infinite reverse'
         }} />
 
-        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 40px' }}>
+        <div className="container contact-container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 40px' }}>
           {/* Hero Section */}
            <div 
              id="hero"
-             className="hero-section"
+             className="hero-section contact-hero"
              style={{ 
                display: 'flex',
                alignItems: 'center',
@@ -273,7 +477,7 @@ const Contact = () => {
           }}>
             Contact Us
           </h1>
-          <p style={{
+          <p className="contact-hero-subtitle" style={{
             fontSize: '24px',
             color: '#86868b',
             maxWidth: '800px',
@@ -290,7 +494,7 @@ const Contact = () => {
         <div className="contact-grid">
           {/* Contact Form */}
           <div 
-            className="form-section"
+            className="form-section contact-form-card"
             style={{
               background: 'rgba(245, 245, 247, 0.8)',
               backdropFilter: 'blur(20px)',
@@ -301,7 +505,7 @@ const Contact = () => {
               boxShadow: '0 20px 60px rgba(0, 0, 0, 0.1)'
             }}
           >
-            <h2 style={{
+            <h2 className="contact-section-title" style={{
               fontSize: '32px',
               color: '#1d1d1f',
               marginBottom: '30px',
@@ -310,7 +514,7 @@ const Contact = () => {
             }}>
               Send us a message
             </h2>
-            <form onSubmit={handleSubmit} style={{
+            <form className="contact-form" onSubmit={handleSubmit} style={{
               display: 'flex',
               flexDirection: 'column',
               gap: '40px'
@@ -393,6 +597,7 @@ const Contact = () => {
                 />
               </div>
               <button
+                className="contact-submit"
                 type="submit"
                 onMouseEnter={() => setHoveredButton(true)}
                 onMouseLeave={() => setHoveredButton(false)}
@@ -422,7 +627,7 @@ const Contact = () => {
 
           {/* Contact Information */}
           <div className="contact-info-section">
-            <h2 style={{
+            <h2 className="contact-section-title" style={{
               fontSize: '32px',
               color: '#1d1d1f',
               marginBottom: '40px',
@@ -432,18 +637,19 @@ const Contact = () => {
               Get in touch
             </h2>
             
-            <div style={{
+            <div className="contact-list" style={{
               display: 'flex',
               flexDirection: 'column',
               gap: '24px'
             }}>
               {/* Contact Person */}
               <div 
+                className="contact-item"
                 style={getContactItemStyle('person')}
                 onMouseEnter={() => handleContactItemHover('person', true)}
                 onMouseLeave={() => handleContactItemHover('person', false)}
               >
-                <div style={{
+                <div className="contact-item-icon" style={{
                   width: '60px',
                   height: '60px',
                   background: 'linear-gradient(135deg, #007AFF, #00D4FF)',
@@ -460,8 +666,8 @@ const Contact = () => {
                     <path d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z" fill="white"/>
                   </svg>
                 </div>
-                <div>
-                  <h3 style={{
+                <div className="contact-item-content">
+                  <h3 className="contact-item-title" style={{
                     fontSize: '21px',
                     color: '#1d1d1f',
                     marginBottom: '8px',
@@ -470,7 +676,7 @@ const Contact = () => {
                   }}>
                     Contact Person
                   </h3>
-                  <p style={{
+                  <p className="contact-item-value" style={{
                     color: '#86868b',
                     fontSize: '18px',
                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
@@ -482,12 +688,13 @@ const Contact = () => {
 
               {/* WhatsApp */}
               <div 
+                className="contact-item"
                 style={getContactItemStyle('whatsapp')}
                 onMouseEnter={() => handleContactItemHover('whatsapp', true)}
                 onMouseLeave={() => handleContactItemHover('whatsapp', false)}
                 onClick={() => window.open('https://wa.me/8618505200972', '_blank')}
               >
-                <div style={{
+                <div className="contact-item-icon" style={{
                   width: '60px',
                   height: '60px',
                   background: 'linear-gradient(135deg, #25D366, #128C7E)',
@@ -503,8 +710,8 @@ const Contact = () => {
                     <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
                   </svg>
                 </div>
-                <div>
-                  <h3 style={{
+                <div className="contact-item-content">
+                  <h3 className="contact-item-title" style={{
                     fontSize: '21px',
                     color: '#1d1d1f',
                     marginBottom: '8px',
@@ -513,7 +720,7 @@ const Contact = () => {
                   }}>
                     WhatsApp
                   </h3>
-                  <p style={{
+                  <p className="contact-item-value" style={{
                     color: '#86868b',
                     fontSize: '18px',
                     fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
@@ -525,11 +732,12 @@ const Contact = () => {
 
               {/* WeChat */}
               <div 
+                className="contact-item"
                 style={getContactItemStyle('wechat')}
                 onMouseEnter={() => handleContactItemHover('wechat', true)}
                 onMouseLeave={() => handleContactItemHover('wechat', false)}
               >
-                <div style={{
+                <div className="contact-item-icon" style={{
                   width: '60px',
                   height: '60px',
                   background: 'linear-gradient(135deg, #1AAD19, #2BA245)',
@@ -546,8 +754,8 @@ const Contact = () => {
                     <path d="M0 6.826c0 1.455.781 2.765 2.001 3.656a.385.385 0 0 1 .143.439l-.161.6-.1.373a.5.5 0 0 0-.032.14.19.19 0 0 0 .193.193q.06 0 .111-.029l1.268-.733a.6.6 0 0 1 .308-.088q.088 0 .171.025a6.8 6.8 0 0 0 1.625.26 4.5 4.5 0 0 1-.177-1.251c0-2.936 2.785-5.02 5.824-5.02l.15.002C10.587 3.429 8.392 2 5.796 2 2.596 2 0 4.16 0 6.826m4.632-1.555a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0m3.875 0a.77.77 0 1 1-1.54 0 .77.77 0 0 1 1.54 0"/>
                     </svg>
                   </div>
-                  <div>
-                    <h3 style={{
+                  <div className="contact-item-content">
+                    <h3 className="contact-item-title" style={{
                       fontSize: '21px',
                       color: '#1d1d1f',
                       marginBottom: '8px',
@@ -556,7 +764,7 @@ const Contact = () => {
                     }}>
                       WeChat
                     </h3>
-                    <p style={{
+                    <p className="contact-item-value" style={{
                       color: '#86868b',
                       fontSize: '18px',
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
@@ -568,12 +776,13 @@ const Contact = () => {
 
                 {/* Email */}
                 <div 
+                  className="contact-item"
                   style={getContactItemStyle('email')}
                   onMouseEnter={() => handleContactItemHover('email', true)}
                   onMouseLeave={() => handleContactItemHover('email', false)}
                   onClick={() => window.open('mailto:pnsbilliardcloth@gmail.com', '_blank')}
                 >
-                  <div style={{
+                  <div className="contact-item-icon" style={{
                     width: '60px',
                     height: '60px',
                     background: 'linear-gradient(135deg, #4285F4, #34A853)',
@@ -589,8 +798,8 @@ const Contact = () => {
                       <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
                     </svg>
                   </div>
-                  <div>
-                    <h3 style={{
+                  <div className="contact-item-content">
+                    <h3 className="contact-item-title" style={{
                       fontSize: '21px',
                       color: '#1d1d1f',
                       marginBottom: '8px',
@@ -599,7 +808,7 @@ const Contact = () => {
                     }}>
                       Email
                     </h3>
-                    <p style={{
+                    <p className="contact-item-value" style={{
                       color: '#86868b',
                       fontSize: '18px',
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
@@ -611,7 +820,7 @@ const Contact = () => {
               </div>
 
               {/* Response Time */}
-              <div className="floating-element" style={{
+              <div className="floating-element contact-response-card" style={{
                 background: 'rgba(245, 245, 247, 0.8)',
                 backdropFilter: 'blur(20px)',
                 borderRadius: '20px',
@@ -635,7 +844,7 @@ const Contact = () => {
                     boxShadow: '0 0 10px rgba(52, 199, 89, 0.5)',
                     animation: 'pulse 2s ease-in-out infinite'
                   }} />
-                  <h4 style={{
+                  <h4 className="contact-response-title" style={{
                     fontSize: '19px',
                     color: '#1d1d1f',
                     fontWeight: 600,
@@ -644,7 +853,7 @@ const Contact = () => {
                     Quick Response
                   </h4>
                 </div>
-                <p style={{
+                <p className="contact-response-text" style={{
                   color: '#86868b',
                   fontSize: '18px',
                   lineHeight: 1.6,
@@ -658,12 +867,12 @@ const Contact = () => {
         </div>
 
         {/* Map Section */}
-        <div style={{
+        <div className="contact-location-section" style={{
           maxWidth: '1200px',
           margin: '0 auto',
           padding: '0 40px 64px',
         }}>
-          <div style={{
+          <div className="contact-location-card" style={{
             background: 'rgba(245, 245, 247, 0.8)',
             backdropFilter: 'blur(20px)',
             borderRadius: '28px',
@@ -671,13 +880,13 @@ const Contact = () => {
             border: '1px solid rgba(255, 255, 255, 0.2)',
             boxShadow: '0 20px 60px rgba(0, 0, 0, 0.1)'
           }}>
-            <div style={{
+            <div className="contact-location-list" style={{
               display: 'flex',
               flexDirection: 'column',
               gap: '24px'
             }}>
               {/* Factory Address */}
-              <div style={{
+              <div className="contact-address-card" style={{
                 background: 'rgba(255, 255, 255, 0.8)',
                 backdropFilter: 'blur(20px)',
                 borderRadius: '20px',
@@ -685,7 +894,7 @@ const Contact = () => {
                 border: '1px solid rgba(255, 255, 255, 0.2)',
                 boxShadow: '0 15px 40px rgba(0, 0, 0, 0.08)'
               }}>
-                <div style={{
+                <div className="contact-address-header" style={{
                   display: 'flex',
                   alignItems: 'center',
                   gap: '16px',
@@ -710,7 +919,7 @@ const Contact = () => {
                   flexDirection: 'column',
                   gap: '12px'
                 }}>
-                  <p style={{
+                  <p className="contact-address-text" style={{
                     color: '#1d1d1f',
                     fontSize: '18px',
                     margin: 0,
@@ -720,7 +929,7 @@ const Contact = () => {
                   }}>
                     No. 100, Huayang North Road, Jintan District, Changzhou City, Jiangsu Province, China
                   </p>
-                  <div style={{
+                  <div className="contact-meta-row" style={{
                     display: 'flex',
                     alignItems: 'center',
                     gap: '12px',
@@ -738,7 +947,7 @@ const Contact = () => {
                       Contact: Stevie Jiang
                     </span>
                   </div>
-                  <div style={{
+                  <div className="contact-meta-row" style={{
                     display: 'flex',
                     alignItems: 'center',
                     gap: '12px'
@@ -759,7 +968,7 @@ const Contact = () => {
               </div>
 
               {/* Guangzhou Office */}
-              <div style={{
+              <div className="contact-address-card" style={{
                 background: 'rgba(255, 255, 255, 0.8)',
                 backdropFilter: 'blur(20px)',
                 borderRadius: '20px',
@@ -767,7 +976,7 @@ const Contact = () => {
                 border: '1px solid rgba(255, 255, 255, 0.2)',
                 boxShadow: '0 15px 40px rgba(0, 0, 0, 0.08)'
               }}>
-                <div style={{
+                <div className="contact-address-header" style={{
                   display: 'flex',
                   alignItems: 'center',
                   gap: '16px',
@@ -792,7 +1001,7 @@ const Contact = () => {
                   flexDirection: 'column',
                   gap: '12px'
                 }}>
-                  <p style={{
+                  <p className="contact-address-text" style={{
                     color: '#1d1d1f',
                     fontSize: '18px',
                     margin: 0,
@@ -802,7 +1011,7 @@ const Contact = () => {
                   }}>
                     No. 64, Jinghu Avenue, Times Cloud Harbor, Huadu District, Guangzhou, Guangdong Province, China
                   </p>
-                  <div style={{
+                  <div className="contact-meta-row" style={{
                     display: 'flex',
                     alignItems: 'center',
                     gap: '12px',
@@ -820,7 +1029,7 @@ const Contact = () => {
                       Contact: Edwin Liu
                     </span>
                   </div>
-                  <div style={{
+                  <div className="contact-meta-row" style={{
                     display: 'flex',
                     alignItems: 'center',
                     gap: '12px'
