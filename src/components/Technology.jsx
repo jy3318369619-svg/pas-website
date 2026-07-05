@@ -270,7 +270,7 @@ const Technology = () => {
         <div id="hero" className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
           {/* Top spacing */}
           <div style={{ height: '96px' }}></div>
-          <div style={{ 
+          <div className="page-hero-section" style={{ 
             textAlign: 'center', 
             marginBottom: '72px',
             background: 'linear-gradient(135deg, #0A65A3, #1976D2)',
@@ -290,7 +290,7 @@ const Technology = () => {
               background: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2V6h4V4H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
               opacity: 0.1
             }} />
-            <h1 className="hero-title" style={{
+            <h1 className="hero-title page-hero-title" style={{
               fontSize: '88px',
               fontWeight: 700,
               marginBottom: '24px',
@@ -301,7 +301,7 @@ const Technology = () => {
             }}>
               Technology
             </h1>
-            <p style={{
+            <p className="page-hero-subtitle" style={{
               fontSize: '24px',
               marginBottom: '48px',
               maxWidth: '600px',

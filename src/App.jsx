@@ -18,17 +18,13 @@ import PNS900Detail from './components/PNS900Detail'
 import PNS988Detail from './components/PNS988Detail'
 import PNSGlovesDetail from './components/PNSGlovesDetail'
 
-function ScrollToHero() {
+function ScrollToTop() {
   const location = useLocation();
 
   useEffect(() => {
-    // 页面加载后滚动到hero区域
     const timer = setTimeout(() => {
-      const heroElement = document.getElementById('hero');
-      if (heroElement) {
-        heroElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100); // 短暂延迟确保DOM已渲染
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    }, 0);
 
     return () => clearTimeout(timer);
   }, [location.pathname]);
@@ -41,7 +37,7 @@ function App() {
     <Router>
       <div className="App">
         <Navigation />
-        <ScrollToHero />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

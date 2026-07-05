@@ -138,10 +138,61 @@ body {
   display: block;
 }
 
+.page-hero-section {
+  text-align: center;
+}
+
+.page-hero-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.page-hero-title {
+  margin: 0 0 24px !important;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 88px !important;
+  font-weight: 700;
+  line-height: 1.08 !important;
+  letter-spacing: 0 !important;
+}
+
+.page-hero-subtitle {
+  max-width: 760px;
+  margin: 0 auto !important;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 24px !important;
+  line-height: 1.55 !important;
+}
+
+.page-hero-subtitle-small {
+  display: block;
+  margin-top: 8px;
+  font-size: 19px;
+  line-height: 1.45;
+  opacity: 0.8;
+}
+
 @media (max-width: 1024px) {
   .container, .container-wide {
     padding-left: var(--container-padding-md) !important;
     padding-right: var(--container-padding-md) !important;
+  }
+
+  .page-hero-content {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .page-hero-title {
+    font-size: clamp(56px, 7vw, 72px) !important;
+    line-height: 1.1 !important;
+  }
+
+  .page-hero-subtitle {
+    font-size: 21px !important;
+    line-height: 1.55 !important;
   }
 
   h1 {
@@ -216,6 +267,32 @@ body {
   .container, .container-wide {
     padding-left: var(--container-padding-sm) !important;
     padding-right: var(--container-padding-sm) !important;
+  }
+
+  .page-hero-content {
+    max-width: 480px !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .page-hero-title {
+    margin-bottom: 16px !important;
+    font-size: clamp(46px, 10vw, 58px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: 0 !important;
+  }
+
+  .page-hero-subtitle {
+    max-width: 430px !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+    line-height: 1.55 !important;
+  }
+
+  .page-hero-subtitle-small {
+    margin-top: 8px !important;
+    font-size: 15px !important;
+    line-height: 1.45 !important;
   }
 
   /* Hero Titles */
@@ -452,6 +529,20 @@ body {
   .container, .container-wide {
     padding-left: var(--container-padding-xs) !important;
     padding-right: var(--container-padding-xs) !important;
+  }
+
+  .page-hero-content {
+    max-width: 360px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .page-hero-title {
+    font-size: clamp(42px, 11vw, 50px) !important;
+  }
+
+  .page-hero-subtitle {
+    font-size: 16px !important;
   }
 
   .footer-grid {

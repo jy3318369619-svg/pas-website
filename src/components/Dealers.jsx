@@ -495,9 +495,9 @@ const Dealers = () => {
         {/* Hero Section */}
         <div id="hero" style={heroStyle}>
           <div style={heroOverlayStyle}></div>
-          <div style={heroContentStyle}>
-            <h1 style={heroTitleStyle}>Our Distributors</h1>
-            <p style={heroSubtitleStyle}>
+          <div className="page-hero-content" style={heroContentStyle}>
+            <h1 className="page-hero-title" style={heroTitleStyle}>Our Distributors</h1>
+            <p className="page-hero-subtitle" style={heroSubtitleStyle}>
               Find authorized PNS distributors worldwide for premium billiard cloth and exceptional service.
             </p>
           </div>

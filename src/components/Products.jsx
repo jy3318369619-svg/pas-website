@@ -186,12 +186,12 @@ const Products = () => {
       }}>
         <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 40px' }}>
           {/* Hero Section */}
-          <div id="hero" style={{ 
+          <div id="hero" className="page-hero-section" style={{ 
             textAlign: 'center', 
             marginBottom: '56px',
             paddingTop: '176px'
           }}>
-            <h1 style={{
+            <h1 className="page-hero-title" style={{
               fontSize: '88px',
               fontWeight: 700,
               color: '#1d1d1f',
@@ -206,7 +206,7 @@ const Products = () => {
             }}>
               Our Products
             </h1>
-            <p style={{
+            <p className="page-hero-subtitle" style={{
               fontSize: '24px',
               color: '#86868b',
               maxWidth: '800px',
@@ -215,7 +215,7 @@ const Products = () => {
               animation: 'fadeInUp 1s ease-out 0.3s both'
             }}>
               Premium billiard cloths for Snooker, American Pool, Chinese Pool/Heyball games, and professional accessories.<br />
-              <span style={{ fontSize: '19px', opacity: 0.8 }}>Click on any category to explore our product collection.</span>
+              <span className="page-hero-subtitle-small" style={{ fontSize: '19px', opacity: 0.8 }}>Click on any category to explore our product collection.</span>
             </p>
           </div>
 

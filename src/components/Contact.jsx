@@ -226,17 +226,17 @@ const Contact = () => {
       }
 
       .contact-hero .hero-title {
-        font-size: 42px !important;
+        font-size: clamp(46px, 10vw, 58px) !important;
         line-height: 1.08 !important;
-        margin-bottom: 14px !important;
+        margin-bottom: 16px !important;
         letter-spacing: 0 !important;
       }
 
       .contact-hero-subtitle {
-        max-width: 330px !important;
+        max-width: 430px !important;
         padding: 0 !important;
-        font-size: 16px !important;
-        line-height: 1.5 !important;
+        font-size: 18px !important;
+        line-height: 1.55 !important;
       }
 
       .contact-grid {
@@ -402,7 +402,7 @@ const Contact = () => {
       }
 
       .contact-hero .hero-title {
-        font-size: 38px !important;
+        font-size: clamp(42px, 11vw, 50px) !important;
       }
 
       .contact-item {
@@ -452,7 +452,7 @@ const Contact = () => {
           {/* Hero Section */}
            <div 
              id="hero"
-             className="hero-section contact-hero"
+             className="hero-section contact-hero page-hero-section"
              style={{ 
                display: 'flex',
                alignItems: 'center',
@@ -462,8 +462,8 @@ const Contact = () => {
                marginBottom: '0px'
              }}
            >
-            <div>
-              <h1 className="hero-title" style={{
+            <div className="page-hero-content">
+              <h1 className="hero-title page-hero-title" style={{
             fontSize: '88px',
             fontWeight: 700,
             color: '#1d1d1f',
@@ -477,7 +477,7 @@ const Contact = () => {
           }}>
             Contact Us
           </h1>
-          <p className="contact-hero-subtitle" style={{
+          <p className="contact-hero-subtitle page-hero-subtitle" style={{
             fontSize: '24px',
             color: '#86868b',
             maxWidth: '800px',

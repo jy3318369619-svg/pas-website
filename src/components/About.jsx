@@ -266,9 +266,9 @@ const About = () => {
         {/* Hero Section */}
         <div id="hero" style={heroStyle}>
           <div style={heroOverlayStyle}></div>
-          <div style={heroContentStyle}>
-            <h1 style={heroTitleStyle}>About Us</h1>
-            <p style={heroSubtitleStyle}>Crafting world-class billiard cloths with precision, innovation, and heritage.</p>
+          <div className="page-hero-content" style={heroContentStyle}>
+            <h1 className="page-hero-title" style={heroTitleStyle}>About Us</h1>
+            <p className="page-hero-subtitle" style={heroSubtitleStyle}>Crafting world-class billiard cloths with precision, innovation, and heritage.</p>
           </div>
         </div>
 
