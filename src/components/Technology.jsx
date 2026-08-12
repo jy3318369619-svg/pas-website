@@ -215,6 +215,170 @@ const Technology = () => {
       box-shadow: 0 25px 50px rgba(10, 101, 163, 0.15);
     }
 
+    .technology-page {
+      background: linear-gradient(180deg, #ECEFF1 0%, #ffffff 48%, #ECEFF1 100%);
+      min-height: 100vh;
+      font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .technology-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .technology-top-spacer {
+      height: 112px;
+    }
+
+    .technology-hero {
+      text-align: center;
+      margin-bottom: 72px;
+      background: linear-gradient(135deg, #0A65A3, #1976D2);
+      border-radius: 28px;
+      padding: 76px 40px 68px;
+      color: #ffffff;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(10, 101, 163, 0.18);
+    }
+
+    .technology-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.14;
+    }
+
+    .technology-hero-title,
+    .technology-hero-subtitle {
+      position: relative;
+      z-index: 1;
+    }
+
+    .technology-hero-title {
+      font-size: clamp(64px, 8vw, 88px);
+      font-weight: 700;
+      line-height: 1.04;
+      margin: 0 0 18px;
+      letter-spacing: 0;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .technology-hero-subtitle {
+      font-size: clamp(20px, 2.4vw, 24px);
+      max-width: 620px;
+      margin: 0 auto;
+      line-height: 1.5;
+      opacity: 0.92;
+      animation: fadeInUp 1s ease-out 0.3s both;
+    }
+
+    .technology-sections {
+      display: flex;
+      flex-direction: column;
+      gap: 88px;
+      padding-bottom: 72px;
+    }
+
+    .tech-section {
+      display: grid;
+      grid-template-columns: minmax(320px, 0.92fr) minmax(0, 1fr);
+      gap: clamp(48px, 6vw, 80px);
+      align-items: center;
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition-delay: 0.2s;
+    }
+
+    .tech-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .tech-section.reverse .tech-media {
+      order: 2;
+    }
+
+    .tech-section.reverse .tech-content {
+      order: 1;
+    }
+
+    .tech-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 0;
+    }
+
+    .tech-media-card {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      padding: 36px;
+      box-shadow: 0 20px 40px rgba(10, 101, 163, 0.1);
+      border: 1px solid rgba(10, 101, 163, 0.1);
+    }
+
+    .tech-media img {
+      width: min(100%, 420px) !important;
+      max-height: 340px;
+      object-fit: contain;
+    }
+
+    .tech-content {
+      max-width: 620px;
+      min-width: 0;
+    }
+
+    .tech-label-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .tech-label {
+      background: linear-gradient(135deg, #0A65A3, #1976D2);
+      color: #ffffff;
+      padding: 6px 16px;
+      border-radius: 16px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .tech-scope {
+      background: #FFD700;
+      color: #0A0A0A;
+    }
+
+    .tech-title {
+      font-size: clamp(30px, 3.5vw, 40px);
+      font-weight: 700;
+      color: #0A0A0A;
+      margin: 0 0 18px;
+      line-height: 1.16;
+      letter-spacing: 0;
+    }
+
+    .tech-description {
+      font-size: 18px;
+      color: #555f66;
+      line-height: 1.68;
+      margin: 0 0 28px;
+    }
+
+    .tech-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+      align-items: center;
+    }
 
     .highlight-tag {
       background: linear-gradient(135deg, #0A65A3, #1976D2);
@@ -256,199 +420,179 @@ const Technology = () => {
       background: #0A65A3;
       color: white;
     }
+
+    @media (max-width: 900px) {
+      .technology-container {
+        padding: 0 24px;
+      }
+
+      .technology-top-spacer {
+        height: 104px;
+      }
+
+      .technology-hero {
+        margin-bottom: 56px;
+        border-radius: 24px;
+        padding: 58px 28px 54px;
+      }
+
+      .technology-sections {
+        gap: 64px;
+        padding-bottom: 56px;
+      }
+
+      .tech-section,
+      .tech-section.reverse {
+        grid-template-columns: 1fr;
+        gap: 26px;
+      }
+
+      .tech-section.reverse .tech-media,
+      .tech-section.reverse .tech-content {
+        order: initial;
+      }
+
+      .tech-content {
+        max-width: 680px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .tech-label-row,
+      .tech-highlights {
+        justify-content: center;
+      }
+
+      .tech-media img {
+        width: min(100%, 560px) !important;
+        max-height: 360px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .technology-container {
+        padding: 0 18px;
+      }
+
+      .technology-top-spacer {
+        height: 96px;
+      }
+
+      .technology-hero {
+        margin-bottom: 42px;
+        border-radius: 18px;
+        padding: 42px 18px 38px;
+      }
+
+      .technology-hero-title {
+        font-size: clamp(44px, 13vw, 56px);
+      }
+
+      .technology-hero-subtitle {
+        font-size: 17px;
+      }
+
+      .technology-sections {
+        gap: 52px;
+        padding-bottom: 44px;
+      }
+
+      .tech-section {
+        gap: 22px;
+      }
+
+      .tech-media-card {
+        padding: 22px;
+        border-radius: 18px;
+      }
+
+      .tech-media img {
+        width: 100% !important;
+        max-height: 280px;
+        border-radius: 16px !important;
+      }
+
+      .tech-title {
+        font-size: 28px;
+      }
+
+      .tech-description {
+        font-size: 16px;
+        line-height: 1.62;
+      }
+
+      .tech-label {
+        font-size: 12px;
+        padding: 6px 12px;
+      }
+
+      .highlight-tag {
+        font-size: 13px !important;
+        padding: 8px 12px !important;
+        border-radius: 18px !important;
+      }
+    }
   `;
 
   return (
     <>
       <style>{styles}</style>
-      <div style={{ 
-        background: 'linear-gradient(180deg, #ECEFF1 0%, #ffffff 50%, #ECEFF1 100%)', 
-        minHeight: '100vh',
-        fontFamily: "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
-      }}>
+      <div className="technology-page">
         {/* Hero Section */}
-        <div id="hero" className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 24px' }}>
+        <div id="hero" className="technology-container">
           {/* Top spacing */}
-          <div style={{ height: '96px' }}></div>
-          <div className="page-hero-section" style={{ 
-            textAlign: 'center', 
-            marginBottom: '72px',
-            background: 'linear-gradient(135deg, #0A65A3, #1976D2)',
-            borderRadius: '32px',
-            padding: '60px 40px',
-            paddingTop: '80px',
-            color: 'white',
-            position: 'relative',
-            overflow: 'hidden'
-          }}>
-            <div style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              background: 'url("data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2V6h4V4H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")',
-              opacity: 0.1
-            }} />
-            <h1 className="hero-title page-hero-title" style={{
-              fontSize: '88px',
-              fontWeight: 700,
-              marginBottom: '24px',
-              letterSpacing: '-0.03em',
-              position: 'relative',
-              zIndex: 1,
-              animation: 'fadeInUp 1s ease-out'
-            }}>
+          <div className="technology-top-spacer"></div>
+          <div className="technology-hero">
+            <h1 className="technology-hero-title">
               Technology
             </h1>
-            <p className="page-hero-subtitle" style={{
-              fontSize: '24px',
-              marginBottom: '48px',
-              maxWidth: '600px',
-              margin: '0 auto 48px',
-              lineHeight: 1.6,
-              opacity: 0.9,
-              position: 'relative',
-              zIndex: 1,
-              animation: 'fadeInUp 1s ease-out 0.3s both'
-            }}>
+            <p className="technology-hero-subtitle">
               Where precision meets durability.
             </p>
           </div>
 
           {/* Technology Sections */}
-          {technologies.map((tech, index) => (
+          <div className="technology-sections">
+            {technologies.map((tech, index) => {
+              const useMediaCard = !(tech.id === 'triple-ply' || tech.id === 'frame-walking' || tech.id === 'ultra-short-velvet' || tech.id === 'merino-wool');
+              const isVisible = visibleSections.has(tech.id);
+
+              return (
                 <div 
                   key={tech.id}
                   ref={el => sectionRefs.current[index] = el}
                   data-section={tech.id}
-                  className="tech-section"
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    marginBottom: index === technologies.length - 1 ? '40px' : '88px',
-                    flexDirection: index % 2 === 0 ? 'row' : 'row-reverse',
-                    gap: '80px',
-                    opacity: visibleSections.has(tech.id) ? 1 : 0,
-                    transform: visibleSections.has(tech.id) ? 'translateY(0)' : 'translateY(60px)',
-                    transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                    transitionDelay: '0.2s'
-                  }}
+                  className={`tech-section ${index % 2 === 1 ? 'reverse' : ''} ${isVisible ? 'visible' : ''}`}
                 >
-                  {(tech.id === 'triple-ply' || tech.id === 'frame-walking' || tech.id === 'ultra-short-velvet' || tech.id === 'merino-wool') ? (
-                    <div style={{
-                      flex: '0 0 auto',
-                      opacity: visibleSections.has(tech.id) ? 1 : 0,
-                      transform: visibleSections.has(tech.id) ? 'translateY(0)' : 'translateY(60px)',
-                      transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                      transitionDelay: `${0.4 + index * 0.1}s`
-                    }}>
-                      {tech.icon}
-                    </div>
-                  ) : (
-                    <div 
-                      style={{
-                        flex: '0 0 420px',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        background: 'rgba(255, 255, 255, 0.8)',
-                        backdropFilter: 'blur(20px)',
-                        borderRadius: '24px',
-                        padding: '40px',
-                        boxShadow: '0 20px 40px rgba(10, 101, 163, 0.1)',
-                        border: '1px solid rgba(10, 101, 163, 0.1)',
-                        opacity: visibleSections.has(tech.id) ? 1 : 0,
-                        transform: visibleSections.has(tech.id) 
-                          ? (index === 0 ? 'translateY(0)' : 'translateX(0) scale(1) rotate(0deg)')
-                          : (index === 0 ? 'translateY(60px)' : `translateX(${index % 2 === 0 ? '-100px' : '100px'}) scale(0.8) rotate(${index % 2 === 0 ? '-5deg' : '5deg'})`),
-                        transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                        transitionDelay: index === 0 ? '0.1s' : `${0.4 + index * 0.1}s`,
-                        overflow: 'hidden'
-                      }}>
-                        <div style={{
-                          transform: visibleSections.has(tech.id) ? 'scale(1)' : (index === 0 ? 'scale(0.9)' : 'scale(0.5)'),
-                          transition: 'transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-                          transitionDelay: index === 0 ? '0.2s' : `${0.6 + index * 0.1}s`
-                        }}>
-                          {tech.icon}
-                        </div>
-                      </div>
-                    )
-                  }
+                  <div className={`tech-media ${useMediaCard ? 'tech-media-card' : ''}`}>
+                    {tech.icon}
+                  </div>
                   
-                  <div className="tech-content" style={{ flex: 1, maxWidth: '600px' }}>
-                    <div style={{ marginBottom: '16px' }}>
-                      <span style={{
-                        background: 'linear-gradient(135deg, #0A65A3, #1976D2)',
-                        color: 'white',
-                        padding: '6px 16px',
-                        borderRadius: '16px',
-                        fontSize: '14px',
-                        fontWeight: 500,
-                        textTransform: 'uppercase',
-                        letterSpacing: '0.5px'
-                      }}>
+                  <div className="tech-content">
+                    <div className="tech-label-row">
+                      <span className="tech-label">
                         {tech.subtitle}
                       </span>
                       {tech.scope && (
-                        <span style={{
-                          background: '#FFD700',
-                          color: '#0A0A0A',
-                          padding: '6px 16px',
-                          borderRadius: '16px',
-                          fontSize: '14px',
-                          fontWeight: 500,
-                          marginLeft: '12px'
-                        }}>
+                        <span className="tech-label tech-scope">
                           {tech.scope}
                         </span>
                       )}
                     </div>
                     
-                    <h2 style={{
-                      fontSize: '36px',
-                      fontWeight: 700,
-                      color: '#0A0A0A',
-                      marginBottom: '24px',
-                      lineHeight: 1.2
-                    }}>
+                    <h2 className="tech-title">
                       {tech.title}
                     </h2>
                     
-                    <p style={{
-                      fontSize: '18px',
-                      color: '#666',
-                      lineHeight: 1.6,
-                      marginBottom: '32px'
-                    }}>
+                    <p className="tech-description">
                       {tech.description}
                     </p>
                     
-                    <div style={{ 
-                      display: 'flex', 
-                      flexWrap: 'wrap', 
-                      gap: '12px',
-                      marginTop: '8px',
-                      justifyContent: 'flex-start',
-                      alignItems: 'center'
-                    }}>
+                    <div className="tech-highlights">
                       {tech.highlights.map((highlight, idx) => (
                         <span 
                           key={idx} 
                           className="highlight-tag"
-                          style={{
-                            background: 'linear-gradient(135deg, #0A65A3, #1976D2)',
-                            color: 'white',
-                            padding: '10px 18px',
-                            borderRadius: '25px',
-                            fontSize: '15px',
-                            fontWeight: '600',
-                            display: 'inline-block',
-                            boxShadow: '0 4px 12px rgba(10, 101, 163, 0.25)',
-                            transition: 'all 0.3s ease',
-                            cursor: 'default'
-                          }}
                         >
                           {highlight}
                         </span>
@@ -456,10 +600,9 @@ const Technology = () => {
                     </div>
                   </div>
                 </div>
-              ))}
-
-          {/* Bottom spacing */}
-          <div style={{ height: '56px' }}></div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

@@ -99,7 +99,7 @@ const PNS760Detail = () => {
                 marginBottom: '30px',
                 fontWeight: 600
               }}>
-                Basic Model
+                Advanced Model
               </p>
 
               <div style={{
@@ -111,7 +111,7 @@ const PNS760Detail = () => {
                   lineHeight: 1.6,
                   marginBottom: '20px'
                 }}>
-                  The smart start for clubs and players. This cloth offers exceptional durability and reliable performance for recreational and competitive pool play.
+                  Engineered for greater precision and consistent club performance. This advanced pool cloth offers exceptional durability and reliable performance for recreational and competitive play.
                 </p>
               </div>
 

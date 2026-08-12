@@ -16,6 +16,10 @@ import PNS990Detail from './components/PNS990Detail'
 import PNS760Detail from './components/PNS760Detail'
 import PNS900Detail from './components/PNS900Detail'
 import PNS988Detail from './components/PNS988Detail'
+import PyramidKadilun300Detail from './components/PyramidKadilun300Detail'
+import PyramidKadilun500Detail from './components/PyramidKadilun500Detail'
+import PyramidPNS760Detail from './components/PyramidPNS760Detail'
+import PyramidPNS900Detail from './components/PyramidPNS900Detail'
 import PNSGlovesDetail from './components/PNSGlovesDetail'
 
 function ScrollToTop() {
@@ -53,6 +57,10 @@ function App() {
           <Route path="/pns-760" element={<PNS760Detail />} />
           <Route path="/pns-900" element={<PNS900Detail />} />
           <Route path="/pns-988" element={<PNS988Detail />} />
+          <Route path="/pyramid-kadilun-300" element={<PyramidKadilun300Detail />} />
+          <Route path="/pyramid-kadilun-500" element={<PyramidKadilun500Detail />} />
+          <Route path="/pyramid-pns-760" element={<PyramidPNS760Detail />} />
+          <Route path="/pyramid-pns-900" element={<PyramidPNS900Detail />} />
           <Route path="/pns-gloves" element={<PNSGlovesDetail />} />
         </Routes>
         <Footer />

@@ -100,7 +100,7 @@ const PNS900Detail = () => {
                 marginBottom: '30px',
                 fontWeight: 600
               }}>
-                Advanced Model
+                Professional Grade
               </p>
 
               <div style={{
@@ -112,7 +112,7 @@ const PNS900Detail = () => {
                   lineHeight: 1.6,
                   marginBottom: '20px'
                 }}>
-                  Engineered for greater precision. This advanced pool cloth delivers exceptional ball control and superior performance for competitive and recreational play.
+                  Designed for superior control and competitive play. This professional-grade pool cloth delivers exceptional ball control and reliable performance for demanding club environments.
                 </p>
               </div>
 

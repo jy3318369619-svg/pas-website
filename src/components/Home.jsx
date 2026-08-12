@@ -76,6 +76,11 @@ const Home = () => {
   // 处理Learn More按钮点击
   const handleLearnMore = (product) => {
     // Snooker、Pool和Chinese pool分类的产品都有详情页面
+    if (product.detailPath) {
+      navigate(product.detailPath);
+      return;
+    }
+
     if (activeProductCategory === 'snooker' || activeProductCategory === 'woollen' || activeProductCategory === 'gloves') {
       const productSlug = product.title.toLowerCase().replace(/\s+/g, '-');
       navigate(`/${productSlug}`);
@@ -124,7 +129,7 @@ const Home = () => {
     woollen: [
       {
         title: 'PNS 760',
-        description: 'Basic Model — The Smart Start for Clubs and Players',
+        description: 'Advanced Model — Engineered for greater precision and consistent club performance',
         color: '#AF52DE',
         gradient: 'linear-gradient(135deg, #AF52DE, #FF2D92)',
         image: '/images/pns 760-electric blue.png',
@@ -137,7 +142,7 @@ const Home = () => {
       },
       {
         title: 'PNS 900',
-        description: 'Advanced Model — Engineered for Greater Precision',
+        description: 'Professional Grade — Designed for superior control and competitive play',
         color: '#5AC8FA',
         gradient: 'linear-gradient(135deg, #5AC8FA, #007AFF)',
         image: '/images/PNS 900 Electric blue.png',
@@ -153,7 +158,7 @@ const Home = () => {
       },
       {
         title: 'PNS 988',
-        description: 'Professional Grade — Setting the Standard for Elite Play',
+        description: 'Elite Grade — Setting the standard for elite pool performance',
         color: '#FF3B30',
         gradient: 'linear-gradient(135deg, #FF3B30, #FF9500)',
         image: '/images/PNS 988 Electric blue.png',
@@ -167,6 +172,40 @@ const Home = () => {
           { name: 'Pink', value: '#FF2D92' },
           { name: 'Black', value: '#1D1D1F' }
         ]
+      }
+    ],
+    pyramid: [
+      {
+        title: 'KADILUN 300',
+        description: 'Basic Model — Durable and economical cloth for recreational clubs and high-frequency commercial use',
+        color: '#2E7D32',
+        gradient: 'linear-gradient(135deg, #2E7D32, #43A047)',
+        image: '/images/kadilun-300-pyramid.png',
+        detailPath: '/pyramid-kadilun-300'
+      },
+      {
+        title: 'KADILUN 500',
+        description: 'Standard Model — Smoother surface, improved ball control, and balanced durability for regular club play',
+        color: '#2E7D32',
+        gradient: 'linear-gradient(135deg, #2E7D32, #43A047)',
+        image: '/images/kadilun-500-pyramid.png',
+        detailPath: '/pyramid-kadilun-500'
+      },
+      {
+        title: 'PNS 760',
+        description: 'Advanced Model — Fast, consistent ball roll and refined response for advanced players and clubs',
+        color: '#2E7D32',
+        gradient: 'linear-gradient(135deg, #2E7D32, #43A047)',
+        image: '/images/pns-760-pyramid.png',
+        detailPath: '/pyramid-pns-760'
+      },
+      {
+        title: 'PNS 900',
+        description: 'Professional Grade — Premium consistency, precision, and durability for tournaments and elite players',
+        color: '#2E7D32',
+        gradient: 'linear-gradient(135deg, #2E7D32, #43A047)',
+        image: '/images/pns-900-pyramid.png',
+        detailPath: '/pyramid-pns-900'
       }
     ],
     gloves: [
@@ -424,14 +463,224 @@ const Home = () => {
     .partner-card:hover .partner-logo-img {
       opacity: 1;
     }
+
+    .home-hero {
+      min-height: min(760px, 88vh);
+    }
+
+    .home-hero-inner {
+      max-width: 1120px !important;
+    }
+
+    .home-section {
+      padding: 88px 0 !important;
+    }
+
+    .home-section-compact {
+      padding-top: 72px !important;
+    }
+
+    .home-container {
+      max-width: 1200px !important;
+      padding-left: 32px !important;
+      padding-right: 32px !important;
+    }
+
+    .home-section-header {
+      max-width: 860px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-bottom: 48px !important;
+    }
+
+    .home-section-header p {
+      max-width: 760px !important;
+    }
+
+    .home-product-tabs {
+      gap: 12px !important;
+      margin-bottom: 42px !important;
+      max-width: 980px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .home-product-tab {
+      min-height: 44px;
+      white-space: nowrap;
+    }
+
+    .home-product-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+      gap: 28px !important;
+      max-width: 1180px !important;
+      padding: 0 !important;
+    }
+
+    .home-product-card {
+      padding: 22px 22px 28px !important;
+      border-radius: 18px !important;
+    }
+
+    .home-product-image {
+      width: 100% !important;
+      height: 240px !important;
+      margin-bottom: 18px !important;
+    }
+
+    .home-ambassadors-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+      gap: 22px !important;
+    }
+
+    .home-ambassador-card {
+      padding: 18px !important;
+      border-radius: 16px !important;
+    }
+
+    .home-ambassador-photo {
+      aspect-ratio: 4 / 4.65 !important;
+    }
+
+    @media (max-width: 1100px) {
+      .home-product-grid,
+      .home-ambassadors-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+
+      .home-product-image {
+        height: 230px !important;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .home-hero {
+        min-height: auto !important;
+        padding: 128px 0 92px !important;
+      }
+
+      .home-hero-inner {
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+        transform: none !important;
+      }
+
+      .home-hero-eyebrow {
+        margin-bottom: 14px !important;
+      }
+
+      .home-hero-copy {
+        margin-bottom: 30px !important;
+      }
+
+      .home-hero-actions {
+        gap: 12px !important;
+      }
+
+      .home-hero-actions button {
+        width: 100%;
+        max-width: 280px;
+      }
+
+      .home-section,
+      .home-section-compact {
+        padding: 58px 0 !important;
+      }
+
+      .home-container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      .home-section-header {
+        margin-bottom: 34px !important;
+      }
+
+      .home-section-header p {
+        font-size: 16px !important;
+        line-height: 1.58 !important;
+        padding: 0 !important;
+      }
+
+      .home-product-tabs {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px !important;
+      }
+
+      .home-product-tab {
+        width: 100%;
+        min-height: 46px;
+        padding: 10px 12px !important;
+        font-size: 12px !important;
+        letter-spacing: 0 !important;
+      }
+
+      .home-product-grid,
+      .home-ambassadors-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+      }
+
+      .home-product-card {
+        padding: 18px 18px 24px !important;
+      }
+
+      .home-product-image {
+        height: 210px !important;
+      }
+
+      .home-ambassador-card {
+        padding: 18px !important;
+      }
+
+      .home-ambassador-photo {
+        aspect-ratio: 4 / 4.25 !important;
+        max-height: 420px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .home-hero {
+        padding: 116px 0 76px !important;
+      }
+
+      .home-hero-copy p:first-child {
+        font-size: 17px !important;
+      }
+
+      .home-hero-copy p:last-child {
+        font-size: 15px !important;
+      }
+
+      .home-product-tabs {
+        grid-template-columns: 1fr;
+      }
+
+      .home-product-image {
+        height: 190px !important;
+      }
+
+      .home-product-card h3 {
+        font-size: 18px !important;
+      }
+
+      .home-product-card p {
+        font-size: 13px !important;
+      }
+
+      .home-ambassador-photo {
+        max-height: 360px;
+      }
+    }
   `;
 
   return (
     <>
       <style>{styles}</style>
-      <div>
+      <div className="home-page">
         {/* Hero Section */}
-        <section id="hero" style={{
+        <section id="hero" className="home-hero" style={{
           background: '#000000', // 简化背景色
           padding: '152px 0 144px',
           display: 'flex',
@@ -471,7 +720,7 @@ const Home = () => {
             zIndex: 2
           }} />
           
-          <div className="container" style={{
+          <div className="container home-hero-inner" style={{
             maxWidth: '1200px',
             width: '100%',
             padding: '0 40px',
@@ -481,7 +730,7 @@ const Home = () => {
             transform: `translateY(${-scrollY * 0.2}px)`,
             transition: 'transform 0.1s ease-out'
           }}>
-            <div style={{ 
+            <div className="home-hero-eyebrow" style={{ 
               marginBottom: '20px',
               animation: 'fadeInUp 1s ease-out'
             }}>
@@ -508,7 +757,7 @@ const Home = () => {
               animation: 'fadeInUp 1s ease-out 0.3s both'
             }} />
             
-            <div style={{
+            <div className="home-hero-copy" style={{
               marginBottom: '40px',
               maxWidth: '800px',
               marginLeft: 'auto',
@@ -537,7 +786,7 @@ const Home = () => {
               </p>
             </div>
             
-            <div style={{
+            <div className="home-hero-actions" style={{
               display: 'flex',
               gap: '16px',
               justifyContent: 'center',
@@ -594,6 +843,7 @@ const Home = () => {
 
         {/* About Us Section */}
         <section 
+          className="home-section"
           ref={el => sectionRefs.current[0] = el}
           data-section="about"
           style={{
@@ -604,12 +854,12 @@ const Home = () => {
             transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
           }}
         >
-          <div className="container" style={{
+          <div className="container home-container" style={{
             maxWidth: '1200px',
             margin: '0 auto',
             padding: '0 40px'
           }}>
-            <div style={{
+            <div className="home-section-header" style={{
               textAlign: 'center',
               marginBottom: '56px'
             }}>
@@ -683,6 +933,7 @@ const Home = () => {
 
         {/* Products Section */}
         <section 
+          className="home-section"
           id="products"
           ref={el => sectionRefs.current[1] = el}
           data-section="products"
@@ -694,12 +945,12 @@ const Home = () => {
             transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s'
           }}
         >
-          <div className="container" style={{
+          <div className="container home-container" style={{
             maxWidth: '1200px',
             margin: '0 auto',
             padding: '0 40px'
           }}>
-            <div style={{
+            <div className="home-section-header" style={{
               textAlign: 'center',
               marginBottom: '56px'
             }}>
@@ -730,14 +981,14 @@ const Home = () => {
               </p>
               
               {/* Product Category Buttons */}
-              <div style={{
+              <div className="home-product-tabs" style={{
                 display: 'flex',
                 gap: '16px',
                 justifyContent: 'center',
                 flexWrap: 'wrap',
                 marginBottom: '40px'
               }}>
-                <button 
+                <button className="home-product-tab"
                   style={{
                     background: activeProductCategory === 'snooker' 
                       ? '#0056CC' 
@@ -764,7 +1015,7 @@ const Home = () => {
                 >
                   SNOOKER
                 </button>
-                <button 
+                <button className="home-product-tab"
                   style={{
                     background: activeProductCategory === 'woollen' 
                       ? '#0056CC' 
@@ -791,7 +1042,34 @@ const Home = () => {
                 >
                   AMERICAN POOL
                 </button>
-                <button 
+                <button className="home-product-tab"
+                  style={{
+                    background: activeProductCategory === 'pyramid' 
+                      ? '#0056CC' 
+                      : (hoveredButtons[6] ? '#0056CC' : '#007BFF'),
+                    color: '#FFFFFF',
+                    padding: '12px 24px',
+                    borderRadius: '8px',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    border: activeProductCategory === 'pyramid' ? '2px solid #0056CC' : 'none',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+                    fontFamily: "'Montserrat', sans-serif",
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px',
+                    boxShadow: (activeProductCategory === 'pyramid' || hoveredButtons[6])
+                      ? '0 6px 20px rgba(0, 123, 255, 0.4)' 
+                      : '0 3px 12px rgba(0, 123, 255, 0.3)',
+                    transform: (activeProductCategory === 'pyramid' || hoveredButtons[6]) ? 'translateY(-2px)' : 'translateY(0)'
+                  }}
+                  onClick={() => handleProductCategoryChange('pyramid')}
+                  onMouseEnter={() => handleButtonHover(6, true)}
+                  onMouseLeave={() => handleButtonHover(6, false)}
+                >
+                  PYRAMID
+                </button>
+                <button className="home-product-tab"
                   style={{
                     background: activeProductCategory === 'gloves' 
                       ? '#0056CC' 
@@ -818,7 +1096,7 @@ const Home = () => {
                 >
                   CHINESE POOL/HEYBALL
                 </button>
-                <button 
+                <button className="home-product-tab"
                   style={{
                     background: hoveredButtons[5] ? '#0056CC' : '#007BFF',
                     color: '#FFFFFF',
@@ -846,7 +1124,7 @@ const Home = () => {
               </div>
             </div>
             
-            <div style={{
+            <div className="product-grid home-product-grid" style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(2, 1fr)',
               gap: '50px',
@@ -854,10 +1132,10 @@ const Home = () => {
               margin: '0 auto',
               padding: '0 20px'
             }}
-            className="product-grid"
             >
               {productCategories[activeProductCategory].map((product, index) => (
                 <SpotlightCard 
+                  className="home-product-card"
                   key={`${activeProductCategory}-${index}`}
                   spotlightColor={`${product.color}24`}
                   style={{
@@ -893,6 +1171,7 @@ const Home = () => {
                   {/* Image Area */}
                   {product.image ? (
                     <img 
+                      className="home-product-image"
                        src={product.image}
                       alt={product.title}
                        style={{
@@ -986,6 +1265,7 @@ const Home = () => {
 
         {/* Ambassadors & Partnerships Section */}
         <section 
+          className="home-section home-section-compact"
           ref={el => sectionRefs.current[2] = el}
           data-section="ambassadors"
           style={{
@@ -997,12 +1277,12 @@ const Home = () => {
             transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s'
           }}
         >
-          <div className="container" style={{
+          <div className="container home-container" style={{
             maxWidth: '1200px',
             margin: '0 auto',
             padding: '0 40px'
           }}>
-            <div style={{
+            <div className="home-section-header" style={{
               textAlign: 'center',
               marginBottom: '56px'
             }}>
@@ -1027,7 +1307,7 @@ const Home = () => {
             </div>
             
             {/* Ambassadors Grid */}
-            <div className="ambassadors-grid" style={{
+            <div className="ambassadors-grid home-ambassadors-grid" style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
               gap: '30px',
@@ -1070,20 +1350,6 @@ const Home = () => {
                   ]
                 },
                 { 
-                  name: 'Johann Chua', 
-                  country: 'Philippines', 
-                  color: '#007BFF',
-                  photo: '/images/johann chua.jpg',
-                  achievements: [
-                    'Champion — 2015, 2017 All Japan Championship (Ten-ball)',
-                    'Champion — 2021 SEA Games, 9-Ball Singles',
-                    'Champion — 2022 WPA World Mixed Teams Ten-Ball (Philippines team)',
-                    'Champion — 2023 World Cup of Pool (with James Aranas)',
-                    'Champion — 2024 Hanoi Open, Shanghai Zen & Yuan8 Open, Ibalong Festival 9-Ball',
-                    'Champion — 2025 Knight Shot Dubai Open, Battle of the Bull, Hoang Phu Tho Pool Arena Open (9-Ball)'
-                  ]
-                },
-                { 
                   name: 'Andri Januarta', 
                   country: 'Indonesia', 
                   color: '#007BFF',
@@ -1120,7 +1386,7 @@ const Home = () => {
                 }
               ].map((ambassador, index) => (
                 <SpotlightCard 
-                  className="ambassador-card"
+                  className="ambassador-card home-ambassador-card"
                   key={index}
                   spotlightColor="rgba(0, 123, 255, 0.16)"
                   style={{ 
@@ -1150,6 +1416,7 @@ const Home = () => {
                   
                   {/* Ambassador Photo - 4:5 ratio */}
                   <img 
+                    className="home-ambassador-photo"
                     src={ambassador.photo}
                     alt={ambassador.name}
                     style={{
@@ -1279,6 +1546,7 @@ const Home = () => {
 
         {/* Our Partners Section - 滚动展示合作伙伴 */}
         <section
+          className="home-section home-section-compact"
           ref={el => sectionRefs.current[3] = el}
           data-section="partners"
           style={{
@@ -1290,7 +1558,7 @@ const Home = () => {
             transition: 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)'
           }}
         >
-          <div style={{
+          <div className="home-section-header home-container" style={{
             textAlign: 'center',
             maxWidth: '1200px',
             margin: '0 auto 48px auto',

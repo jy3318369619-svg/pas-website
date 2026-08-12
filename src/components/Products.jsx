@@ -53,8 +53,13 @@ const Products = () => {
   };
 
   // 处理产品项目点击
-  const handleProductItemClick = (productName, categoryId) => {
-    // Snooker、Chinese Pool、Pool和Other Accessories都有详情页
+  const handleProductItemClick = (productName, categoryId, detailPath) => {
+    if (detailPath) {
+      navigate(detailPath);
+      return;
+    }
+
+    // Snooker、Chinese Pool、American Pool、Pyramid和Other Accessories都有详情页
     if (categoryId === 'snooker' || categoryId === 'chinese-pool' || categoryId === 'pool' || categoryId === 'other-accessories') {
       if (categoryId === 'other-accessories' && productName === 'Baekeland Balls') {
         window.open('https://www.baekelandballs.com', '_blank', 'noopener,noreferrer');
@@ -87,9 +92,22 @@ const Products = () => {
       gradient: '#1565C0',
       color: '#1565C0',
       productList: [
-        { name: 'PNS 760', description: 'Basic Model — The Smart Start for Clubs and Players' },
-        { name: 'PNS 900', description: 'Advanced Model — Engineered for Greater Precision' },
-        { name: 'PNS 988', description: 'Professional Grade — Setting the Standard for Elite Play' }
+        { name: 'PNS 760', description: 'Advanced Model — Engineered for greater precision and consistent club performance', detailPath: '/pns-760' },
+        { name: 'PNS 900', description: 'Professional Grade — Designed for superior control and competitive play', detailPath: '/pns-900' },
+        { name: 'PNS 988', description: 'Elite Grade — Setting the standard for elite pool performance' }
+      ]
+    },
+    {
+      id: 'pyramid',
+      name: 'Pyramid',
+      description: 'Dedicated pyramid cloth for the distinctive demands of Russian pyramid play. Built for stable ball response, durable table coverage, and confident control.',
+      gradient: '#2E7D32',
+      color: '#2E7D32',
+      productList: [
+        { name: 'KADILUN 300', description: 'Basic Model — Durable and economical cloth for recreational clubs and high-frequency commercial use', detailPath: '/pyramid-kadilun-300' },
+        { name: 'KADILUN 500', description: 'Standard Model — Smoother surface, improved ball control, and balanced durability for regular club play', detailPath: '/pyramid-kadilun-500' },
+        { name: 'PNS 760', description: 'Advanced Model — Fast, consistent ball roll and refined response for advanced players and clubs', detailPath: '/pyramid-pns-760' },
+        { name: 'PNS 900', description: 'Professional Grade — Premium consistency, precision, and durability for tournaments and elite players', detailPath: '/pyramid-pns-900' }
       ]
     },
     {
@@ -214,7 +232,7 @@ const Products = () => {
               lineHeight: 1.5,
               animation: 'fadeInUp 1s ease-out 0.3s both'
             }}>
-              Premium billiard cloths for Snooker, American Pool, Chinese Pool/Heyball games, and professional accessories.<br />
+              Premium billiard cloths for Snooker, American Pool, Pyramid, Chinese Pool/Heyball games, and professional accessories.<br />
               <span className="page-hero-subtitle-small" style={{ fontSize: '19px', opacity: 0.8 }}>Click on any category to explore our product collection.</span>
             </p>
           </div>
@@ -349,7 +367,7 @@ const Products = () => {
                   }}>
                     {product.productList.map((item, itemIndex) => {
                       const itemKey = `${product.id}-${itemIndex}`;
-                      const hasDetailPage = product.id === 'snooker' || product.id === 'chinese-pool' || product.id === 'pool' || product.id === 'other-accessories';
+                      const hasDetailPage = Boolean(item.detailPath) || product.id === 'snooker' || product.id === 'chinese-pool' || product.id === 'pool' || product.id === 'other-accessories';
                       
                       return (
                         <div 
@@ -371,7 +389,7 @@ const Products = () => {
                           }}
                           onMouseEnter={() => hasDetailPage && handleProductItemHover(itemKey, true)}
                           onMouseLeave={() => hasDetailPage && handleProductItemHover(itemKey, false)}
-                          onClick={() => handleProductItemClick(item.name, product.id)}
+                          onClick={() => handleProductItemClick(item.name, product.id, item.detailPath)}
                         >
                           <h4 style={{
                             fontSize: '1.2em',

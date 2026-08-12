@@ -98,7 +98,7 @@ const PNS988Detail = () => {
                 marginBottom: '30px',
                 fontWeight: 600
               }}>
-                Professional Grade
+                Elite Grade
               </p>
 
               <div style={{
@@ -110,7 +110,7 @@ const PNS988Detail = () => {
                   lineHeight: 1.6,
                   marginBottom: '20px'
                 }}>
-                  Setting the standard for elite play. This professional-grade cloth delivers exceptional performance and precision for tournament-level pool competitions.
+                  Setting the standard for elite pool performance. This elite-grade cloth delivers exceptional performance and precision for tournament-level pool competitions.
                 </p>
               </div>
 
