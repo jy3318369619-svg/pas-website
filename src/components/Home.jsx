@@ -266,6 +266,7 @@ const Home = () => {
     }
   ];
   const hasMultiplePartners = partners.length > 1;
+  const partnerLoopGroups = hasMultiplePartners ? 4 : 1;
 
   const renderPartner = (partner, i) => (
     <SpotlightCard className="partner-card" key={i} spotlightColor="rgba(0, 123, 255, 0.14)" style={{
@@ -434,11 +435,12 @@ const Home = () => {
 
     @keyframes partnerScroll {
       from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
+      to { transform: translateX(-25%); }
     }
 
     .partner-track {
-      animation: partnerScroll 35s linear infinite;
+      animation: partnerScroll 28s linear infinite;
+      will-change: transform;
     }
 
     .partner-marquee:hover .partner-track {
@@ -1598,14 +1600,16 @@ const Home = () => {
               width: hasMultiplePartners ? 'max-content' : '100%',
               animation: hasMultiplePartners ? undefined : 'none'
             }}>
-              <div className="partner-group" style={{ display: 'flex', gap: '24px', paddingRight: '24px' }}>
-                {partners.map(renderPartner)}
-              </div>
-              {hasMultiplePartners && (
-                <div className="partner-group" aria-hidden="true" style={{ display: 'flex', gap: '24px', paddingRight: '24px' }}>
-                  {partners.map(renderPartner)}
+              {Array.from({ length: partnerLoopGroups }).map((_, groupIndex) => (
+                <div
+                  className="partner-group"
+                  key={`partner-group-${groupIndex}`}
+                  aria-hidden={groupIndex > 0 ? 'true' : undefined}
+                  style={{ display: 'flex', flexShrink: 0, gap: '24px', paddingRight: '24px' }}
+                >
+                  {partners.map((partner, partnerIndex) => renderPartner(partner, `${groupIndex}-${partnerIndex}`))}
                 </div>
-              )}
+              ))}
             </div>
           </div>
         </section>
