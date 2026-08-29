@@ -769,7 +769,7 @@ const Contact = () => {
                       fontSize: '18px',
                       fontFamily: "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
                     }}>
-                      pns_stevie
+                      Jy_stevie
                     </p>
                   </div>
                 </div>
