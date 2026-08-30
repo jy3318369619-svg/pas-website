@@ -75,7 +75,7 @@ const Dealers = () => {
       gradient: '#000000',
       countries: [
         { 
-          name: 'Gulf Cooperation Council (GCC)', 
+          name: 'United Arab Emirates', 
           dealers: (
             <>
               <strong>Dubai Snooker Club</strong><br />
