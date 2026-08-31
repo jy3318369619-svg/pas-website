@@ -255,7 +255,7 @@ const Footer = () => {
             fontSize: '0.9em',
             textAlign: 'center'
           }}>
-            © 2025 PNS Billiard Cloth. All rights reserved.
+            © 2026 PNS Billiard Cloth. All rights reserved.
           </div>
         </div>
       </div>

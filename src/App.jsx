@@ -36,6 +36,61 @@ function ScrollToTop() {
   return null;
 }
 
+const productDetailPaths = new Set([
+  '/pns-520',
+  '/pns-600',
+  '/pns-720',
+  '/pns-s147',
+  '/pns-990',
+  '/pns-760',
+  '/pns-900',
+  '/pns-988',
+  '/pyramid-kadilun-300',
+  '/pyramid-kadilun-500',
+  '/pyramid-pns-760',
+  '/pyramid-pns-900',
+  '/pns-gloves'
+]);
+
+function ProductDetailDisclaimer() {
+  const location = useLocation();
+
+  if (!productDetailPaths.has(location.pathname)) {
+    return null;
+  }
+
+  return (
+    <section
+      style={{
+        background: '#ffffff',
+        padding: '0 40px 64px'
+      }}
+    >
+      <div
+        style={{
+          maxWidth: '960px',
+          margin: '0 auto',
+          padding: '18px 24px',
+          border: '1px solid rgba(0, 0, 0, 0.08)',
+          borderRadius: '12px',
+          background: '#f8f9fa',
+          color: '#6e6e73',
+          fontSize: '0.9rem',
+          lineHeight: 1.6,
+          textAlign: 'center'
+        }}
+      >
+        <p style={{ margin: '0 0 6px' }}>
+          All product details are provided for reference only. Actual specifications may vary slightly.
+        </p>
+        <p style={{ margin: 0 }}>
+          Changzhou Perez Textile Co., Ltd. reserves the final right of interpretation and may adjust production technology or product details based on market feedback.
+        </p>
+      </div>
+    </section>
+  );
+}
+
 function App() {
   return (
     <Router>
@@ -63,6 +118,7 @@ function App() {
           <Route path="/pyramid-pns-900" element={<PyramidPNS900Detail />} />
           <Route path="/pns-gloves" element={<PNSGlovesDetail />} />
         </Routes>
+        <ProductDetailDisclaimer />
         <Footer />
       </div>
     </Router>
