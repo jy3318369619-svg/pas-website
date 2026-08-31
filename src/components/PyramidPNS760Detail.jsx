@@ -14,7 +14,7 @@ const PyramidPNS760Detail = () => {
   }, []);
 
   const specs = [
-    { label: 'Weight', value: '755g/m (26.6oz/m)' },
+    { label: 'Weight', value: '780g/m (27.5oz/m)' },
     { label: 'Composition', value: '60% Wool\n40% Nylon' },
     { label: 'Width', value: '1.95m' },
     { label: 'Table Size', value: '3.85m bed cloth + 0.17m cushion cloth × 6' }

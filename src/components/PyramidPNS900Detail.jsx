@@ -14,7 +14,7 @@ const PyramidPNS900Detail = () => {
   }, []);
 
   const specs = [
-    { label: 'Weight', value: '755g/m (26.6oz/m)' },
+    { label: 'Weight', value: '780g/m (27.5oz/m)' },
     { label: 'Composition', value: '80% Wool\n20% Nylon' },
     { label: 'Width', value: '1.95m' },
     { label: 'Table Size', value: '3.85m bed cloth + 0.17m cushion cloth × 6' }
