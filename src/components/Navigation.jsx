@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navigation = () => {
   const location = useLocation();
@@ -98,6 +99,11 @@ const Navigation = () => {
       marginTop: isMobile ? '20px' : 0,
       justifyContent: 'center'
     },
+    rightActions: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '18px'
+    },
     socialIcon: {
       width: '24px',
       height: '24px',
@@ -177,6 +183,8 @@ const Navigation = () => {
         <button 
           style={styles.hamburger} 
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isMobileMenuOpen}
         >
           <div style={{...styles.hamburgerLine, transform: isMobileMenuOpen ? 'rotate(45deg)' : 'rotate(0)'}} />
           <div style={{...styles.hamburgerLine, opacity: isMobileMenuOpen ? 0 : 1, transform: isMobileMenuOpen ? 'translateX(20px)' : 'translateX(0)'}} />
@@ -202,8 +210,10 @@ const Navigation = () => {
           
           {/* 社交媒体图标 (移动端放在菜单下方) */}
           {isMobile && (
-            <div style={styles.socialIcons}>
-              {socialLinks.map((social, index) => (
+            <>
+              <LanguageSwitcher isMobile />
+              <div style={styles.socialIcons}>
+                {socialLinks.map((social, index) => (
                 <a
                   key={index}
                   href={social.href}
@@ -218,15 +228,18 @@ const Navigation = () => {
                     <path d={social.icon} />
                   </svg>
                 </a>
-              ))}
-            </div>
+                ))}
+              </div>
+            </>
           )}
         </div>
         
         {/* 社交媒体图标 - 右侧 (仅PC端) */}
         {!isMobile && (
-          <div style={styles.socialIcons}>
-            {socialLinks.map((social, index) => (
+          <div style={styles.rightActions}>
+            <LanguageSwitcher />
+            <div style={styles.socialIcons}>
+              {socialLinks.map((social, index) => (
               <a
                 key={index}
                 href={social.href}
@@ -241,7 +254,8 @@ const Navigation = () => {
                   <path d={social.icon} />
                 </svg>
               </a>
-            ))}
+              ))}
+            </div>
           </div>
         )}
       </div>

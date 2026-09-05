@@ -37,6 +37,140 @@ body {
   width: 100%;
 }
 
+/* Custom language menu; Google Translate's stock UI stays hidden. */
+.language-switcher {
+  position: relative;
+  z-index: 1002;
+  direction: ltr;
+}
+
+.language-switcher__trigger {
+  min-width: 76px;
+  height: 38px;
+  padding: 0 11px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font: 600 13px/1 'Montserrat', sans-serif;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.language-switcher__trigger:hover,
+.language-switcher__trigger:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+
+.language-switcher__trigger:active {
+  transform: scale(0.97);
+}
+
+.language-switcher__trigger svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.language-switcher__trigger .language-switcher__chevron {
+  width: 9px;
+  height: 6px;
+  stroke-width: 1.8;
+}
+
+.language-switcher__menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 158px;
+  padding: 6px;
+  overflow: hidden;
+  background: rgba(22, 22, 24, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+}
+
+.language-switcher__option {
+  width: 100%;
+  min-height: 39px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.78);
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  font: 500 14px/1.2 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.language-switcher__option:hover,
+.language-switcher__option:focus-visible {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.09);
+  outline: none;
+}
+
+.language-switcher__option.is-active {
+  color: #fff;
+  background: rgba(0, 122, 255, 0.2);
+}
+
+.language-switcher__check {
+  color: #48a0ff;
+  font-size: 15px;
+}
+
+.language-switcher--mobile {
+  margin-top: 24px;
+}
+
+.language-switcher--mobile .language-switcher__trigger {
+  min-width: 118px;
+}
+
+.language-switcher--mobile .language-switcher__menu {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+#google_translate_element,
+.goog-te-banner-frame,
+.goog-te-gadget,
+.goog-te-balloon-frame,
+#goog-gt-tt {
+  display: none !important;
+}
+
+body > .skiptranslate,
+body > iframe.skiptranslate,
+body > iframe[id$=".container"],
+iframe[class*="VIpgJd-ZVi9od-ORHb"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+}
+
+body {
+  top: 0 !important;
+  position: static !important;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
