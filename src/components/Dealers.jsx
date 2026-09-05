@@ -259,6 +259,16 @@ const Dealers = () => {
       color: '#000000',
       gradient: '#000000',
       countries: [
+        {
+          name: 'Morocco',
+          dealers: (
+            <>
+              <strong>LA MAISON DU BILLARD</strong><br />
+              Tel: +212522221840<br />
+              Address: 8 Rue Jaafar Ibnou Al Habib, Bourgogne
+            </>
+          )
+        },
         { 
           name: 'South Africa', 
           dealers: (
