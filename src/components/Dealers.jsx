@@ -115,7 +115,7 @@ const Dealers = () => {
             <>
               <strong>Playon ltd</strong><br />
               Contact Person: Yaki Matlin<br />
-              Tel: 972 522462299<br />
+              Tel: +972 522462299<br />
               Email: <a href="mailto:yaki@playon.co.il" style={{ color: '#007AFF', textDecoration: 'none' }}>yaki@playon.co.il</a><br />
               Website: <a href="https://playon.co.il" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>playon.co.il</a>
             </>
@@ -137,7 +137,7 @@ const Dealers = () => {
             <>
               <strong>Classic Factory</strong><br />
               Contact Person: Serkul Bekbol<br />
-              Phone: +7 702 574 7474
+              Tel: +7 702 574 7474
             </>
           )
         },
@@ -147,7 +147,7 @@ const Dealers = () => {
             <>
               <strong>AS Billiards</strong><br />
               Address: Kyrgyzstan, Bishkek, Bakaeva st. 4<br />
-              Tel: +996703305305<br />
+              Tel: +996 703305305<br />
               Email: <a href="mailto:biznesman2309@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>biznesman2309@gmail.com</a><br />
               Instagram: <a href="https://www.instagram.com/asbilliards_shop.kg" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@asbilliards_shop.kg</a>
             </>
@@ -158,7 +158,7 @@ const Dealers = () => {
           dealers: (
             <>
               <strong>Arena Billiards Sport Trading</strong><br />
-              Tel: +60 17-741 6133<br />
+              Tel: +60 17 741 6133<br />
               Address: No 23-2 Jalan Sepah Puteri 5/1b, Kota Damansara, PJU 5, 47810 Petaling Jaya, Selangor
             </>
           )
@@ -175,7 +175,7 @@ const Dealers = () => {
               <br />
               <strong>NS TRADERS</strong><br />
               Contact Person: Nasarullah<br />
-              Tel: 0092-423-7632693<br />
+              Tel: +92 423 7632693<br />
               Address: 7B Shah Alam Market
             </>
           )
@@ -245,7 +245,7 @@ const Dealers = () => {
             <>
               <strong>TT-Billiard</strong><br />
               Address: Europeyskoho Soyusa 35, Kyiv, Ukraine, 04108<br />
-              Tel: +38(067)2364341 , +38(050)4431028<br />
+              Tel: +380 67 2364341 | +380 50 4431028<br />
               Email: <a href="mailto:info@tt-billiard.ua" style={{ color: '#007AFF', textDecoration: 'none' }}>info@tt-billiard.ua</a><br />
               Instagram: <a href="https://www.instagram.com/tt_billiard" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>tt_billiard</a>
             </>
@@ -264,7 +264,7 @@ const Dealers = () => {
           dealers: (
             <>
               <strong>LA MAISON DU BILLARD</strong><br />
-              Tel: +212522221840<br />
+              Tel: +212 522221840<br />
               Address: 8 Rue Jaafar Ibnou Al Habib, Bourgogne
             </>
           )
