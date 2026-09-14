@@ -1320,7 +1320,7 @@ const Home = () => {
                   name: 'Mark Williams', 
                   country: 'United Kingdom', 
                   color: '#007BFF',
-                  photo: '/images/mark williams.png',
+                  photo: '/images/mark williams.jpg',
                   achievements: [
                     'World Champion — 2000, 2003, 2018',
                     'Triple Crown Winner — World Championship, Masters, UK Championship (2002–03)',
@@ -1344,7 +1344,7 @@ const Home = () => {
                   name: 'Chang Bing Yu',
                   country: 'China',
                   color: '#007BFF',
-                  photo: '/images/chang-bing-yu.png',
+                  photo: '/images/chang-bing-yu.jpg',
                   achievements: [
                     '2025 Scottish Open — Runner-up',
                     '2025 Saudi Masters — Last 16',
