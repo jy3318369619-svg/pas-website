@@ -229,6 +229,19 @@ const Dealers = () => {
             </>
           )
         },
+        {
+          name: 'Sweden',
+          dealers: (
+            <>
+              <strong>Spelbord.se</strong><br />
+              Contact Person: Hjalmar Thor<br />
+              Address: Lotangsgatan 2, 80301 Gavle, Sweden<br />
+              Tel: +46262222026<br />
+              Email: <a href="mailto:info@spelbord.se" style={{ color: '#007AFF', textDecoration: 'none' }}>info@spelbord.se</a><br />
+              Website: <a href="https://spelbord.se" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Spelbord.se</a>
+            </>
+          )
+        },
         { 
           name: 'United Kingdom', 
           dealers: (
