@@ -110,6 +110,17 @@ const Dealers = () => {
           )
         },
         {
+          name: 'Iraq',
+          dealers: (
+            <>
+              <strong>Haji Muhsin Billiard Company</strong><br />
+              Contact Person: Shvan Haji<br />
+              Tel: +9647504478947<br />
+              Address: Aswaq Erbil, Erbil, Iraq
+            </>
+          )
+        },
+        {
           name: 'Israel',
           dealers: (
             <>
