@@ -162,6 +162,7 @@ const Dealers = () => {
               Email: <a href="mailto:biznesman2309@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>biznesman2309@gmail.com</a><br />
               Instagram: <a href="https://www.instagram.com/asbilliards_shop.kg" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@asbilliards_shop.kg</a><br />
               <br />
+              <strong>ISHEN</strong><br />
               Contact Person: Djakypbekov Ishen<br />
               Tel: +996 707 999 727<br />
               Address: 19/111 Shota Rustavely Street, Bishkek, Kyrgyzstan
