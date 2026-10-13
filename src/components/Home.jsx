@@ -1340,17 +1340,6 @@ const Home = () => {
                     'Champion — Chinese 8-Ball International Exchange Tournament (Dangshan Stop)'
                   ]
                 },
-                {
-                  name: 'Chang Bing Yu',
-                  country: 'China',
-                  color: '#007BFF',
-                  photo: '/images/chang-bing-yu.png',
-                  achievements: [
-                    '2025 Scottish Open — Runner-up',
-                    '2025 Saudi Masters — Last 16',
-                    '2018 World Snooker Under-21 Championship & World Snooker Under-18 Championship — Runner-up (both)'
-                  ]
-                },
                 { 
                   name: 'Andri Januarta', 
                   country: 'Indonesia', 
