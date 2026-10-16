@@ -179,6 +179,18 @@ const Dealers = () => {
             </>
           )
         },
+        {
+          name: 'Oman',
+          dealers: (
+            <>
+              <strong>Global Delight of Modern Trade</strong><br />
+              Contact Person: Mohammed Moutaz Ajlouni<br />
+              Tel: 0096896000147<br />
+              Email: <a href="mailto:inflama111@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>inflama111@gmail.com</a><br />
+              Instagram: <a href="https://www.instagram.com/m.moutaz147" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@m.moutaz147</a>
+            </>
+          )
+        },
         { 
           name: 'Pakistan', 
           dealers: (
