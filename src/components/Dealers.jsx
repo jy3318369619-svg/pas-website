@@ -258,6 +258,19 @@ const Dealers = () => {
           )
         },
         {
+          name: 'Greece',
+          dealers: (
+            <>
+              <strong>JOLLY BILLIARDS</strong><br />
+              Contact Person: FOTIS NAKOS<br />
+              Address: zakinthou 47, Athens kypseli, Greece<br />
+              Postal Code: 11362<br />
+              Tel: +306944320534<br />
+              Email: <a href="mailto:fotismaxi@hotmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>fotismaxi@hotmail.com</a>
+            </>
+          )
+        },
+        {
           name: 'Sweden',
           dealers: (
             <>
