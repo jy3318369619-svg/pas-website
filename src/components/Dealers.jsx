@@ -233,7 +233,11 @@ const Dealers = () => {
               Zalo: 0931295222<br />
               Address: 332 Tran Hung Dao, Phuong Le Dai Hanh, Hai Phong City<br />
               Email: <a href="mailto:Hoanguyen96neu@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>Hoanguyen96neu@gmail.com</a><br />
-              Facebook: <a href="https://www.facebook.com/share/17KzGNfzAa/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Le Hoang Billiards</a>
+              Facebook: <a href="https://www.facebook.com/share/17KzGNfzAa/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Le Hoang Billiards</a><br />
+              <br />
+              <strong>Tieu Tu Billiards Shop</strong><br />
+              Tel: +84 358048810<br />
+              Address: 433/10 Hai Ba Trung Street, Vo Thi Sau Ward, District 3, Ho Chi Minh City, Vietnam
             </>
           )
         }
