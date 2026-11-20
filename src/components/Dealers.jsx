@@ -81,7 +81,7 @@ const Dealers = () => {
               name: 'Dubai Snooker Club',
               fields: [
                 { label: 'Address', value: <>Khalid Bin Al Waleed Road, Al Karama, Dubai, UAE</> },
-                { label: 'Tel', value: <>+971 50 1471491 | +971 50 4520770</> },
+                { label: 'Tel', value: <>+971 50 147 1491 | +971 50 452 0770</> },
                 { label: 'Email', value: <><a href="mailto:dubsnkr@eim.ae" style={{ color: '#007AFF', textDecoration: 'none' }}>dubsnkr@eim.ae</a> | <a href="mailto:dubaisnookerclub@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>dubaisnookerclub@gmail.com</a></> },
                 { label: 'Website', value: <><a href="https://www.dubaisnooker.ae" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>www.dubaisnooker.ae</a></> },
                 { label: 'Instagram', value: <><a href="https://www.instagram.com/dubaisnooker" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@dubaisnooker</a></> },
@@ -123,7 +123,7 @@ const Dealers = () => {
               fields: [
                 { label: 'Contact Person', value: <>Shvan Haji</> },
                 { label: 'Address', value: <>Aswaq Erbil, Erbil, Iraq</> },
-                { label: 'Tel', value: <>+9647504478947</> },
+                { label: 'Tel', value: <>+964 750 447 8947</> },
               ]
             },
           ]
@@ -135,7 +135,7 @@ const Dealers = () => {
               name: 'Playon ltd',
               fields: [
                 { label: 'Contact Person', value: <>Yaki Matlin</> },
-                { label: 'Tel', value: <>+972 522462299</> },
+                { label: 'Tel', value: <>+972 52 246 2299</> },
                 { label: 'Email', value: <><a href="mailto:yaki@playon.co.il" style={{ color: '#007AFF', textDecoration: 'none' }}>yaki@playon.co.il</a></> },
                 { label: 'Website', value: <><a href="https://playon.co.il" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>playon.co.il</a></> },
               ]
@@ -148,7 +148,7 @@ const Dealers = () => {
             {
               fields: [
                 { label: 'Contact Person', value: <>Abdullah Khraim</> },
-                { label: 'Tel', value: <>+962 7 9918 7928</> },
+                { label: 'Tel', value: <>+962 79 918 7928</> },
                 { label: 'Instagram', value: <><a href="https://www.instagram.com/abdullah_khraim" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@abdullah_khraim</a></> },
               ]
             },
@@ -173,7 +173,7 @@ const Dealers = () => {
               name: 'AS Billiards',
               fields: [
                 { label: 'Address', value: <>Kyrgyzstan, Bishkek, Bakaeva st. 4</> },
-                { label: 'Tel', value: <>+996 703305305</> },
+                { label: 'Tel', value: <>+996 703 305 305</> },
                 { label: 'Email', value: <><a href="mailto:biznesman2309@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>biznesman2309@gmail.com</a></> },
                 { label: 'Instagram', value: <><a href="https://www.instagram.com/asbilliards_shop.kg" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@asbilliards_shop.kg</a></> },
               ]
@@ -207,7 +207,7 @@ const Dealers = () => {
               name: 'Global Delight of Modern Trade',
               fields: [
                 { label: 'Contact Person', value: <>Mohammed Moutaz Ajlouni</> },
-                { label: 'Tel', value: <>0096896000147</> },
+                { label: 'Tel', value: <>+968 9600 0147</> },
                 { label: 'Email', value: <><a href="mailto:inflama111@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>inflama111@gmail.com</a></> },
                 { label: 'Instagram', value: <><a href="https://www.instagram.com/m.moutaz147" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@m.moutaz147</a></> },
               ]
@@ -223,7 +223,7 @@ const Dealers = () => {
                 { label: 'Contact Person', value: <>Jahanzaib Sheikh</> },
                 { label: 'Branch 1', value: <>Shop #13 & 14B, Ichhra Shopping Centre, Main Ferozpur Road, Lahore, Pakistan</> },
                 { label: 'Branch 2', value: <>Shop #1 & 2, Ground Floor, Umer Farooq Plaza, Murree Road, Near Chandni Chowk, Rawalpindi, Pakistan</> },
-                { label: 'Tel', value: <>+92 3097147147</> },
+                { label: 'Tel', value: <>+92 309 714 7147</> },
               ]
             },
             {
@@ -231,7 +231,7 @@ const Dealers = () => {
               fields: [
                 { label: 'Contact Person', value: <>Nasarullah</> },
                 { label: 'Address', value: <>7B Shah Alam Market</> },
-                { label: 'Tel', value: <>+92 423 7632693</> },
+                { label: 'Tel', value: <>+92 42 3763 2693</> },
               ]
             },
           ]
@@ -243,7 +243,7 @@ const Dealers = () => {
               name: 'Grand999',
               fields: [
                 { label: 'Address', value: <>55/12 Moo.1 Phetchakasem R. Omyai Sampran Nakhonpathom</> },
-                { label: 'Tel', value: <>+66 835935939</> },
+                { label: 'Tel', value: <>+66 83 593 5939</> },
                 { label: 'Email', value: <><a href="mailto:grandtriplenine@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>grandtriplenine@gmail.com</a></> },
               ]
             },
@@ -257,7 +257,7 @@ const Dealers = () => {
               fields: [
                 { label: 'Contact Person', value: <>Ho So Phat</> },
                 { label: 'Address', value: <>1D/7 Binh Gia, Ward 13, Tan Binh District, Ho Chi Minh City, Vietnam</> },
-                { label: 'Tel', value: <>+84 933 18 68 18</> },
+                { label: 'Tel', value: <>+84 933 186 818</> },
               ]
             },
             {
@@ -267,14 +267,14 @@ const Dealers = () => {
                 { label: 'Tel', value: <>+84 931 295 222</> },
                 { label: 'Email', value: <><a href="mailto:Hoanguyen96neu@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>Hoanguyen96neu@gmail.com</a></> },
                 { label: 'Facebook', value: <><a href="https://www.facebook.com/share/17KzGNfzAa/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Le Hoang Billiards</a></> },
-                { label: 'Zalo', value: <>0931295222</> },
+                { label: 'Zalo', value: <>+84 931 295 222</> },
               ]
             },
             {
               name: 'Tieu Tu Billiards Shop',
               fields: [
                 { label: 'Address', value: <>433/10 Hai Ba Trung Street, Vo Thi Sau Ward, District 3, Ho Chi Minh City, Vietnam</> },
-                { label: 'Tel', value: <>+84 358048810</> },
+                { label: 'Tel', value: <>+84 358 048 810</> },
               ]
             },
           ]
@@ -310,7 +310,7 @@ const Dealers = () => {
                 { label: 'Contact Person', value: <>FOTIS NAKOS</> },
                 { label: 'Address', value: <>zakinthou 47, Athens kypseli, Greece</> },
                 { label: 'Postal Code', value: <>11362</> },
-                { label: 'Tel', value: <>+306944320534</> },
+                { label: 'Tel', value: <>+30 694 432 0534</> },
                 { label: 'Email', value: <><a href="mailto:fotismaxi@hotmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>fotismaxi@hotmail.com</a></> },
               ]
             },
@@ -324,7 +324,7 @@ const Dealers = () => {
               fields: [
                 { label: 'Contact Person', value: <>Hjalmar Thor</> },
                 { label: 'Address', value: <>Lotangsgatan 2, 80301 Gavle, Sweden</> },
-                { label: 'Tel', value: <>+46262222026</> },
+                { label: 'Tel', value: <>+46 26 222 20 26</> },
                 { label: 'Email', value: <><a href="mailto:info@spelbord.se" style={{ color: '#007AFF', textDecoration: 'none' }}>info@spelbord.se</a></> },
                 { label: 'Website', value: <><a href="https://spelbord.se" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Spelbord.se</a></> },
               ]
@@ -350,7 +350,7 @@ const Dealers = () => {
               name: 'TT-Billiard',
               fields: [
                 { label: 'Address', value: <>Europeyskoho Soyusa 35, Kyiv, Ukraine, 04108</> },
-                { label: 'Tel', value: <>+380 67 2364341 | +380 50 4431028</> },
+                { label: 'Tel', value: <>+380 67 236 4341 | +380 50 443 1028</> },
                 { label: 'Email', value: <><a href="mailto:info@tt-billiard.ua" style={{ color: '#007AFF', textDecoration: 'none' }}>info@tt-billiard.ua</a></> },
                 { label: 'Instagram', value: <><a href="https://www.instagram.com/tt_billiard" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>tt_billiard</a></> },
               ]
@@ -372,7 +372,7 @@ const Dealers = () => {
               name: 'LA MAISON DU BILLARD',
               fields: [
                 { label: 'Address', value: <>8 Rue Jaafar Ibnou Al Habib, Bourgogne</> },
-                { label: 'Tel', value: <>+212 522221840</> },
+                { label: 'Tel', value: <>+212 522 221 840</> },
               ]
             },
           ]
@@ -384,7 +384,7 @@ const Dealers = () => {
               name: 'Crown Snooker & Pool Shop',
               fields: [
                 { label: 'Contact Person', value: <>Cuban Moodley</> },
-                { label: 'Tel', value: <>+27 840689572</> },
+                { label: 'Tel', value: <>+27 84 068 9572</> },
                 { label: 'Email', value: <><a href="mailto:ceo@prosnooker.co.za" style={{ color: '#007AFF', textDecoration: 'none' }}>ceo@prosnooker.co.za</a></> },
               ]
             },
@@ -419,7 +419,7 @@ const Dealers = () => {
               name: 'The Snooker Shop',
               fields: [
                 { label: 'Contact Person', value: <>Jason Hastings</> },
-                { label: 'Tel', value: <>+61 448429059</> },
+                { label: 'Tel', value: <>+61 448 429 059</> },
                 { label: 'Email', value: <><a href="mailto:jason@thesnookershop.com.au" style={{ color: '#007AFF', textDecoration: 'none' }}>jason@thesnookershop.com.au</a></> },
                 { label: 'Website', value: <><a href="https://thesnookershop.com.au" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>thesnookershop.com.au</a></> },
               ]
