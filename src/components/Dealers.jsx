@@ -76,170 +76,208 @@ const Dealers = () => {
       countries: [
         { 
           name: 'United Arab Emirates', 
-          dealers: (
-            <>
-              <strong>Dubai Snooker Club</strong><br />
-              Address: Khalid Bin Al Waleed Road, Al Karama, Dubai, UAE<br />
-              Tel: +971 50 1471491 | +971 50 4520770<br />
-              Email: <a href="mailto:dubsnkr@eim.ae" style={{ color: '#007AFF', textDecoration: 'none' }}>dubsnkr@eim.ae</a> | <a href="mailto:dubaisnookerclub@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>dubaisnookerclub@gmail.com</a><br />
-              Website: <a href="https://www.dubaisnooker.ae" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>www.dubaisnooker.ae</a><br />
-              Instagram: <a href="https://www.instagram.com/dubaisnooker" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@dubaisnooker</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'Dubai Snooker Club',
+              fields: [
+                { label: 'Address', value: <>Khalid Bin Al Waleed Road, Al Karama, Dubai, UAE</> },
+                { label: 'Tel', value: <>+971 50 1471491 | +971 50 4520770</> },
+                { label: 'Email', value: <><a href="mailto:dubsnkr@eim.ae" style={{ color: '#007AFF', textDecoration: 'none' }}>dubsnkr@eim.ae</a> | <a href="mailto:dubaisnookerclub@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>dubaisnookerclub@gmail.com</a></> },
+                { label: 'Website', value: <><a href="https://www.dubaisnooker.ae" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>www.dubaisnooker.ae</a></> },
+                { label: 'Instagram', value: <><a href="https://www.instagram.com/dubaisnooker" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@dubaisnooker</a></> },
+              ]
+            },
+          ]
         },
         { 
           name: 'India', 
-          dealers: (
-            <>
-              <strong>Apex Sports Promotion</strong><br />
-              Contact Person: Mohsin Achhava<br />
-              Tel: +91 80003 37105
-            </>
-          )
+          dealers: [
+            {
+              name: 'Apex Sports Promotion',
+              fields: [
+                { label: 'Contact Person', value: <>Mohsin Achhava</> },
+                { label: 'Tel', value: <>+91 80003 37105</> },
+              ]
+            },
+          ]
         },
         { 
           name: 'Indonesia', 
-          dealers: (
-            <>
-              <strong>Eutopia Billiards & Co</strong><br />
-              Tel: +62 851 9454 9686<br />
-              Address: Jl. Teuku Umar No.39, Dauh Puri Klod, Kecamatan Denpasar Baru, Kota Denpasar, Bali, 80114 (Postal Code)<br />
-              Email: <a href="mailto:eutopia.idn@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>eutopia.idn@gmail.com</a><br />
-              Instagram: <a href="https://www.instagram.com/eutopiabilliards?igsh=MXE3NjlwNGhlZXdiNA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@eutopiabilliards</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'Eutopia Billiards & Co',
+              fields: [
+                { label: 'Address', value: <>Jl. Teuku Umar No.39, Dauh Puri Klod, Kecamatan Denpasar Baru, Kota Denpasar, Bali, 80114 (Postal Code)</> },
+                { label: 'Tel', value: <>+62 851 9454 9686</> },
+                { label: 'Email', value: <><a href="mailto:eutopia.idn@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>eutopia.idn@gmail.com</a></> },
+                { label: 'Instagram', value: <><a href="https://www.instagram.com/eutopiabilliards?igsh=MXE3NjlwNGhlZXdiNA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@eutopiabilliards</a></> },
+              ]
+            },
+          ]
         },
         {
           name: 'Iraq',
-          dealers: (
-            <>
-              <strong>Haji Muhsin Billiard Company</strong><br />
-              Contact Person: Shvan Haji<br />
-              Tel: +9647504478947<br />
-              Address: Aswaq Erbil, Erbil, Iraq
-            </>
-          )
+          dealers: [
+            {
+              name: 'Haji Muhsin Billiard Company',
+              fields: [
+                { label: 'Contact Person', value: <>Shvan Haji</> },
+                { label: 'Address', value: <>Aswaq Erbil, Erbil, Iraq</> },
+                { label: 'Tel', value: <>+9647504478947</> },
+              ]
+            },
+          ]
         },
         {
           name: 'Israel',
-          dealers: (
-            <>
-              <strong>Playon ltd</strong><br />
-              Contact Person: Yaki Matlin<br />
-              Tel: +972 522462299<br />
-              Email: <a href="mailto:yaki@playon.co.il" style={{ color: '#007AFF', textDecoration: 'none' }}>yaki@playon.co.il</a><br />
-              Website: <a href="https://playon.co.il" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>playon.co.il</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'Playon ltd',
+              fields: [
+                { label: 'Contact Person', value: <>Yaki Matlin</> },
+                { label: 'Tel', value: <>+972 522462299</> },
+                { label: 'Email', value: <><a href="mailto:yaki@playon.co.il" style={{ color: '#007AFF', textDecoration: 'none' }}>yaki@playon.co.il</a></> },
+                { label: 'Website', value: <><a href="https://playon.co.il" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>playon.co.il</a></> },
+              ]
+            },
+          ]
         },
         {
           name: 'Jordan',
-          dealers: (
-            <>
-              Contact Person: Abdullah Khraim<br />
-              Tel: +962 7 9918 7928<br />
-              Instagram: <a href="https://www.instagram.com/abdullah_khraim" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@abdullah_khraim</a>
-            </>
-          )
+          dealers: [
+            {
+              fields: [
+                { label: 'Contact Person', value: <>Abdullah Khraim</> },
+                { label: 'Tel', value: <>+962 7 9918 7928</> },
+                { label: 'Instagram', value: <><a href="https://www.instagram.com/abdullah_khraim" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@abdullah_khraim</a></> },
+              ]
+            },
+          ]
         },
         {
           name: 'Kazakhstan',
-          dealers: (
-            <>
-              <strong>Classic Factory</strong><br />
-              Contact Person: Serkul Bekbol<br />
-              Tel: +7 702 574 7474
-            </>
-          )
+          dealers: [
+            {
+              name: 'Classic Factory',
+              fields: [
+                { label: 'Contact Person', value: <>Serkul Bekbol</> },
+                { label: 'Tel', value: <>+7 702 574 7474</> },
+              ]
+            },
+          ]
         },
         {
           name: 'Kyrgyzstan',
-          dealers: (
-            <>
-              <strong>AS Billiards</strong><br />
-              Address: Kyrgyzstan, Bishkek, Bakaeva st. 4<br />
-              Tel: +996 703305305<br />
-              Email: <a href="mailto:biznesman2309@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>biznesman2309@gmail.com</a><br />
-              Instagram: <a href="https://www.instagram.com/asbilliards_shop.kg" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@asbilliards_shop.kg</a><br />
-              <br />
-              <strong>ISHEN</strong><br />
-              Contact Person: Djakypbekov Ishen<br />
-              Tel: +996 707 999 727<br />
-              Address: 19/111 Shota Rustavely Street, Bishkek, Kyrgyzstan
-            </>
-          )
+          dealers: [
+            {
+              name: 'AS Billiards',
+              fields: [
+                { label: 'Address', value: <>Kyrgyzstan, Bishkek, Bakaeva st. 4</> },
+                { label: 'Tel', value: <>+996 703305305</> },
+                { label: 'Email', value: <><a href="mailto:biznesman2309@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>biznesman2309@gmail.com</a></> },
+                { label: 'Instagram', value: <><a href="https://www.instagram.com/asbilliards_shop.kg" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@asbilliards_shop.kg</a></> },
+              ]
+            },
+            {
+              name: 'ISHEN',
+              fields: [
+                { label: 'Contact Person', value: <>Djakypbekov Ishen</> },
+                { label: 'Address', value: <>19/111 Shota Rustavely Street, Bishkek, Kyrgyzstan</> },
+                { label: 'Tel', value: <>+996 707 999 727</> },
+              ]
+            },
+          ]
         },
         { 
           name: 'Malaysia', 
-          dealers: (
-            <>
-              <strong>Arena Billiards Sport Trading</strong><br />
-              Tel: +60 17 741 6133<br />
-              Address: No 23-2 Jalan Sepah Puteri 5/1b, Kota Damansara, PJU 5, 47810 Petaling Jaya, Selangor
-            </>
-          )
+          dealers: [
+            {
+              name: 'Arena Billiards Sport Trading',
+              fields: [
+                { label: 'Address', value: <>No 23-2 Jalan Sepah Puteri 5/1b, Kota Damansara, PJU 5, 47810 Petaling Jaya, Selangor</> },
+                { label: 'Tel', value: <>+60 17 741 6133</> },
+              ]
+            },
+          ]
         },
         {
           name: 'Oman',
-          dealers: (
-            <>
-              <strong>Global Delight of Modern Trade</strong><br />
-              Contact Person: Mohammed Moutaz Ajlouni<br />
-              Tel: 0096896000147<br />
-              Email: <a href="mailto:inflama111@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>inflama111@gmail.com</a><br />
-              Instagram: <a href="https://www.instagram.com/m.moutaz147" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@m.moutaz147</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'Global Delight of Modern Trade',
+              fields: [
+                { label: 'Contact Person', value: <>Mohammed Moutaz Ajlouni</> },
+                { label: 'Tel', value: <>0096896000147</> },
+                { label: 'Email', value: <><a href="mailto:inflama111@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>inflama111@gmail.com</a></> },
+                { label: 'Instagram', value: <><a href="https://www.instagram.com/m.moutaz147" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@m.moutaz147</a></> },
+              ]
+            },
+          ]
         },
         { 
           name: 'Pakistan', 
-          dealers: (
-            <>
-              <strong>Al-Madina Sports</strong><br />
-              Contact Person: Jahanzaib Sheikh<br />
-              Tel: +92 3097147147<br />
-              Branch 1: Shop #13 & 14B, Ichhra Shopping Centre, Main Ferozpur Road, Lahore, Pakistan<br />
-              Branch 2: Shop #1 & 2, Ground Floor, Umer Farooq Plaza, Murree Road, Near Chandni Chowk, Rawalpindi, Pakistan<br />
-              <br />
-              <strong>NS TRADERS</strong><br />
-              Contact Person: Nasarullah<br />
-              Tel: +92 423 7632693<br />
-              Address: 7B Shah Alam Market
-            </>
-          )
+          dealers: [
+            {
+              name: 'Al-Madina Sports',
+              fields: [
+                { label: 'Contact Person', value: <>Jahanzaib Sheikh</> },
+                { label: 'Branch 1', value: <>Shop #13 & 14B, Ichhra Shopping Centre, Main Ferozpur Road, Lahore, Pakistan</> },
+                { label: 'Branch 2', value: <>Shop #1 & 2, Ground Floor, Umer Farooq Plaza, Murree Road, Near Chandni Chowk, Rawalpindi, Pakistan</> },
+                { label: 'Tel', value: <>+92 3097147147</> },
+              ]
+            },
+            {
+              name: 'NS TRADERS',
+              fields: [
+                { label: 'Contact Person', value: <>Nasarullah</> },
+                { label: 'Address', value: <>7B Shah Alam Market</> },
+                { label: 'Tel', value: <>+92 423 7632693</> },
+              ]
+            },
+          ]
         },
         { 
           name: 'Thailand', 
-          dealers: (
-            <>
-              <strong>Grand999</strong><br />
-              Tel: +66 835935939<br />
-              Address: 55/12 Moo.1 Phetchakasem R. Omyai Sampran Nakhonpathom<br />
-              Email: <a href="mailto:grandtriplenine@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>grandtriplenine@gmail.com</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'Grand999',
+              fields: [
+                { label: 'Address', value: <>55/12 Moo.1 Phetchakasem R. Omyai Sampran Nakhonpathom</> },
+                { label: 'Tel', value: <>+66 835935939</> },
+                { label: 'Email', value: <><a href="mailto:grandtriplenine@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>grandtriplenine@gmail.com</a></> },
+              ]
+            },
+          ]
         },
         { 
           name: 'Vietnam', 
-          dealers: (
-            <>
-              <strong>HSP Billiards Equipment</strong><br />
-              Contact Person: Ho So Phat<br />
-              Tel: +84 933 18 68 18<br />
-              Address: 1D/7 Binh Gia, Ward 13, Tan Binh District, Ho Chi Minh City, Vietnam<br />
-              <br />
-              <strong>Le Hoang Billiards</strong><br />
-              Tel: +84 931 295 222<br />
-              Zalo: 0931295222<br />
-              Address: 332 Tran Hung Dao, Phuong Le Dai Hanh, Hai Phong City<br />
-              Email: <a href="mailto:Hoanguyen96neu@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>Hoanguyen96neu@gmail.com</a><br />
-              Facebook: <a href="https://www.facebook.com/share/17KzGNfzAa/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Le Hoang Billiards</a><br />
-              <br />
-              <strong>Tieu Tu Billiards Shop</strong><br />
-              Tel: +84 358048810<br />
-              Address: 433/10 Hai Ba Trung Street, Vo Thi Sau Ward, District 3, Ho Chi Minh City, Vietnam
-            </>
-          )
+          dealers: [
+            {
+              name: 'HSP Billiards Equipment',
+              fields: [
+                { label: 'Contact Person', value: <>Ho So Phat</> },
+                { label: 'Address', value: <>1D/7 Binh Gia, Ward 13, Tan Binh District, Ho Chi Minh City, Vietnam</> },
+                { label: 'Tel', value: <>+84 933 18 68 18</> },
+              ]
+            },
+            {
+              name: 'Le Hoang Billiards',
+              fields: [
+                { label: 'Address', value: <>332 Tran Hung Dao, Phuong Le Dai Hanh, Hai Phong City</> },
+                { label: 'Tel', value: <>+84 931 295 222</> },
+                { label: 'Email', value: <><a href="mailto:Hoanguyen96neu@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>Hoanguyen96neu@gmail.com</a></> },
+                { label: 'Facebook', value: <><a href="https://www.facebook.com/share/17KzGNfzAa/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Le Hoang Billiards</a></> },
+                { label: 'Zalo', value: <>0931295222</> },
+              ]
+            },
+            {
+              name: 'Tieu Tu Billiards Shop',
+              fields: [
+                { label: 'Address', value: <>433/10 Hai Ba Trung Street, Vo Thi Sau Ward, District 3, Ho Chi Minh City, Vietnam</> },
+                { label: 'Tel', value: <>+84 358048810</> },
+              ]
+            },
+          ]
         }
       ]
     },
@@ -251,63 +289,73 @@ const Dealers = () => {
       countries: [
         { 
           name: 'Belgium', 
-          dealers: (
-            <>
-              <strong>Pro Fit Billiards</strong><br />
-              Contact Person: Edwin Depoorter<br />
-              Tel: +32 499 186 978<br />
-              Email: <a href="mailto:edwindepoorter@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>edwindepoorter@gmail.com</a><br />
-              Website: <a href="https://profitbilliards.be" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>profitbilliards.be</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'Pro Fit Billiards',
+              fields: [
+                { label: 'Contact Person', value: <>Edwin Depoorter</> },
+                { label: 'Tel', value: <>+32 499 186 978</> },
+                { label: 'Email', value: <><a href="mailto:edwindepoorter@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>edwindepoorter@gmail.com</a></> },
+                { label: 'Website', value: <><a href="https://profitbilliards.be" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>profitbilliards.be</a></> },
+              ]
+            },
+          ]
         },
         {
           name: 'Greece',
-          dealers: (
-            <>
-              <strong>JOLLY BILLIARDS</strong><br />
-              Contact Person: FOTIS NAKOS<br />
-              Address: zakinthou 47, Athens kypseli, Greece<br />
-              Postal Code: 11362<br />
-              Tel: +306944320534<br />
-              Email: <a href="mailto:fotismaxi@hotmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>fotismaxi@hotmail.com</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'JOLLY BILLIARDS',
+              fields: [
+                { label: 'Contact Person', value: <>FOTIS NAKOS</> },
+                { label: 'Address', value: <>zakinthou 47, Athens kypseli, Greece</> },
+                { label: 'Postal Code', value: <>11362</> },
+                { label: 'Tel', value: <>+306944320534</> },
+                { label: 'Email', value: <><a href="mailto:fotismaxi@hotmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>fotismaxi@hotmail.com</a></> },
+              ]
+            },
+          ]
         },
         {
           name: 'Sweden',
-          dealers: (
-            <>
-              <strong>Spelbord.se</strong><br />
-              Contact Person: Hjalmar Thor<br />
-              Address: Lotangsgatan 2, 80301 Gavle, Sweden<br />
-              Tel: +46262222026<br />
-              Email: <a href="mailto:info@spelbord.se" style={{ color: '#007AFF', textDecoration: 'none' }}>info@spelbord.se</a><br />
-              Website: <a href="https://spelbord.se" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Spelbord.se</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'Spelbord.se',
+              fields: [
+                { label: 'Contact Person', value: <>Hjalmar Thor</> },
+                { label: 'Address', value: <>Lotangsgatan 2, 80301 Gavle, Sweden</> },
+                { label: 'Tel', value: <>+46262222026</> },
+                { label: 'Email', value: <><a href="mailto:info@spelbord.se" style={{ color: '#007AFF', textDecoration: 'none' }}>info@spelbord.se</a></> },
+                { label: 'Website', value: <><a href="https://spelbord.se" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Spelbord.se</a></> },
+              ]
+            },
+          ]
         },
         { 
           name: 'United Kingdom', 
-          dealers: (
-            <>
-              <strong>Dunstable Snooker Club</strong><br />
-              Contact Person: Suny Singh<br />
-              Email: <a href="mailto:dunstablesnooker@outlook.com" style={{ color: '#007AFF', textDecoration: 'none' }}>dunstablesnooker@outlook.com</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'Dunstable Snooker Club',
+              fields: [
+                { label: 'Contact Person', value: <>Suny Singh</> },
+                { label: 'Email', value: <><a href="mailto:dunstablesnooker@outlook.com" style={{ color: '#007AFF', textDecoration: 'none' }}>dunstablesnooker@outlook.com</a></> },
+              ]
+            },
+          ]
         },
         {
           name: 'Ukraine',
-          dealers: (
-            <>
-              <strong>TT-Billiard</strong><br />
-              Address: Europeyskoho Soyusa 35, Kyiv, Ukraine, 04108<br />
-              Tel: +380 67 2364341 | +380 50 4431028<br />
-              Email: <a href="mailto:info@tt-billiard.ua" style={{ color: '#007AFF', textDecoration: 'none' }}>info@tt-billiard.ua</a><br />
-              Instagram: <a href="https://www.instagram.com/tt_billiard" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>tt_billiard</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'TT-Billiard',
+              fields: [
+                { label: 'Address', value: <>Europeyskoho Soyusa 35, Kyiv, Ukraine, 04108</> },
+                { label: 'Tel', value: <>+380 67 2364341 | +380 50 4431028</> },
+                { label: 'Email', value: <><a href="mailto:info@tt-billiard.ua" style={{ color: '#007AFF', textDecoration: 'none' }}>info@tt-billiard.ua</a></> },
+                { label: 'Instagram', value: <><a href="https://www.instagram.com/tt_billiard" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>tt_billiard</a></> },
+              ]
+            },
+          ]
         }
       ]
     },
@@ -319,24 +367,28 @@ const Dealers = () => {
       countries: [
         {
           name: 'Morocco',
-          dealers: (
-            <>
-              <strong>LA MAISON DU BILLARD</strong><br />
-              Tel: +212 522221840<br />
-              Address: 8 Rue Jaafar Ibnou Al Habib, Bourgogne
-            </>
-          )
+          dealers: [
+            {
+              name: 'LA MAISON DU BILLARD',
+              fields: [
+                { label: 'Address', value: <>8 Rue Jaafar Ibnou Al Habib, Bourgogne</> },
+                { label: 'Tel', value: <>+212 522221840</> },
+              ]
+            },
+          ]
         },
         { 
           name: 'South Africa', 
-          dealers: (
-            <>
-              <strong>Crown Snooker & Pool Shop</strong><br />
-              Contact Person: Cuban Moodley<br />
-              Tel: +27 840689572<br />
-              Email: <a href="mailto:ceo@prosnooker.co.za" style={{ color: '#007AFF', textDecoration: 'none' }}>ceo@prosnooker.co.za</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'Crown Snooker & Pool Shop',
+              fields: [
+                { label: 'Contact Person', value: <>Cuban Moodley</> },
+                { label: 'Tel', value: <>+27 840689572</> },
+                { label: 'Email', value: <><a href="mailto:ceo@prosnooker.co.za" style={{ color: '#007AFF', textDecoration: 'none' }}>ceo@prosnooker.co.za</a></> },
+              ]
+            },
+          ]
         }
       ]
     },
@@ -362,15 +414,17 @@ const Dealers = () => {
       countries: [
         { 
           name: 'Australia', 
-          dealers: (
-            <>
-              <strong>The Snooker Shop</strong><br />
-              Contact Person: Jason Hastings<br />
-              Tel: +61 448429059<br />
-              Email: <a href="mailto:jason@thesnookershop.com.au" style={{ color: '#007AFF', textDecoration: 'none' }}>jason@thesnookershop.com.au</a><br />
-              Website: <a href="https://thesnookershop.com.au" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>thesnookershop.com.au</a>
-            </>
-          )
+          dealers: [
+            {
+              name: 'The Snooker Shop',
+              fields: [
+                { label: 'Contact Person', value: <>Jason Hastings</> },
+                { label: 'Tel', value: <>+61 448429059</> },
+                { label: 'Email', value: <><a href="mailto:jason@thesnookershop.com.au" style={{ color: '#007AFF', textDecoration: 'none' }}>jason@thesnookershop.com.au</a></> },
+                { label: 'Website', value: <><a href="https://thesnookershop.com.au" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>thesnookershop.com.au</a></> },
+              ]
+            },
+          ]
         }
       ]
     }
@@ -725,14 +779,21 @@ const Dealers = () => {
                             }}>
                               {country.name}
                             </h4>
-                            <p style={{
-                              fontSize: '0.95em',
-                              color: '#666666',
-                              lineHeight: 1.5,
-                              margin: 0
-                            }}>
-                              {country.dealers}
-                            </p>
+                            <div className="dealer-list">
+                              {country.dealers.map((dealer, dealerIndex) => (
+                                <section className="dealer-entry" key={dealer.name || dealerIndex}>
+                                  {dealer.name && <h5 className="dealer-name">{dealer.name}</h5>}
+                                  <dl className="dealer-details">
+                                    {dealer.fields.map(({ label, value }) => (
+                                      <div className="dealer-field" key={label}>
+                                        <dt>{label}</dt>
+                                        <dd>{value}</dd>
+                                      </div>
+                                    ))}
+                                  </dl>
+                                </section>
+                              ))}
+                            </div>
                           </div>
                         ))}
                       </div>

@@ -896,3 +896,67 @@ body {
     grid-template-columns: 104px minmax(0, 1fr) !important;
   }
 }
+.dealer-list {
+  display: grid;
+  gap: 24px;
+}
+
+.dealer-entry {
+  min-width: 0;
+}
+
+.dealer-entry + .dealer-entry {
+  border-top: 1px solid #e2e5e9;
+  padding-top: 24px;
+}
+
+.dealer-name {
+  margin: 0 0 14px;
+  color: #1a1a1a;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.dealer-details {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.dealer-field {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: 16px;
+}
+
+.dealer-field dt {
+  color: #555;
+  font-weight: 600;
+}
+
+.dealer-field dd {
+  min-width: 0;
+  margin: 0;
+  color: #666;
+  overflow-wrap: anywhere;
+}
+
+.dealer-field a:hover,
+.dealer-field a:focus-visible {
+  text-decoration: underline !important;
+}
+
+@media (max-width: 600px) {
+  .dealer-field {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+
+  .dealer-details {
+    gap: 12px;
+  }
+}
