@@ -341,6 +341,17 @@ const Dealers = () => {
                 { label: 'Email', value: <><a href="mailto:dunstablesnooker@outlook.com" style={{ color: '#007AFF', textDecoration: 'none' }}>dunstablesnooker@outlook.com</a></> },
               ]
             },
+            {
+              name: 'Cuephoria Limited',
+              fields: [
+                { label: 'Contact Person', value: <>Paul Wright</> },
+                { label: 'Tel', value: <>01233 632967 | 07973967679</> },
+                { label: 'Address', value: <>Unit 2 Retail Warehouse, Eastmead Avenue, Ashford, Kent. TN23 7RX</> },
+                { label: 'Email', value: <><a href="mailto:paul@cuephoria.co.uk" style={{ color: '#007AFF', textDecoration: 'none' }}>paul@cuephoria.co.uk</a></> },
+                { label: 'Facebook', value: <><a href="https://www.facebook.com/cuephoria.cues" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>www.facebook.com/cuephoria.cues</a></> },
+                { label: 'Instagram', value: <><a href="https://www.instagram.com/cuephoria.cues" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>www.instagram.com/cuephoria.cues</a></> },
+              ]
+            },
           ]
         },
         {
