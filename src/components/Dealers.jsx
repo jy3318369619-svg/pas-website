@@ -83,7 +83,7 @@ const Dealers = () => {
                 { label: 'Address', value: <>Khalid Bin Al Waleed Road, Al Karama, Dubai, UAE</> },
                 { label: 'Tel', value: <>+971 50 147 1491 | +971 50 452 0770</> },
                 { label: 'Email', value: <><a href="mailto:dubsnkr@eim.ae" style={{ color: '#007AFF', textDecoration: 'none' }}>dubsnkr@eim.ae</a> | <a href="mailto:dubaisnookerclub@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>dubaisnookerclub@gmail.com</a></> },
-                { label: 'Website', value: <><a href="https://www.dubaisnooker.ae" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>www.dubaisnooker.ae</a></> },
+                { label: 'Website', value: <><a href="https://www.dubaisnooker.ae" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Dubai Snooker Club</a></> },
                 { label: 'Instagram', value: <><a href="https://www.instagram.com/dubaisnooker" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@dubaisnooker</a></> },
               ]
             },
@@ -137,7 +137,7 @@ const Dealers = () => {
                 { label: 'Contact Person', value: <>Yaki Matlin</> },
                 { label: 'Tel', value: <>+972 52 246 2299</> },
                 { label: 'Email', value: <><a href="mailto:yaki@playon.co.il" style={{ color: '#007AFF', textDecoration: 'none' }}>yaki@playon.co.il</a></> },
-                { label: 'Website', value: <><a href="https://playon.co.il" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>playon.co.il</a></> },
+                { label: 'Website', value: <><a href="https://playon.co.il" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Playon</a></> },
               ]
             },
           ]
@@ -296,7 +296,7 @@ const Dealers = () => {
                 { label: 'Contact Person', value: <>Edwin Depoorter</> },
                 { label: 'Tel', value: <>+32 499 186 978</> },
                 { label: 'Email', value: <><a href="mailto:edwindepoorter@gmail.com" style={{ color: '#007AFF', textDecoration: 'none' }}>edwindepoorter@gmail.com</a></> },
-                { label: 'Website', value: <><a href="https://profitbilliards.be" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>profitbilliards.be</a></> },
+                { label: 'Website', value: <><a href="https://profitbilliards.be" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Pro Fit Billiards</a></> },
               ]
             },
           ]
@@ -326,7 +326,7 @@ const Dealers = () => {
                 { label: 'Address', value: <>Lotangsgatan 2, 80301 Gavle, Sweden</> },
                 { label: 'Tel', value: <>+46 26 222 20 26</> },
                 { label: 'Email', value: <><a href="mailto:info@spelbord.se" style={{ color: '#007AFF', textDecoration: 'none' }}>info@spelbord.se</a></> },
-                { label: 'Website', value: <><a href="https://spelbord.se" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Spelbord.se</a></> },
+                { label: 'Website', value: <><a href="https://spelbord.se" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Spelbord</a></> },
               ]
             },
           ]
@@ -345,11 +345,11 @@ const Dealers = () => {
               name: 'Cuephoria Limited',
               fields: [
                 { label: 'Contact Person', value: <>Paul Wright</> },
-                { label: 'Tel', value: <>01233 632967 | 07973967679</> },
+                { label: 'Tel', value: <>+44 1233 632967 | +44 7973 967679</> },
                 { label: 'Address', value: <>Unit 2 Retail Warehouse, Eastmead Avenue, Ashford, Kent. TN23 7RX</> },
                 { label: 'Email', value: <><a href="mailto:paul@cuephoria.co.uk" style={{ color: '#007AFF', textDecoration: 'none' }}>paul@cuephoria.co.uk</a></> },
-                { label: 'Facebook', value: <><a href="https://www.facebook.com/cuephoria.cues" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>www.facebook.com/cuephoria.cues</a></> },
-                { label: 'Instagram', value: <><a href="https://www.instagram.com/cuephoria.cues" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>www.instagram.com/cuephoria.cues</a></> },
+                { label: 'Facebook', value: <><a href="https://www.facebook.com/cuephoria.cues" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>Cuephoria Cues</a></> },
+                { label: 'Instagram', value: <><a href="https://www.instagram.com/cuephoria.cues" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@cuephoria.cues</a></> },
               ]
             },
           ]
@@ -363,7 +363,7 @@ const Dealers = () => {
                 { label: 'Address', value: <>Europeyskoho Soyusa 35, Kyiv, Ukraine, 04108</> },
                 { label: 'Tel', value: <>+380 67 236 4341 | +380 50 443 1028</> },
                 { label: 'Email', value: <><a href="mailto:info@tt-billiard.ua" style={{ color: '#007AFF', textDecoration: 'none' }}>info@tt-billiard.ua</a></> },
-                { label: 'Instagram', value: <><a href="https://www.instagram.com/tt_billiard" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>tt_billiard</a></> },
+                { label: 'Instagram', value: <><a href="https://www.instagram.com/tt_billiard" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@tt_billiard</a></> },
               ]
             },
           ]
@@ -432,7 +432,7 @@ const Dealers = () => {
                 { label: 'Contact Person', value: <>Jason Hastings</> },
                 { label: 'Tel', value: <>+61 448 429 059</> },
                 { label: 'Email', value: <><a href="mailto:jason@thesnookershop.com.au" style={{ color: '#007AFF', textDecoration: 'none' }}>jason@thesnookershop.com.au</a></> },
-                { label: 'Website', value: <><a href="https://thesnookershop.com.au" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>thesnookershop.com.au</a></> },
+                { label: 'Website', value: <><a href="https://thesnookershop.com.au" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>The Snooker Shop</a></> },
               ]
             },
           ]
