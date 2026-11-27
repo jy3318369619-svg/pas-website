@@ -366,6 +366,13 @@ const Dealers = () => {
                 { label: 'Instagram', value: <><a href="https://www.instagram.com/tt_billiard" target="_blank" rel="noopener noreferrer" style={{ color: '#007AFF', textDecoration: 'none' }}>@tt_billiard</a></> },
               ]
             },
+            {
+              name: 'Billiard-Prime',
+              fields: [
+                { label: 'Address', value: <>Bohdana Khmelnytskoho, 110A, Dnipro, Ukraine</> },
+                { label: 'Tel', value: <>+380 67 633 4334</> },
+              ]
+            },
           ]
         }
       ]
